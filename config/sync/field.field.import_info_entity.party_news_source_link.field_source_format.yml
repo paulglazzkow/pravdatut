@@ -1,0 +1,23 @@
+uuid: dcb8547f-c24d-4968-affd-d54cb88539a8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_info_entity.field_source_format
+    - import_info.import_info_entity_type.party_news_source_link
+  module:
+    - options
+id: import_info_entity.party_news_source_link.field_source_format
+field_name: field_source_format
+entity_type: import_info_entity
+bundle: party_news_source_link
+label: source_format
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: html
+default_value_callback: ''
+settings: {  }
+field_type: list_string

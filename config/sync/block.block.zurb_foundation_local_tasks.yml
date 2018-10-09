@@ -1,0 +1,22 @@
+uuid: 768110e6-148e-4380-9b88-ba6595e24aab
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - zurb_foundation
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: zurb_foundation_local_tasks
+theme: zurb_foundation
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

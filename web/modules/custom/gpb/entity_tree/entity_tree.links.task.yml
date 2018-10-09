@@ -1,0 +1,23 @@
+# Entity tree routing definition
+
+entity.entity_tree.canonical:
+  route_name: entity.entity_tree.canonical
+  base_route: entity.entity_tree.canonical
+  title: 'View'
+
+entity.entity_tree.edit_form:
+  route_name: entity.entity_tree.edit_form
+  base_route: entity.entity_tree.canonical
+  title: 'Edit'
+
+entity.entity_tree.version_history:
+  route_name: entity.entity_tree.version_history
+  base_route: entity.entity_tree.canonical
+  title: 'Revisions'
+
+entity.entity_tree.delete_form:
+  route_name:  entity.entity_tree.delete_form
+  base_route:  entity.entity_tree.canonical
+  title: Delete
+  weight: 10
+

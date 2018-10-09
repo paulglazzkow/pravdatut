@@ -1,0 +1,9 @@
+uuid: eecdab47-4fdd-46f6-af2f-2ac1ed0ac8c4
+langcode: ru
+status: true
+dependencies: {  }
+name: Партия
+vid: party
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,10 @@
+uuid: 380a47b2-d973-47ed-a8bc-b810a2b3d317
+langcode: ru
+status: true
+dependencies:
+  module:
+    - group
+id: group.full_content
+label: Полностью
+targetEntityType: group
+cache: true

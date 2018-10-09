@@ -1,0 +1,8 @@
+
+social_auth_ext.user_auth_list:
+  path: '/user/{user}/social-auth'
+  defaults:
+    _controller: '\Drupal\social_auth_ext\Controller\SocialAuthListUserController::list'
+    _title: 'List'
+  requirements:
+    _permission: 'access content'

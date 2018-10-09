@@ -1,0 +1,21 @@
+uuid: 6aec6a69-b388-4d51-851b-201fcbf889a9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_content_entity.field_state
+    - import_info.import_content_entity_type.news
+  module:
+    - options
+id: import_content_entity.news.field_state
+field_name: field_state
+entity_type: import_content_entity
+bundle: news
+label: state
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

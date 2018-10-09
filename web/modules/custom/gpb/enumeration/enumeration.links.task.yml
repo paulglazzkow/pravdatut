@@ -1,0 +1,23 @@
+# Entity enumeration routing definition
+
+entity.entity_enumeration.canonical:
+  route_name: entity.entity_enumeration.canonical
+  base_route: entity.entity_enumeration.canonical
+  title: 'View'
+
+entity.entity_enumeration.edit_form:
+  route_name: entity.entity_enumeration.edit_form
+  base_route: entity.entity_enumeration.canonical
+  title: 'Edit'
+
+entity.entity_enumeration.version_history:
+  route_name: entity.entity_enumeration.version_history
+  base_route: entity.entity_enumeration.canonical
+  title: 'Revisions'
+
+entity.entity_enumeration.delete_form:
+  route_name:  entity.entity_enumeration.delete_form
+  base_route:  entity.entity_enumeration.canonical
+  title: Delete
+  weight: 10
+

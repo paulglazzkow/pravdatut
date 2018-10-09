@@ -1,0 +1,8 @@
+uuid: 3df6d674-ae87-4d1e-8739-fa1535a6f94d
+langcode: ru
+status: true
+dependencies: {  }
+id: time__hour_min
+label: 'Время час:минута'
+locked: false
+pattern: 'H:i'

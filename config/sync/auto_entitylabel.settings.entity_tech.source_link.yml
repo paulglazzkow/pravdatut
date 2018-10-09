@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[entity_tech:field_link_type:value]:[entity_tech:field_link:uri]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.source_link

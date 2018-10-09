@@ -1,0 +1,6 @@
+uuid: 7c0a8ae4-7f1c-488d-ba81-dd3e8e8840b5
+langcode: ru
+status: true
+dependencies: {  }
+id: party_news
+label: 'Party News'

@@ -1,0 +1,8 @@
+uuid: 6f0e58a1-7280-4aa7-8c3c-4130ef61ebe8
+langcode: ru
+status: true
+dependencies: {  }
+id: party-programm
+label: Программа
+description: ''
+locked: false

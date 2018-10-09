@@ -1,0 +1,18 @@
+
+# Event menu items definition
+entity.entity_event.collection:
+  title: 'Event list'
+  route_name: entity.entity_event.collection
+  description: 'List Events'
+  parent: admin_content.types_content
+  weight: 100
+
+
+# Event type menu items definition
+entity.entity_event_type.collection:
+  title: 'Event type'
+  route_name: entity.entity_event_type.collection
+  description: 'List Event (bundles)'
+  parent: admin_content.types
+  weight: 99
+

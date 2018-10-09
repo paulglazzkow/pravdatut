@@ -1,0 +1,4 @@
+services:
+  gpb_service.router_find:
+    class: Drupal\gpb_services\RouterFindService
+    arguments: ['@database','@cache.data','router']

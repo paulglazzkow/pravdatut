@@ -1,0 +1,17 @@
+uuid: e142ac7c-6483-44b5-a15e-d11e12879b31
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Программа партии'
+type: party_programm
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

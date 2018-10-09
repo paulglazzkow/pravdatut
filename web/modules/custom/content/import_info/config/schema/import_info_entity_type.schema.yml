@@ -1,0 +1,12 @@
+import_info.import_info_entity_type.*:
+  type: config_entity
+  label: 'Import info entity type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

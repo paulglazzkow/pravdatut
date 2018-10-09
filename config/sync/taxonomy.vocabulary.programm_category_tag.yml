@@ -1,0 +1,9 @@
+uuid: 0dd65045-ac00-4ac7-be4f-9632b63d9415
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Категории программ (тэг)'
+vid: programm_category_tag
+description: ''
+hierarchy: 0
+weight: 0

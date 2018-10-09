@@ -1,0 +1,22 @@
+uuid: 25a3bdad-8045-44a6-997f-c0069ce1e00e
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Аутентифицированный пользователь'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'flag comment_abuse'
+  - 'flag comment_like'
+  - 'post comments'
+  - 'search content'
+  - 'unflag comment_like'
+  - 'use text format comment'
+  - 'use vote up/down'
+  - 'view media'

@@ -1,0 +1,22 @@
+uuid: 6e1c7f6b-79d3-40d8-81a2-ab34aff1097e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - druda_adminimal_theme
+_core:
+  default_config_hash: bOInZcrZU3ePNlZJ0ov2b65mLAoNMwfamEsBq5JxPYk
+id: druda_adminimal_theme_breadcrumbs
+theme: druda_adminimal_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

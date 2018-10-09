@@ -1,0 +1,122 @@
+alt-text:
+  Type:	String
+  Default:	no default value
+  This option specifies the default alt= text Tidy uses for <img> attributes when the alt= attribute is missing.
+  Use with care, as it is your responsibility to make your documents accessible to people who cannot see the images.
+anchor-as-name:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option controls the deletion or addition of the name attribute in elements where it can serve as anchor.
+  If set to yes a name attribute, if not already existing, is added along an existing id attribute if the DTD allows it.
+  If set to no any existing name attribute is removed if an id attribute exists or has been added.
+assume-xml-procins:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should change the parsing of processing instructions to require ?> as the terminator rather than >.
+  This option is automatically set if the input is in XML.
+coerce-endtags:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should coerce a start tag into an end tag in cases where it looks like an end tag was probably intended; for example, given
+  <span>foo <b>bar<b> baz</span>
+  Tidy will output
+  <span>foo <b>bar</b> baz</span>
+css-prefix:
+  Type:	String
+  Default:	c
+  This option specifies the prefix that Tidy uses for styles rules.
+  By default, c will be used.
+custom-tags:
+  Type:	Enum
+  Default:	no
+  Values:	no, blocklevel, empty, inline, pre
+  See also:	new-blocklevel-tags, new-empty-tags, new-inline-tags, new-pre-tags
+  This option enables the use of tags for autonomous custom elements, e.g. <flag-icon> with Tidy. Custom tags are disabled if this value is no. Other settings - blocklevel, empty, inline, and pre will treat all detected custom tags accordingly.
+  The use of new-blocklevel-tags, new-empty-tags, new-inline-tags, or new-pre-tags will override the treatment of custom tags by this configuration option. This may be useful if you have different types of custom tags.
+  When enabled these tags are determined during the processing of your document using opening tags; matching closing tags will be recognized accordingly, and unknown closing tags will be discarded.
+enclose-block-text:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should insert a <p> element to enclose any text it finds in any element that allows mixed content for HTML transitional but not HTML strict.
+enclose-text:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should enclose any text it finds in the body element within a <p> element.
+  This is useful when you want to take existing HTML and use it with a style sheet.
+escape-scripts:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option causes items that look like closing tags, like </g to be escaped to <\/g.
+  Set this option to no if you do not want this.
+fix-backslash:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should replace backslash characters \ in URLs with forward slashes /.
+fix-bad-comments:
+  Type:	Enum
+  Default:	auto
+  Values:	no, yes, auto
+  This option specifies if Tidy should replace unexpected hyphens with = characters when it comes across adjacent hyphens.
+  The default is auto will which will act as no for HTML5 document types, and yes for all other document types.
+  HTML has abandonded SGML comment syntax, and allows adjacent hypens for all versions of HTML, although XML and XHTML do not. If you plan to support older browsers that require SGML comment syntax, then consider setting this value to yes.
+fix-style-tags:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should move all style tags to the head of the document.
+fix-uri:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should check attribute values that carry URIs for illegal characters and if such are found, escape them as HTML4 recommends.
+literal-attributes:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies how Tidy deals with whitespace characters within attribute values.
+  If the value is no Tidy normalizes attribute values by replacing any newline or tab with a single space, and further by replacing any contiguous whitespace with a single space.
+  To force Tidy to preserve the original, literal values of all attributes and ensure that whitespace within attribute values is passed through unchanged, set this option to yes.
+lower-literals:
+Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should convert the value of an attribute that takes a list of predefined values to lower case.
+  This is required for XHTML documents.
+repeated-attributes:
+  Type:	Enum
+  Default:	keep-last
+  Values:	keep-first, keep-last
+  See also:	join-classes, join-styles
+  This option specifies if Tidy should keep the first or last attribute, if an attribute is repeated, e.g. has two align attributes.
+skip-nested:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies that Tidy should skip nested tags when parsing script and style data.
+strict-tags-attributes:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This options ensures that tags and attributes are applicable for the version of HTML that Tidy outputs. When set to yes and the output document type is a strict doctype, then Tidy will report errors. If the output document type is a loose or transitional doctype, then Tidy will report warnings.
+  Additionally if drop-proprietary-attributes is enabled, then not applicable attributes will be dropped, too.
+  When set to no, these checks are not performed.
+uppercase-attributes:
+  Type:	Enum
+  Default:	no
+  Values:	no, yes, preserve
+  This option specifies if Tidy should output attribute names in upper case.
+  When set to no, attribute names will be written in lower case. Specifying yes will output attribute names in upper case, and preserve can used to leave attribute names untouched.
+  When using XML input, the original case is always preserved.
+uppercase-tags:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should output tag names in upper case.
+  The default is no which results in lower case tag names, except for XML input where the original case is preserved.

@@ -1,0 +1,31 @@
+uuid: 223bbe03-ed89-453e-94d1-e74543244e53
+langcode: ru
+status: true
+dependencies:
+  module:
+    - comment
+id: comment_abuse
+label: 'Comment Abuse'
+bundles:
+  - comment_news
+entity_type: comment
+global: true
+weight: 0
+flag_short: '<i class="fa fa-ban"></i>'
+flag_long: 'Уведомить модератора о нарушении'
+flag_message: 'Модератор уведомлен'
+unflag_short: '<i class="fa fa-ban"></i>'
+unflag_long: 'Модератор уведомлен'
+unflag_message: ''
+unflag_denied_text: '<i class="fa fa-ban"></i>'
+flag_type: 'entity:comment'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+    parent_owner: '0'
+linkTypeConfig: {  }

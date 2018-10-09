@@ -1,0 +1,144 @@
+uuid: 9965617e-97f5-47cb-a207-431e5311686d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.entity_solution.teaser
+    - entity_solution.entity_solution_type.module
+    - field.field.entity_solution.module.field_category
+    - field.field.entity_solution.module.field_description
+    - field.field.entity_solution.module.field_platform
+  module:
+    - druda_fields
+    - entity_solution
+    - field_formatter_class
+    - field_group
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_top:
+      children:
+        - name
+        - to_order
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'Row Top'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: teaser-top
+      label: 'Row Top'
+    group_content:
+      children:
+        - field_description
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: 'Row Content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: teaser-content
+      label: 'Row Content'
+    group_info:
+      children:
+        - user_id
+        - field_category
+        - field_platform
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        label: Footer
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: teaser-footer
+      label: Footer
+id: entity_solution.module.teaser
+targetEntityType: entity_solution
+bundle: module
+mode: teaser
+content:
+  field_category:
+    weight: -2
+    label: inline
+    settings:
+      link: true
+    third_party_settings:
+      field_formatter_class:
+        class: footer-item
+    type: entity_reference_label
+    region: content
+  field_description:
+    type: text_trimmed
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings:
+      field_formatter_class:
+        class: content-item
+  field_platform:
+    weight: -1
+    label: inline
+    settings:
+      link: true
+    third_party_settings:
+      field_formatter_class:
+        class: footer-item
+    type: entity_reference_label
+    region: content
+  name:
+    label: hidden
+    type: title_formatter
+    weight: -4
+    region: content
+    settings:
+      html_tag: h2
+    third_party_settings:
+      field_formatter_class:
+        class: top-item
+  to_order:
+    type: solution_order_button
+    weight: -3
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      button_text: 'To order'
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: top-item
+  user_id:
+    label: inline
+    type: author
+    weight: -3
+    region: content
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: footer-item
+hidden:
+  langcode: true

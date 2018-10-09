@@ -1,0 +1,23 @@
+uuid: 0cd7d9e3-34ab-4a20-85e9-db3a58055bb9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_content_entity.field_source_url
+    - import_info.import_content_entity_type.news
+  module:
+    - link
+id: import_content_entity.news.field_source_url
+field_name: field_source_url
+entity_type: import_content_entity
+bundle: news
+label: source_url
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

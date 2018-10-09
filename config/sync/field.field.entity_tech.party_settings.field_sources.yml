@@ -1,0 +1,28 @@
+uuid: a07b8525-9cd7-4a7e-a846-214593e29993
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.party_settings
+    - entity_tech.entity_tech_type.source_link
+    - field.storage.entity_tech.field_sources
+id: entity_tech.party_settings.field_sources
+field_name: field_sources
+entity_type: entity_tech
+bundle: party_settings
+label: Sources
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:entity_tech'
+  handler_settings:
+    target_bundles:
+      source_link: source_link
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

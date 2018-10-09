@@ -1,0 +1,23 @@
+error-file
+Type:	String
+Default:	no default value
+See also:	output-file
+This option specifies the error file Tidy uses for errors and warnings. Normally errors and warnings are output to stderr.
+keep-time
+Type:	Boolean
+Default:	no
+Values:	no, yes
+This option specifies if Tidy should keep the original modification time of files that Tidy modifies in place.
+Setting the option to yes allows you to tidy files without changing the file modification date, which may be useful with certain tools that use the modification date for things such as automatic server deployment.
+Note this feature is not supported on some platforms.
+output-file
+Type:	String
+Default:	no default value
+See also:	error-file
+This option specifies the output file Tidy uses for markup. Normally markup is written to stdout.
+write-back
+Type:	Boolean
+Default:	no
+Values:	no, yes
+This option specifies if Tidy should write back the tidied markup to the same file it read from.
+You are advised to keep copies of important files before tidying them, as on rare occasions the result may not be what you expect.

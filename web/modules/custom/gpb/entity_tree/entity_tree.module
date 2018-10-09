@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains entity_tree.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function entity_tree_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the entity_tree module.
+    case 'help.page.entity_tree':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entity Tree') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function entity_tree_theme() {
+  $theme = [];
+  $theme['entity_tree'] = [
+    'render element' => 'elements',
+    'file' => 'entity_tree.page.inc',
+    'template' => 'entity_tree',
+  ];
+  $theme['entity_tree_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'entity_tree.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function entity_tree_theme_suggestions_entity_tree(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#entity_tree'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'entity_tree__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_tree__' . $entity->bundle();
+  $suggestions[] = 'entity_tree__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_tree__' . $entity->id();
+  $suggestions[] = 'entity_tree__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

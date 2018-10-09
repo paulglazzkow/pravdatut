@@ -1,0 +1,18 @@
+
+# Entity problem menu items definition
+entity.entity_problem.collection:
+  title: 'Entity problem list'
+  route_name: entity.entity_problem.collection
+  description: 'List Entity problem entities'
+  parent: admin_content.types_content
+  weight: 100
+
+
+# Entity problem type menu items definition
+entity.entity_problem_type.collection:
+  title: 'Entity problem type'
+  route_name: entity.entity_problem_type.collection
+  description: 'List Entity problem type (bundles)'
+  parent: admin_content.types_content
+  weight: 99
+

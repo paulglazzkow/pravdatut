@@ -1,0 +1,27 @@
+uuid: 16ed7898-ba1a-437d-a4c9-30af2796dc4b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_party
+    - profile.type.party_member
+id: profile.party_member.field_party
+field_name: field_party
+entity_type: profile
+bundle: party_member
+label: Партия
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

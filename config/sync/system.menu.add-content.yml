@@ -1,0 +1,8 @@
+uuid: e4d0881a-8ba1-4dfe-85c0-ad2fa4862c1a
+langcode: ru
+status: true
+dependencies: {  }
+id: add-content
+label: Добавить
+description: ''
+locked: false

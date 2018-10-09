@@ -1,0 +1,18 @@
+
+# Entity tree menu items definition
+entity.entity_tree.collection:
+  title: 'Entity tree list'
+  route_name: entity.entity_tree.collection
+  description: 'List Entity tree entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Entity tree type menu items definition
+entity.entity_tree_type.collection:
+  title: 'Entity tree type'
+  route_name: entity.entity_tree_type.collection
+  description: 'List Entity tree type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

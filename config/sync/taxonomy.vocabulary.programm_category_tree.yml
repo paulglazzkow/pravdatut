@@ -1,0 +1,9 @@
+uuid: 8471e93f-ce4f-44f0-9dfe-25866862daee
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Категории программ (дерево)'
+vid: programm_category_tree
+description: ''
+hierarchy: 0
+weight: 0

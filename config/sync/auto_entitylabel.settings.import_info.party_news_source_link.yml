@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[import_info_entity:field_term_party:entity:name]'
+php: 0
+escape: 1
+dependencies:
+  config:
+    - import_info.import_info_entity_type.party_news_source_link

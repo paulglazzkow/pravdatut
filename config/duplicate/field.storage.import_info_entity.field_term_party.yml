@@ -1,0 +1,20 @@
+uuid: e45bdb35-3120-45e9-ab4d-e3e32c2e1d91
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import_info
+    - taxonomy
+id: import_info_entity.field_term_party
+field_name: field_term_party
+entity_type: import_info_entity
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

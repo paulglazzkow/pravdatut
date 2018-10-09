@@ -1,0 +1,150 @@
+uuid: be2f0cea-39c0-494a-b2d8-ba5c2af8a555
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.import_content_entity.news.field_body
+    - field.field.import_content_entity.news.field_body_raw
+    - field.field.import_content_entity.news.field_import_config
+    - field.field.import_content_entity.news.field_media
+    - field.field.import_content_entity.news.field_source_url
+    - field.field.import_content_entity.news.field_state
+    - field.field.import_content_entity.news.field_status
+    - import_info.import_content_entity_type.news
+  module:
+    - field_group
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_content
+        - group_import
+        - group_media
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: tabs
+    group_content:
+      children:
+        - field_import_config
+        - field_state
+        - field_status
+        - field_body
+      parent_name: group_tabs
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Content
+    group_import:
+      children:
+        - field_source_url
+        - field_config_yml
+        - field_body_raw
+      parent_name: group_tabs
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Import
+    group_media:
+      children:
+        - field_media
+      parent_name: group_tabs
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Media
+id: import_content_entity.news.default
+targetEntityType: import_content_entity
+bundle: news
+mode: default
+content:
+  field_body:
+    weight: 8
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_body_raw:
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_import_config:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_media:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_source_url:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_state:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_status:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  moderation_state: true
+  status: true
+  user_id: true

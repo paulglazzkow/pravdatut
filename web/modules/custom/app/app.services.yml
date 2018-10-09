@@ -1,0 +1,6 @@
+services:
+  app.terminate:
+    class: Drupal\app\EventSubscriber\AppTerminateSubscriber
+    arguments: []
+    tags:
+      - { name: event_subscriber }

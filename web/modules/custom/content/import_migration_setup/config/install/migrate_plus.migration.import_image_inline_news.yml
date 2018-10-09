@@ -1,0 +1,12 @@
+langcode: ru
+status: true
+id: import_media_news
+label: 'News Media.'
+migration_group: news_html
+source:
+  plugin: process_image_inline_news
+  data_parser_plugin: import_parser
+  source_field: field_body_raw
+destination:
+  plugin: 'entity:media'
+  default_bundle: image_import

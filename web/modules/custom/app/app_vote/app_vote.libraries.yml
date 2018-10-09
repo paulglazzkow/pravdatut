@@ -1,0 +1,24 @@
+flag_widget:
+  version: VERSION
+  js:
+    js/flag-widget.js : {}
+  css:
+    theme:
+      css/flag-widget.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - votingapi_widgets/fontawesome
+like_widget:
+  version: VERSION
+  js:
+    js/like-widget.js : {}
+  css:
+    theme:
+      css/like-widget.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - votingapi_widgets/fontawesome

@@ -1,0 +1,82 @@
+#--------------------------------------------------------------------------------------------------------
+# PARTY ITEM VIEW
+#--------------------------------------------------------------------------------------------------------
+entity.pravdatut_party.canonical:
+  path: '/party/{group}'
+  defaults:
+    _entity_view: 'group.full'
+    _title_callback: '\Drupal\Core\Entity\Controller\EntityController::title'
+  requirements:
+    _entity_access: 'group.view'
+    group: '\d+'
+  options:
+    compiler_class: '\Drupal\Core\Routing\RouteCompiler'
+    parameters:
+      group:
+        type: 'entity:group'
+        converter: 'paramconverter.latest_revision'
+    _access_checks:  'access_check.entity'
+
+#--------------------------------------------------------------------------------------------------------
+# PARTY ITEM EDIT
+#--------------------------------------------------------------------------------------------------------
+entity.pravdatut_party.edit_form:
+  path: '/party/{group}/edit'
+  defaults:
+    _entity_form:           'group.edit'
+    _title_callback:        '\Drupal\Core\Entity\Controller\EntityController::editTitle'
+  requirements:
+    _entity_access:         'group.update'
+    group:                  '\d+'
+  options:
+    compiler_class:         '\Drupal\Core\Routing\RouteCompiler'
+    parameters:
+      group:
+        type: 'entity:group'
+        converter: 'paramconverter.latest_revision'
+    _group_operation_route: 1
+    _access_checks:         'access_check.entity'
+
+#--------------------------------------------------------------------------------------------------------
+# PARTY PROGRAMM CREATE
+#--------------------------------------------------------------------------------------------------------
+
+entity.pravdatut_party.programm.create_form:
+  path: '/party/{group}/programm/create/{plugin_id}'
+  defaults:
+    _controller:  '\Drupal\group\Entity\Controller\GroupContentController::createForm'
+    _title_callback: '\Drupal\group\Entity\Controller\GroupContentController::createFormTitle'
+  requirements:
+    _group_content_create_entity_access: 'TRUE'
+  options:
+    compiler_class: '\Drupal\Core\Routing\RouteCompiler'
+    _group_operation_route: 1
+    parameters:
+      group:
+        type: 'entity:group'
+        converter: 'paramconverter.latest_revision'
+    _access_checks: 'access_check.group_content.create_entity'
+
+#--------------------------------------------------------------------------------------------------------
+# JOIN MEMBER TO PARTY
+#--------------------------------------------------------------------------------------------------------
+entity.pravdatut_party.join:
+  path: '/party/{group}/join'
+  defaults:
+    _controller: '\Drupal\pravdatut_party\Controller\PartyGroupMembershipController::join'
+    _title_callback: '\Drupal\pravdatut_party\Controller\PartyGroupMembershipController::joinTitle'
+  requirements:
+    _group_permission: 'join group'
+    _group_member: 'FALSE'
+
+#--------------------------------------------------------------------------------------------------------
+# LEAVE MEMBER FROM PARTY
+#--------------------------------------------------------------------------------------------------------
+entity.pravdatut_party.leave:
+  path: '/party/{group}/leave'
+  defaults:
+    _controller: '\Drupal\pravdatut_party\Controller\PartyGroupMembershipController::leave'
+  requirements:
+    _group_permission: 'leave group'
+    _group_member: 'TRUE'
+

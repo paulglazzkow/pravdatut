@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains route_subscribe.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function route_subscribe_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the route_subscribe module.
+    case 'help.page.route_subscribe':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Route subscribe') . '</p>';
+      return $output;
+
+    default:
+  }
+}

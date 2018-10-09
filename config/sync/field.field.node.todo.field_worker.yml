@@ -1,0 +1,31 @@
+uuid: 54d82e89-2570-4322-b3da-5bef839b858b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_worker
+    - node.type.todo
+id: node.todo.field_worker
+field_name: field_worker
+entity_type: node
+bundle: todo
+label: Назначено
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        administrator: administrator
+        manager: manager
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

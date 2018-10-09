@@ -1,0 +1,19 @@
+uuid: eac6aff7-e49d-4a8f-b9a3-eec5118ab4fb
+langcode: ru
+status: true
+dependencies:
+  module:
+    - entity_tech
+    - link
+id: entity_tech.field_link
+field_name: field_link
+entity_type: entity_tech
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

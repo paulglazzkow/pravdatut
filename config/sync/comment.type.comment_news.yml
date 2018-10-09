@@ -1,0 +1,8 @@
+uuid: 1feea9e5-27af-44c5-ada0-8c73d8aa1141
+langcode: ru
+status: true
+dependencies: {  }
+id: comment_news
+label: 'Комментарий к новости'
+target_entity_type_id: entity_news
+description: ''

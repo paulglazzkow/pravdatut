@@ -1,0 +1,36 @@
+uuid: 5254a1f9-172d-4ff3-bf4a-e7b5313f00ea
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import_info
+    - options
+id: import_content_entity.field_state
+field_name: field_state
+entity_type: import_content_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: link
+      label: Link
+    -
+      value: content
+      label: Content
+    -
+      value: process
+      label: Content
+    -
+      value: done
+      label: Done
+    -
+      value: publication
+      label: Publication
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

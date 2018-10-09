@@ -1,0 +1,130 @@
+break-before-br:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should output a line break before each <br> element.
+indent:
+  Type:	Enum
+  Default:	no
+  Values:	no, yes, auto
+  See also:	indent-spaces
+  This option specifies if Tidy should indent block-level tags.
+  If set to auto Tidy will decide whether or not to indent the content of tags such as <title>, <h1>-<h6>, <li>, <td>, or <p> based on the content including a block-level element.
+  Setting indent to yes can expose layout bugs in some browsers.
+  Use the option indent-spaces to control the number of spaces or tabs output per level of indent, and indent-with-tabs to specify whether spaces or tabs are used.
+indent-attributes:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should begin each attribute on a new line.
+indent-cdata:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should indent <![CDATA[]]> sections.
+indent-spaces:
+  Type:	Integer
+  Default:	2
+  Values:	0, 1, 2, ...
+  See also:	indent
+  This option specifies the number of spaces or tabs that Tidy uses to indent content when indent is enabled.
+  Note that the default value for this option is dependent upon the value of indent-with-tabs (see also).
+indent-with-tabs:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should indent with tabs instead of spaces, assuming indent is yes.
+  Set it to yes to indent using tabs instead of the default spaces.
+  Use the option indent-spaces to control the number of tabs output per level of indent. Note that when indent-with-tabs is enabled the default value of indent-spaces is reset to 1.
+  Note tab-size controls converting input tabs to spaces. Set it to zero to retain input tabs.
+keep-tabs:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  With the default no Tidy will replace all source tabs with spaces, controlled by the option tab-size, and the current line offset. Of course, except in the special blocks/elements enumerated below, this will later be reduced to just one space.
+  If set yes this option specifies Tidy should keep certain tabs found in the source, but only in preformatted blocks like <pre>, and other CDATA elements like <script>, <style>, and other pseudo elements like <?php ... ?>. As always, all other tabs, or sequences of tabs, in the source will continue to be replaced with a space.
+omit-optional-tags:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should omit optional start tags and end tags when generating output.
+  Setting this option causes all tags for the <html>, <head>, and <body> elements to be omitted from output, as well as such end tags as </p>, </li>, </dt>, </dd>, </option>, </tr>, </td>, and </th>.
+  This option is ignored for XML output.
+priority-attributes:
+  Type:	Attributes Names
+  Default:	no default value
+  Values:	attributeX, attributeY, ...
+  This option allows prioritizing the writing of attributes in tidied documents, allowing them to written before the other attributes of an element. For example, you might specify that id and name are written before every other attribute.
+  This option takes a space or comma separated list of attribute names.
+punctuation-wrap:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should line wrap after some Unicode or Chinese punctuation characters.
+sort-attributes:
+  Type:	Enum
+  Default:	none
+  Values:	none, alpha
+  See also:	priority-attributes
+  This option specifies that Tidy should sort attributes within an element using the specified sort algorithm. If set to alpha, the algorithm is an ascending alphabetic sort.
+  When used while sorting with priority-attributes, any attribute sorting will take place after the priority attributes have been output.
+tab-size:
+  Type:	Integer
+  Default:	8
+  Values:	0, 1, 2, ...
+  This option specifies the number of columns that Tidy uses between successive tab stops. It is used to map tabs to spaces when reading the input.
+tidy-mark:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should add a meta element to the document head to indicate that the document has been tidied.
+  Tidy won't add a meta element if one is already present.
+vertical-space:
+  Type:	Enum
+  Default:	no
+  Values:	no, yes, auto
+  This option specifies if Tidy should add some extra empty lines for readability.
+  The default is no.
+  If set to auto Tidy will eliminate nearly all newline characters.
+wrap:
+  Type:	Integer
+  Default:	68
+  Values:	0 (no wrapping), 1, 2, ...
+  This option specifies the right margin Tidy uses for line wrapping.
+  Tidy tries to wrap lines so that they do not exceed this length.
+  Set wrap to 0 (zero) if you want to disable line wrapping.
+wrap-asp:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should line wrap text contained within ASP pseudo elements, which look like: <% ... %>.
+wrap-attributes:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  See also:	wrap-script-literals, literal-attributes
+  This option specifies if Tidy should line-wrap attribute values, meaning that if the value of an attribute causes a line to exceed the width specified by wrap, Tidy will add one or more line breaks to the value, causing it to be wrapped into multiple lines.
+  Note that this option can be set independently of wrap-script-literals. By default Tidy replaces any newline or tab with a single space and replaces any sequences of whitespace with a single space.
+  To force Tidy to preserve the original, literal values of all attributes, and ensure that whitespace characters within attribute values are passed through unchanged, set literal-attributes to yes.
+wrap-jste:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should line wrap text contained within JSTE pseudo elements, which look like: <# ... #>.
+wrap-php:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should line wrap text contained within PHP pseudo elements, which look like: <?php ... ?>.
+wrap-script-literals:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  See also:	wrap-attributes
+  This option specifies if Tidy should line wrap string literals that appear in script attributes.
+  Tidy wraps long script string literals by inserting a backslash character before the line break.
+wrap-sections:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should line wrap text contained within <![ ... ]> section tags.

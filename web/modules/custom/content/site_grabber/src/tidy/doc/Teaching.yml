@@ -1,0 +1,35 @@
+new-blocklevel-tags
+Type:	Tag Names
+Default:	no default value
+Values:	tagX, tagY, ...
+See also:	new-empty-tags, new-inline-tags, new-pre-tags, custom-tags
+This option specifies new block-level tags. This option takes a space or comma separated list of tag names.
+Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags.
+Note you can't change the content model for elements such as <table>, <ul>, <ol> and <dl>.
+This option is ignored in XML mode.
+new-empty-tags
+Type:	Tag Names
+Default:	no default value
+Values:	tagX, tagY, ...
+See also:	new-blocklevel-tags, new-inline-tags, new-pre-tags, custom-tags
+This option specifies new empty inline tags. This option takes a space or comma separated list of tag names.
+Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags.
+Remember to also declare empty tags as either inline or blocklevel.
+This option is ignored in XML mode.
+new-inline-tags
+Type:	Tag Names
+Default:	no default value
+Values:	tagX, tagY, ...
+See also:	new-blocklevel-tags, new-empty-tags, new-pre-tags, custom-tags
+This option specifies new non-empty inline tags. This option takes a space or comma separated list of tag names.
+Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags.
+This option is ignored in XML mode.
+new-pre-tags
+Type:	Tag Names
+Default:	no default value
+Values:	tagX, tagY, ...
+See also:	new-blocklevel-tags, new-empty-tags, new-inline-tags, custom-tags
+This option specifies new tags that are to be processed in exactly the same way as HTML's <pre> element. This option takes a space or comma separated list of tag names.
+Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags.
+Note you cannot as yet add new CDATA elements.
+This option is ignored in XML mode.

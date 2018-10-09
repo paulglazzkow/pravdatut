@@ -1,0 +1,9 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/druda_zurb.css: {}
+      fontawesome/css/fontawesome.css: {}
+      fontawesome/css/all.css: {}
+  js:
+    js/druda_zurb.js: {}

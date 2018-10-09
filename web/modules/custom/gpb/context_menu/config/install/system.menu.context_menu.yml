@@ -1,0 +1,7 @@
+langcode: ru
+status: true
+dependencies: {  }
+id: context_menu
+label: 'Context menu'
+description: 'Context menu'
+locked: true

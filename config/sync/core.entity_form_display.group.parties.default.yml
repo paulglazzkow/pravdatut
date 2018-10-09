@@ -1,0 +1,139 @@
+uuid: 6054a239-13bf-4cd1-8d83-a2bbec23e64e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.group.parties.field_create_method
+    - field.field.group.parties.field_date_egrul
+    - field.field.group.parties.field_description
+    - field.field.group.parties.field_full_name
+    - field.field.group.parties.field_governing_body
+    - field.field.group.parties.field_leader_legal_entity
+    - field.field.group.parties.field_legal_address
+    - field.field.group.parties.field_legal_address_text
+    - field.field.group.parties.field_logo
+    - field.field.group.parties.field_ogrn
+    - field.field.group.parties.field_partia
+    - field.field.group.parties.field_site
+    - field.field.group.parties.field_source_info
+    - group.type.parties
+    - image.style.thumbnail
+  module:
+    - datetime
+    - image
+    - link
+    - text
+id: group.parties.default
+targetEntityType: group
+bundle: parties
+mode: default
+content:
+  field_create_method:
+    weight: 4
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_date_egrul:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_description:
+    weight: 11
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_full_name:
+    weight: 3
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_governing_body:
+    weight: 7
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_leader_legal_entity:
+    weight: 8
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_legal_address_text:
+    weight: 9
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_logo:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_ogrn:
+    weight: 5
+    settings:
+      size: 13
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_partia:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_site:
+    weight: 12
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_source_info:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_legal_address: true
+  langcode: true
+  path: true
+  uid: true

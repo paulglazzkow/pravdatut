@@ -1,0 +1,11 @@
+uuid: df3c92ac-cc2b-4b48-95a2-314aaf725686
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.party
+id: taxonomy_term.party
+target_entity_type_id: taxonomy_term
+target_bundle: party
+default_langcode: site_default
+language_alterable: false

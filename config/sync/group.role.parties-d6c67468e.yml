@@ -1,0 +1,17 @@
+uuid: df787b76-b8ba-44a6-ab81-f9fad52eab24
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.parties
+  enforced:
+    config:
+      - user.role.root
+id: parties-d6c67468e
+label: Root
+weight: 4
+internal: true
+audience: outsider
+group_type: parties
+permissions_ui: false
+permissions: {  }

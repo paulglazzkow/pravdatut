@@ -1,0 +1,30 @@
+add entity enumeration entities:
+  title: 'Create new Entity enumeration entities'
+
+administer entity enumeration entities:
+  title: 'Administer Entity enumeration entities'
+  description: 'Allow to access the administration form to configure Entity enumeration entities.'
+  restrict access: true
+
+delete entity enumeration entities:
+  title: 'Delete Entity enumeration entities'
+
+edit entity enumeration entities:
+  title: 'Edit Entity enumeration entities'
+
+view published entity enumeration entities:
+  title: 'View published Entity enumeration entities'
+
+view unpublished entity enumeration entities:
+  title: 'View unpublished Entity enumeration entities'
+
+view all entity enumeration revisions:
+  title: 'View all Entity enumeration revisions'
+
+revert all entity enumeration revisions:
+  title: 'Revert all Entity enumeration revisions'
+  description: 'Role requires permission <em>view Entity enumeration revisions</em> and <em>edit rights</em> for entity enumeration entities in question or <em>administer entity enumeration entities</em>.'
+
+delete all entity enumeration revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Entity enumeration revisions</em> and <em>delete rights</em> for entity enumeration entities in question or <em>administer entity enumeration entities</em>.'

@@ -1,0 +1,23 @@
+uuid: 1b3db5af-8de0-4845-a53d-6b03e0c5a876
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.party_programm.field_solution
+    - field.field.node.party_programm.field_task
+    - node.type.party_programm
+  module:
+    - user
+id: node.party_programm.content_browser
+targetEntityType: node
+bundle: party_programm
+mode: content_browser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_solution: true
+  field_task: true
+  langcode: true

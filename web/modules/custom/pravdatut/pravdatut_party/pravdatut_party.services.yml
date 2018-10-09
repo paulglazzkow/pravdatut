@@ -1,0 +1,4 @@
+services:
+  plugin.manager.menu_config_plugin:
+    class: Drupal\pravdatut_party\MenuConfigPluginManager
+    arguments: ['@module_handler', '@cache.discovery']

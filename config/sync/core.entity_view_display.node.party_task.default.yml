@@ -1,0 +1,27 @@
+uuid: 6ced3b2f-eb1b-459f-95ec-009c24c0e77a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.party_task.body
+    - node.type.party_task
+  module:
+    - text
+    - user
+id: node.party_task.default
+targetEntityType: node
+bundle: party_task
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

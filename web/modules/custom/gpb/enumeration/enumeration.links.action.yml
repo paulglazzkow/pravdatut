@@ -1,0 +1,11 @@
+entity.entity_enumeration.add_form:
+  route_name: entity.entity_enumeration.add_page
+  title: 'Add Entity enumeration'
+  appears_on:
+    - entity.entity_enumeration.collection
+entity.entity_enumeration_type.add_form:
+  route_name: entity.entity_enumeration_type.add_form
+  title: 'Add Entity enumeration type'
+  appears_on:
+    - entity.entity_enumeration_type.collection
+

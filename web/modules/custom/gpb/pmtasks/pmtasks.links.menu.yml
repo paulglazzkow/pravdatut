@@ -1,0 +1,18 @@
+
+# Project task menu items definition
+entity.pmtask.collection:
+  title: 'Project task list'
+  route_name: entity.pmtask.collection
+  description: 'List Project task entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Project task type menu items definition
+entity.pmtask_type.collection:
+  title: 'Project task type'
+  route_name: entity.pmtask_type.collection
+  description: 'List Project task type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

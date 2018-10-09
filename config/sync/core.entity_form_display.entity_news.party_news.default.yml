@@ -1,0 +1,70 @@
+uuid: c7d01de0-78f7-45c1-86ae-048846b432e4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_news.entity_news_type.party_news
+    - field.field.entity_news.party_news.field_comments
+    - field.field.entity_news.party_news.field_photo_top
+    - field.field.entity_news.party_news.field_term_party
+    - image.style.thumbnail
+  module:
+    - comment
+    - image
+    - text
+id: entity_news.party_news.default
+targetEntityType: entity_news
+bundle: party_news
+mode: default
+content:
+  body:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_comments:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_photo_top:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_term_party:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  moderation_state: true

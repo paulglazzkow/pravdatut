@@ -1,0 +1,8 @@
+uuid: 78001992-296b-4c2d-a93b-2b952aaf7e70
+langcode: ru
+status: true
+dependencies: {  }
+id: comment_event
+label: 'Комментарий к событию'
+target_entity_type_id: entity_event
+description: ''

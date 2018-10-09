@@ -1,0 +1,11 @@
+entity.entity_tree.add_form:
+  route_name: entity.entity_tree.add_page
+  title: 'Add Entity tree'
+  appears_on:
+    - entity.entity_tree.collection
+entity.entity_tree_type.add_form:
+  route_name: entity.entity_tree_type.add_form
+  title: 'Add Entity tree type'
+  appears_on:
+    - entity.entity_tree_type.collection
+

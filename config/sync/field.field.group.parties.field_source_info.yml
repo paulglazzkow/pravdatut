@@ -1,0 +1,23 @@
+uuid: 14df5cd9-2526-42cb-99fd-fce989e91e5e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_source_info
+    - group.type.parties
+  module:
+    - link
+id: group.parties.field_source_info
+field_name: field_source_info
+entity_type: group
+bundle: parties
+label: 'Источники информации'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

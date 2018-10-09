@@ -1,0 +1,22 @@
+uuid: e3c73692-c5b4-4cad-92b4-8129cb44b60d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.party_programm
+id: node.party_programm.status
+field_name: status
+entity_type: node
+bundle: party_programm
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

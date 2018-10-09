@@ -1,0 +1,5 @@
+name: 'Entity News'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'pravdatut'

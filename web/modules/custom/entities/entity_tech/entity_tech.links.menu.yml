@@ -1,0 +1,18 @@
+
+# Entity tech menu items definition
+entity.entity_tech.collection:
+  title: 'Service'
+  route_name: entity.entity_tech.collection
+  description: 'List Service entities'
+  parent: entity_tech.types_content
+  weight: 100
+
+
+# Entity tech type menu items definition
+entity.entity_tech_type.collection:
+  title: 'Service'
+  route_name: entity.entity_tech_type.collection
+  description: 'List Service (bundles)'
+  parent: entity_tech.types
+  weight: 99
+

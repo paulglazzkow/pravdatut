@@ -1,0 +1,14 @@
+{
+  "name": "drupal/theme_custom",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/theme_custom",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/theme_custom",
+    "source": "http://cgit.drupalcode.org/theme_custom"
+  },
+  "require": { }
+}

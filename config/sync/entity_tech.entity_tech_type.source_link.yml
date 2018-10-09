@@ -1,0 +1,6 @@
+uuid: 327fd98f-9b78-46f3-9ea8-fca43e4b7816
+langcode: ru
+status: true
+dependencies: {  }
+id: source_link
+label: 'Source link'

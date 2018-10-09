@@ -1,0 +1,29 @@
+uuid: 5fde383f-f841-4468-85aa-2b76adeeeffc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category_tag
+    - node.type.party_programm
+    - taxonomy.vocabulary.programm_category_tag
+id: node.party_programm.field_category_tag
+field_name: field_category_tag
+entity_type: node
+bundle: party_programm
+label: Категория
+description: 'Введите категорию программы. Категория необходима для упорядочивания программ по разделам.<em> При наличии необходимой категории в выпадающем списке, выберите подходящую категорию из списка.</em>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      programm_category_tag: programm_category_tag
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

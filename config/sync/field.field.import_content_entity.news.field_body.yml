@@ -1,0 +1,32 @@
+uuid: 079f751c-c528-4c86-9d10-ce21f710c2c0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_content_entity.field_body
+    - import_info.import_content_entity_type.news
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    htmleditor: htmleditor
+    full_html: full_html
+    yamleditor: '0'
+    basic_html: '0'
+    comment: '0'
+    restricted_html: '0'
+    plain_text: '0'
+id: import_content_entity.news.field_body
+field_name: field_body
+entity_type: import_content_entity
+bundle: news
+label: body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

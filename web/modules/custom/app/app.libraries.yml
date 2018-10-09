@@ -1,0 +1,5 @@
+menu__toolbar:
+  version: VERSION
+  css:
+    theme:
+      css/menu-toolbar.css: {}

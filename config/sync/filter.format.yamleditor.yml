@@ -1,0 +1,25 @@
+uuid: 40de6a4f-1167-4f40-b9c8-2254c761a091
+langcode: ru
+status: true
+dependencies:
+  module:
+    - ace_editor
+name: YAMLEditor
+format: yamleditor
+weight: 0
+filters:
+  ace_filter:
+    id: ace_filter
+    provider: ace_editor
+    status: false
+    weight: 0
+    settings:
+      theme: cobalt
+      syntax: html
+      height: 500px
+      width: 700px
+      font_size: 10pt
+      line_numbers: '1'
+      print_margins: '1'
+      show_invisibles: '0'
+      use_wrap_mode: '1'

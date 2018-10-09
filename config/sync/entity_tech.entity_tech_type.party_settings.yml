@@ -1,0 +1,6 @@
+uuid: 5766c1b0-5362-4076-a572-df4c67b28ac2
+langcode: ru
+status: true
+dependencies: {  }
+id: party_settings
+label: 'Party settings'

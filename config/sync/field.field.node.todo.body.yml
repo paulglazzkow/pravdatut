@@ -1,0 +1,22 @@
+uuid: 49aff2a4-5b83-453f-b85c-b8ce5e7f340e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.todo
+  module:
+    - text
+id: node.todo.body
+field_name: body
+entity_type: node
+bundle: todo
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

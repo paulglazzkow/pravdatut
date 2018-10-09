@@ -1,0 +1,21 @@
+uuid: a97a87e1-4d1b-4c21-a7ae-ba2ffffda0c9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.source_link
+    - field.storage.entity_tech.field_link_type
+  module:
+    - options
+id: entity_tech.source_link.field_link_type
+field_name: field_link_type
+entity_type: entity_tech
+bundle: source_link
+label: 'Link type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

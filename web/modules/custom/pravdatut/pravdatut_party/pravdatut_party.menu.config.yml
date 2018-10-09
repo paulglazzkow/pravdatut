@@ -1,0 +1,8 @@
+# Example menu_config_plugin plugin definitions.
+# Plugin property $defaults are defined in MenuConfigPluginManager.
+first:
+  id: one
+  label: One
+second:
+  id: two
+  label: Two

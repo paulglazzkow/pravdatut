@@ -1,0 +1,14 @@
+{
+  "name": "drupal/import_news",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/import_news",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/import_news",
+    "source": "http://cgit.drupalcode.org/import_news"
+  },
+  "require": { }
+}

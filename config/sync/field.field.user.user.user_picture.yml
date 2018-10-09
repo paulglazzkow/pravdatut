@@ -1,0 +1,40 @@
+uuid: 49114538-ea04-463f-8099-7e7c70504815
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.user.user_picture
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: Iiq0AttdhgbebJwabSFwQQ1ORn64GoGz0xSZ_eyCJ8A
+id: user.user.user_picture
+field_name: user_picture
+entity_type: user
+bundle: user
+label: Изображение
+description: 'Ваше виртуальное лицо или изображение'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'pictures/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 82b145ae-63dc-47b4-90ae-53d0b0aa43db
+    alt: ''
+    title: ''
+    width: 442
+    height: 486
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

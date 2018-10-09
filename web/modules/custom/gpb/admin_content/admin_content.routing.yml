@@ -1,0 +1,51 @@
+# Custom content
+admin_content.types:
+  path: '/admin/structure/content-types'
+  defaults:
+    _controller: '\Drupal\admin_content\Controller\AdminContentController::TypesPage'
+    _title: 'Custom types'
+  requirements:
+    _permission: 'administer content types'
+
+admin_content.types_content:
+  path: '/admin/content/content-types'
+  defaults:
+    _controller: '\Drupal\admin_content\Controller\AdminContentController::TypesContentPage'
+    _title: 'Custom types'
+  requirements:
+    _permission: 'administer content types'
+
+
+# Import settings entities
+import_settings.types:
+  path: '/admin/structure/import'
+  defaults:
+    _controller: '\Drupal\admin_content\Controller\AdminContentController::TypesPage'
+    _title: 'Import'
+  requirements:
+    _permission: 'administer content types'
+
+import_settings.types_content:
+  path: '/admin/content/import'
+  defaults:
+    _controller: '\Drupal\admin_content\Controller\AdminContentController::TypesContentPage'
+    _title: 'Import'
+  requirements:
+    _permission: 'administer import content entities'
+
+# Technical entities
+entity_tech.types:
+  path: '/admin/structure/service'
+  defaults:
+    _controller: '\Drupal\admin_content\Controller\AdminContentController::TypesPage'
+    _title: 'Import'
+  requirements:
+    _permission: 'administer content types'
+
+entity_tech.types_content:
+  path: '/admin/content/service'
+  defaults:
+    _controller: '\Drupal\admin_content\Controller\AdminContentController::TypesContentPage'
+    _title: 'Import'
+  requirements:
+    _permission: 'administer entity tech entities'

@@ -1,0 +1,29 @@
+uuid: 08b33708-8f61-4c21-83a8-c6e20189cd9c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.party_settings
+    - field.storage.entity_tech.field_term_party
+    - taxonomy.vocabulary.party
+id: entity_tech.party_settings.field_term_party
+field_name: field_term_party
+entity_type: entity_tech
+bundle: party_settings
+label: Партия
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      party: party
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

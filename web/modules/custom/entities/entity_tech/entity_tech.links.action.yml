@@ -1,0 +1,11 @@
+entity.entity_tech.add_form:
+  route_name: entity.entity_tech.add_page
+  title: 'Add Entity tech'
+  appears_on:
+    - entity.entity_tech.collection
+entity.entity_tech_type.add_form:
+  route_name: entity.entity_tech_type.add_form
+  title: 'Add Entity tech type'
+  appears_on:
+    - entity.entity_tech_type.collection
+

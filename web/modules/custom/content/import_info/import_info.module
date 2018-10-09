@@ -1,0 +1,174 @@
+<?php
+
+/**
+ * @file
+ * Contains import_info.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function import_info_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the import_info module.
+    case 'help.page.import_info':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entity for import info') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function import_info_theme_suggestions_import_info_entity(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#import_info_entity'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'import_info_entity__' . $sanitized_view_mode;
+  $suggestions[] = 'import_info_entity__' . $entity->bundle();
+  $suggestions[] = 'import_info_entity__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'import_info_entity__' . $entity->id();
+  $suggestions[] = 'import_info_entity__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
+
+
+
+
+/**
+ * Implements hook_theme().
+ */
+function import_info_theme() {
+  $theme = [];
+  $theme['import_info_entity'] = [
+    'render element' => 'elements',
+    'file' => 'import_info_entity.page.inc',
+    'template' => 'import_info_entity',
+  ];
+  $theme['import_info_entity_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'import_info_entity.page.inc',
+  ];
+  $theme['import_content_entity'] = [
+    'render element' => 'elements',
+    'file' => 'import_content_entity.page.inc',
+    'template' => 'import_content_entity',
+  ];
+  $theme['import_content_entity_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'import_content_entity.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function import_info_theme_suggestions_import_content_entity(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#import_content_entity'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'import_content_entity__' . $sanitized_view_mode;
+  $suggestions[] = 'import_content_entity__' . $entity->bundle();
+  $suggestions[] = 'import_content_entity__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'import_content_entity__' . $entity->id();
+  $suggestions[] = 'import_content_entity__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
+
+/**
+ * Provide information about available placeholder tokens and token types.
+ *
+ * Tokens are placeholders that can be put into text by using the syntax
+ * [type:token], where type is the machine-readable name of a token type, and
+ * token is the machine-readable name of a token within this group. This hook
+ * provides a list of types and tokens to be displayed on text editing screens,
+ * so that people editing text can see what their token options are.
+ *
+ * The actual token replacement is done by
+ * \Drupal\Core\Utility\Token::replace(), which invokes hook_tokens(). Your
+ * module will need to implement that hook in order to generate token
+ * replacements from the tokens defined here.
+ *
+ * @return
+ *   An associative array of available tokens and token types. The outer array
+ *   has two components:
+ *   - types: An associative array of token types (groups). Each token type is
+ *     an associative array with the following components:
+ *     - name: The translated human-readable short name of the token type.
+ *     - description (optional): A translated longer description of the token
+ *       type.
+ *     - needs-data: The type of data that must be provided to
+ *       \Drupal\Core\Utility\Token::replace() in the $data argument (i.e., the
+ *       key name in $data) in order for tokens of this type to be used in the
+ *       $text being processed. For instance, if the token needs a node object,
+ *       'needs-data' should be 'node', and to use this token in
+ *       \Drupal\Core\Utility\Token::replace(), the caller needs to supply a
+ *       node object as $data['node']. Some token data can also be supplied
+ *       indirectly; for instance, a node object in $data supplies a user object
+ *       (the author of the node), allowing user tokens to be used when only
+ *       a node data object is supplied.
+ *   - tokens: An associative array of tokens. The outer array is keyed by the
+ *     group name (the same key as in the types array). Within each group of
+ *     tokens, each token item is keyed by the machine name of the token, and
+ *     each token item has the following components:
+ *     - name: The translated human-readable short name of the token.
+ *     - description (optional): A translated longer description of the token.
+ *     - type (optional): A 'needs-data' data type supplied by this token, which
+ *       should match a 'needs-data' value from another token type. For example,
+ *       the node author token provides a user object, which can then be used
+ *       for token replacement data in \Drupal\Core\Utility\Token::replace()
+ *       without having to supply a separate user object.
+ *
+ * @see hook_token_info_alter()
+ * @see hook_tokens()
+ */
+function import_info_token_info() {
+
+  $info = [
+    'import_info_entity_type' => t('Import info type'),
+    'import_info_entity' => t('Import info'),
+  ];
+
+  $token_info = [
+    'types' => [],
+    'tokens' => [],
+  ];
+
+  foreach ($info as $type_name => $label) {
+    $type = [
+      'name' => $label,
+      'description' => t('Tokens related to individual entiites.'),
+      'needs-data' => $type_name,
+    ];
+
+    // Core tokens for nodes.
+    $entity['id'] = [
+      'name' => t("ID"),
+      'description' => t("The unique ID of the entity."),
+    ];
+    $entity['title'] = [
+      'name' => t("Title"),
+    ];
+    $entity['author'] = [
+      'name' => t("Author"),
+      'type' => 'user',
+    ];
+    $token_info['types'][$type_name] = $type;
+    $token_info['tokens'][$type_name] = $entity;
+  }
+
+
+  return $token_info;
+}

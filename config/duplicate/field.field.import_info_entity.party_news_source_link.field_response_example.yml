@@ -1,0 +1,31 @@
+uuid: e06e1ac5-39e4-4a6b-964a-dade069cbd7e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_info_entity.field_response_example
+    - import_info.import_info_entity_type.'party_news_source_content
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    htmleditor: htmleditor
+    yamleditor: '0'
+    basic_html: '0'
+    comment: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: import_info_entity.'party_news_source_content.field_response_example
+field_name: field_response_example
+entity_type: import_info_entity
+bundle: 'party_news_source_content
+label: response_example
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

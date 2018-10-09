@@ -1,0 +1,30 @@
+uuid: 3bf3a39a-cb09-49f5-b0b2-0507e52fbfff
+langcode: ru
+status: true
+dependencies:
+  module:
+    - entity_news
+    - file
+    - image
+id: entity_news.field_photo_top
+field_name: field_photo_top
+entity_type: entity_news
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

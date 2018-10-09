@@ -1,0 +1,12 @@
+entity_party_programm.entity_party_programm_type.*:
+  type: config_entity
+  label: 'Entity party programm type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

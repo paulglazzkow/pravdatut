@@ -1,0 +1,14 @@
+uuid: 941a7b80-d8b4-4829-a5bb-d33db10aeca3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.parties
+id: parties-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: parties
+permissions_ui: true
+permissions: {  }

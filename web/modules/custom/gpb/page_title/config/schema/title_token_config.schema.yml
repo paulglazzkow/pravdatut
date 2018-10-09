@@ -1,0 +1,14 @@
+page_title.title_token_config.*:
+  type: config_entity
+  label: 'Title token config config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    template:
+          type: string

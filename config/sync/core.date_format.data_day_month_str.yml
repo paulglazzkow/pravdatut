@@ -1,0 +1,8 @@
+uuid: ae187401-3806-4336-8552-1eeb7126a58d
+langcode: ru
+status: true
+dependencies: {  }
+id: data_day_month_str
+label: 'День месяца'
+locked: false
+pattern: 'j F'

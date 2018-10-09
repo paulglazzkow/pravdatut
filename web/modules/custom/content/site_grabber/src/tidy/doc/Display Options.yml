@@ -1,0 +1,50 @@
+gnu-emacs:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should change the format for reporting errors and warnings to a format that is more easily parsed by GNU Emacs.
+markup:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should generate a pretty printed version of the markup. Note that Tidy won't generate a pretty printed version if it finds significant errors (see force-output).
+mute:
+  Type:	String
+  Default:	no default value
+  See also:	mute-id
+  Use this option to prevent Tidy from displaying certain types of report output, for example, for conditions that you wish to ignore.
+  This option takes a list of one or more keys indicating the message type to mute. You can discover these message keys by using the mute-id configuration option and examining Tidy's output.
+mute-id:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  See also:	mute
+  This option indicates whether or not Tidy should display message ID's with each of its error reports. This could be useful if you wanted to use the mute configuration option in order to filter out certain report messages.
+quiet:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  When enabled, this option limits Tidy's non-document output to report only document warnings and errors.
+show-body-only:
+  Type:	Enum
+  Default:	no
+  Values:	no, yes, auto
+  This option specifies if Tidy should print only the contents of the body tag as an HTML fragment.
+  If set to auto, this is performed only if the body tag has been inferred.
+  Useful for incorporating existing whole pages as a portion of another page.
+  This option has no effect if XML output is requested.
+show-errors:
+  Type:	Integer
+  Default:	6
+  Values:	0, 1, 2, ...
+  This option specifies the number Tidy uses to determine if further errors should be shown. If set to 0, then no errors are shown.
+show-info:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should display info-level messages.
+show-warnings:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should suppress warnings. This can be useful when a few errors are hidden in a flurry of warnings.

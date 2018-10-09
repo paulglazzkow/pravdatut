@@ -1,0 +1,10 @@
+id: user_login
+label: 'User login'
+ui_limit: ''
+properties:
+  block: user_login_block
+  use_block_title: false
+type: block
+type_label: 'Block field'
+entities:
+  entity_news: entity_news

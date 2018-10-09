@@ -1,0 +1,21 @@
+uuid: 91a82675-7068-47a2-b901-3edc6d2b9077
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.party_programm.field_task
+    - node.type.party_programm
+  module:
+    - user
+id: node.party_programm.teaser
+targetEntityType: node
+bundle: party_programm
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_task: true
+  langcode: true

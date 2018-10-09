@@ -1,0 +1,10 @@
+uuid: 1098c93a-e8db-4bf0-894d-eef81e5054ba
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Jr0bd588HusV6cjqPC3keR8f85l3jXfqYkcc6hmcU4U
+id: fivestar
+label: 'Five star'
+value_type: points
+description: 'A simple 1-5 star rating.'

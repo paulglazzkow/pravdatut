@@ -1,0 +1,21 @@
+uuid: e5653952-c3e9-4707-8149-195b43b01fc0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - comment.type.comment_todo
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_todo.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_todo
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

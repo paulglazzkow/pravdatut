@@ -1,0 +1,19 @@
+uuid: bffdc011-8cd9-4f26-a861-5983fc1677ad
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import_info
+    - link
+id: import_info_entity.field_source_link
+field_name: field_source_link
+entity_type: import_info_entity
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+uuid: 719e9913-2f73-4f7f-95d6-21a8bb8eb1ec
+langcode: ru
+status: true
+dependencies:
+  config:
+    - media.type.image
+  content:
+    - 'file:file:8e1f7cdb-8d8e-42aa-b533-cc18c19fb701'
+  module:
+    - entity_embed
+    - media
+label: 'Entity  images'
+id: entity_images
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - image
+  display_plugins:
+    - 'entity_reference:media_thumbnail'
+    - 'entity_reference:entity_reference_entity_id'
+    - 'entity_reference:entity_reference_label'
+  entity_browser: browse_content_iframe
+  entity_browser_settings:
+    display_review: true
+icon_uuid: 8e1f7cdb-8d8e-42aa-b533-cc18c19fb701

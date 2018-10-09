@@ -1,0 +1,18 @@
+
+# News menu items definition
+entity.entity_news.collection:
+  title: 'News list'
+  route_name: entity.entity_news.collection
+  description: 'List News'
+  parent: admin_content.types_content
+  weight: 100
+
+
+# News type menu items definition
+entity.entity_news_type.collection:
+  title: 'News type'
+  route_name: entity.entity_news_type.collection
+  description: 'List News (bundles)'
+  parent: admin_content.types
+  weight: 99
+

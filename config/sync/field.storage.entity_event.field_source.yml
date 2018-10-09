@@ -1,0 +1,19 @@
+uuid: b034adbc-3ee1-48d4-aea1-bae362c109cb
+langcode: ru
+status: true
+dependencies:
+  module:
+    - entity_events
+    - link
+id: entity_event.field_source
+field_name: field_source
+entity_type: entity_event
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

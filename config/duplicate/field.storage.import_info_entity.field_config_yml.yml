@@ -1,0 +1,19 @@
+uuid: 28b6bf31-d1bd-4f75-98a4-966b35c235b9
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import_info
+    - text
+id: import_info_entity.field_config_yml
+field_name: field_config_yml
+entity_type: import_info_entity
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

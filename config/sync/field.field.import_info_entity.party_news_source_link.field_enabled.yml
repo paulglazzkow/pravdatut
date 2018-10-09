@@ -1,0 +1,23 @@
+uuid: 9765f02b-64db-4805-9708-5668d7ccf40c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_info_entity.field_enabled
+    - import_info.import_info_entity_type.party_news_source_link
+id: import_info_entity.party_news_source_link.field_enabled
+field_name: field_enabled
+entity_type: import_info_entity
+bundle: party_news_source_link
+label: enabled
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

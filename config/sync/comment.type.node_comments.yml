@@ -1,0 +1,10 @@
+uuid: 7eec707f-b177-4e4b-a49f-95bfc637b605
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _iidyBpZhk61ekfCNeZlPQe6CTRTRGvu6s0XtxltmQ8
+id: node_comments
+label: 'Node comments'
+target_entity_type_id: node
+description: ''

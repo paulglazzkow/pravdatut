@@ -1,0 +1,137 @@
+uuid: 66a4a889-b2a7-4729-a5e9-8259214c1004
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.group.parties.field_create_method
+    - field.field.group.parties.field_date_egrul
+    - field.field.group.parties.field_description
+    - field.field.group.parties.field_full_name
+    - field.field.group.parties.field_governing_body
+    - field.field.group.parties.field_leader_legal_entity
+    - field.field.group.parties.field_legal_address
+    - field.field.group.parties.field_legal_address_text
+    - field.field.group.parties.field_logo
+    - field.field.group.parties.field_ogrn
+    - field.field.group.parties.field_partia
+    - field.field.group.parties.field_site
+    - field.field.group.parties.field_source_info
+    - group.type.parties
+    - image.style.thumbnail
+  module:
+    - datetime
+    - image
+    - link
+    - text
+id: group.parties.default
+targetEntityType: group
+bundle: parties
+mode: default
+content:
+  field_create_method:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_date_egrul:
+    weight: 5
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_description:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_full_name:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_governing_body:
+    weight: 6
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_leader_legal_entity:
+    weight: 7
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_legal_address_text:
+    weight: 8
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_logo:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_ogrn:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_site:
+    weight: 10
+    label: inline
+    settings:
+      trim_length: 80
+      rel: nofollow
+      target: _blank
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_source_info:
+    type: link
+    weight: 9
+    region: content
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  label:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_legal_address: true
+  field_partia: true
+  langcode: true
+  uid: true

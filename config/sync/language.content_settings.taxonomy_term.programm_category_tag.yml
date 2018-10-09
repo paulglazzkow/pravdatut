@@ -1,0 +1,11 @@
+uuid: 120d190d-ec59-4d21-9ad8-137c98beb4af
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.programm_category_tag
+id: taxonomy_term.programm_category_tag
+target_entity_type_id: taxonomy_term
+target_bundle: programm_category_tag
+default_langcode: site_default
+language_alterable: false

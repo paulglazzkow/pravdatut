@@ -1,0 +1,30 @@
+add news entities:
+  title: 'Create new News entities'
+
+administer news entities:
+  title: 'Administer News entities'
+  description: 'Allow to access the administration form to configure News entities.'
+  restrict access: true
+
+delete news entities:
+  title: 'Delete News entities'
+
+edit news entities:
+  title: 'Edit News entities'
+
+view published news entities:
+  title: 'View published News entities'
+
+view unpublished news entities:
+  title: 'View unpublished News entities'
+
+view all news revisions:
+  title: 'View all News revisions'
+
+revert all news revisions:
+  title: 'Revert all News revisions'
+  description: 'Role requires permission <em>view News revisions</em> and <em>edit rights</em> for news entities in question or <em>administer news entities</em>.'
+
+delete all news revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view News revisions</em> and <em>delete rights</em> for news entities in question or <em>administer news entities</em>.'

@@ -1,0 +1,10 @@
+id: user_register
+label: 'User register'
+ui_limit: ''
+properties:
+  block: formblock_user_register
+  use_block_title: false
+type: block
+type_label: 'Block field'
+entities:
+  entity_news: entity_news

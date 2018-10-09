@@ -1,0 +1,46 @@
+char-encoding
+Type:	Encoding
+Default:	utf8
+Values:	raw, ascii, latin0, latin1, utf8, iso2022, mac, win1252, ibm858, utf16le, utf16be, utf16, big5, shiftjis
+See also:	input-encoding, output-encoding
+This option specifies the character encoding Tidy uses for input, and when set, automatically chooses an appropriate character encoding to be used for output. The output encoding Tidy chooses may be different from the input encoding.
+For ascii, latin0, ibm858, mac, and win1252 input encodings, the output-encoding option will automatically be set to ascii. You can set output-encoding manually to override this.
+For other input encodings, the output-encoding option will automatically be set to the the same value.
+Regardless of the preset value, you can set output-encoding manually to override this.
+Tidy is not an encoding converter. Although the Latin and UTF encodings can be mixed freely, it is not possible to convert Asian encodings to Latin encodings with Tidy.
+input-encoding
+Type:	Encoding
+Default:	utf8
+Values:	raw, ascii, latin0, latin1, utf8, iso2022, mac, win1252, ibm858, utf16le, utf16be, utf16, big5, shiftjis
+See also:	char-encoding
+This option specifies the character encoding Tidy uses for input. Tidy makes certain assumptions about some of the input encodings.
+For ascii, Tidy will accept Latin-1 (ISO-8859-1) character values and convert them to entities as necessary.
+For raw, Tidy will make no assumptions about the character values and will pass them unchanged to output.
+For mac and win1252, vendor specific characters values will be accepted and converted to entities as necessary.
+Asian encodings such as iso2022 will be handled appropriately assuming the corresponding output-encoding is also specified.
+Tidy is not an encoding converter. Although the Latin and UTF encodings can be mixed freely, it is not possible to convert Asian encodings to Latin encodings with Tidy.
+newline
+Type:	Enum
+Default:	LF
+Values:	LF, CRLF, CR
+The default is appropriate to the current platform.
+Genrally CRLF on PC-DOS, Windows and OS/2; CR on Classic Mac OS; and LF everywhere else (Linux, macOS, and Unix).
+output-bom
+Type:	Enum
+Default:	auto
+Values:	no, yes, auto
+This option specifies if Tidy should write a Unicode Byte Order Mark character (BOM; also known as Zero Width No-Break Space; has value of U+FEFF) to the beginning of the output, and only applies to UTF-8 and UTF-16 output encodings.
+If set to auto this option causes Tidy to write a BOM to the output only if a BOM was present at the beginning of the input.
+A BOM is always written for XML/XHTML output using UTF-16 output encodings.
+output-encoding
+Type:	Encoding
+Default:	utf8
+Values:	raw, ascii, latin0, latin1, utf8, iso2022, mac, win1252, ibm858, utf16le, utf16be, utf16, big5, shiftjis
+See also:	char-encoding
+This option specifies the character encoding Tidy uses for output. Some of the output encodings affect whether or not some characters are translated to entities, although in all cases, some entities will be written according to other Tidy configuration options.
+For ascii, mac, and win1252 output encodings, entities will be used for all characters with values over 127.
+For raw output, Tidy will write values above 127 without translating them to entities.
+Output using latin1 will cause Tidy to write character values higher than 255 as entities.
+The UTF family such as utf8 will write output in the respective UTF encoding.
+Asian output encodings such as iso2022 will write output in the specified encoding, assuming a corresponding input-encoding was specified.
+Tidy is not an encoding converter. Although the Latin and UTF encodings can be mixed freely, it is not possible to convert Asian encodings to Latin encodings with Tidy.

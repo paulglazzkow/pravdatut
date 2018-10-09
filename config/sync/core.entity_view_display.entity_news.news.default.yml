@@ -1,0 +1,197 @@
+uuid: 2c4750e6-f352-4e9c-8256-24d37e614f38
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_news.default
+    - entity_news.entity_news_type.news
+    - field.field.entity_news.news.field_comments
+    - field.field.entity_news.news.field_source
+    - field.field.entity_news.news.field_term_party
+  module:
+    - ajax_comments
+    - comment
+    - ds
+    - field_group
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - 'dynamic_block_field:entity_news-user_register'
+        - group_top_info
+        - name
+        - body
+        - field_source
+        - group_user_login
+        - 'dynamic_block_field:entity_news-social_auth'
+        - 'dynamic_block_field:entity_news-user_login'
+        - field_comments
+        - group_social_auth_links
+        - group_user_login_form
+        - group_user_register_form
+        - user_id
+        - field_term_party
+    fields:
+      'dynamic_block_field:entity_news-social_auth':
+        plugin_id: 'dynamic_block_field:entity_news-social_auth'
+        weight: 6
+        label: hidden
+        formatter: default
+      'dynamic_block_field:entity_news-user_login':
+        plugin_id: 'dynamic_block_field:entity_news-user_login'
+        weight: 7
+        label: hidden
+        formatter: default
+      'dynamic_block_field:entity_news-user_register':
+        plugin_id: 'dynamic_block_field:entity_news-user_register'
+        weight: 0
+        label: hidden
+        formatter: default
+  field_group:
+    group_user_login:
+      children:
+        - group_social_auth_links
+        - group_user_login_form
+        - group_user_register_form
+      parent_name: ''
+      weight: 6
+      format_type: tabs
+      format_settings:
+        label: 'User login'
+        direction: vertical
+        id: ''
+        classes: comment-user-login
+      label: 'User login'
+    group_user_login_form:
+      children:
+        - 'dynamic_block_field:entity_news-user_login'
+      parent_name: group_user_login
+      weight: 14
+      format_type: tab
+      format_settings:
+        label: Войти
+        formatter: closed
+        description: ''
+        id: ''
+        classes: ''
+      label: Войти
+    group_social_auth_links:
+      children:
+        - 'dynamic_block_field:entity_news-social_auth'
+      parent_name: group_user_login
+      weight: 13
+      format_type: tab
+      format_settings:
+        label: 'Войти через социальные сети'
+        formatter: open
+        description: ''
+        id: ''
+        classes: ''
+      label: 'Войти через социальные сети'
+    group_user_register_form:
+      children:
+        - 'dynamic_block_field:entity_news-user_register'
+      parent_name: group_user_login
+      weight: 15
+      format_type: tab
+      format_settings:
+        label: Регистрация
+        formatter: closed
+        description: ''
+        id: ''
+        classes: ''
+      label: Регистрация
+    group_top_info:
+      children:
+        - user_id
+        - field_term_party
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'Top Info'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: news-top-info
+      label: 'Top Info'
+id: entity_news.news.default
+targetEntityType: entity_news
+bundle: news
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_comments:
+    weight: 7
+    label: hidden
+    settings:
+      pager_id: 10
+      view_mode: default
+    third_party_settings:
+      ajax_comments:
+        enable_ajax_comments: '1'
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: comment_default
+    region: content
+  field_source:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_term_party:
+    weight: 22
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 2
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_label
+    weight: 21
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  langcode: true

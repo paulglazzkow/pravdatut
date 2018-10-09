@@ -1,0 +1,13 @@
+uuid: faefc4cc-94e7-4fd2-92f3-cf60a7e84c44
+langcode: ru
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.comment_like.unflag
+label: 'Unflag this item'
+type: comment
+plugin: 'flag_action:comment_like.unflag'
+configuration:
+  flag_id: comment_like
+  flag_action: unflag

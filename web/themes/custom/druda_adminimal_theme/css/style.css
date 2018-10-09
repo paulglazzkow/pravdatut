@@ -1,0 +1,45 @@
+.menu-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-horizontal li{
+    padding: 5px 10px;
+}
+
+form .form-wrapper details .details-wrapper{
+    background-color: #ffffdf;
+}
+
+.field-multiple-table .field-multiple-table tr{
+    background-color: #ddeeff;
+}
+
+.entity-tech-party-settings-edit-form th {
+    display: none;
+}
+
+.entity-tech-party-settings-edit-form .tabledrag-toggle-weight-wrapper{
+    display: none;
+}
+
+.entity-tech-party-settings-edit-form td.field-multiple-drag{
+    display: none;
+}
+
+.entity-tech-party-settings-edit-form td{
+    display: flex;
+}
+
+.entity-tech-party-settings-edit-form .js-form-type-url{
+    padding-right: 1em;
+}
+
+.entity-tech-party-settings-edit-form summary{
+    background-color: #5599ff;
+    color: #fff;
+}
+
+.toolbar-menu>li>a{
+    padding:8px 5px
+}

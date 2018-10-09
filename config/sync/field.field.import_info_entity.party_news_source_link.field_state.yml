@@ -1,0 +1,21 @@
+uuid: 3fa2ee2f-73cd-4064-9e35-276665579e6c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_info_entity.field_state
+    - import_info.import_info_entity_type.party_news_source_link
+  module:
+    - options
+id: import_info_entity.party_news_source_link.field_state
+field_name: field_state
+entity_type: import_info_entity
+bundle: party_news_source_link
+label: state
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

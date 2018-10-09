@@ -1,0 +1,115 @@
+uuid: abe281b4-253a-4781-9d3a-f59ab68b03b2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.full_content
+    - field.field.group.parties.field_create_method
+    - field.field.group.parties.field_date_egrul
+    - field.field.group.parties.field_description
+    - field.field.group.parties.field_full_name
+    - field.field.group.parties.field_governing_body
+    - field.field.group.parties.field_leader_legal_entity
+    - field.field.group.parties.field_legal_address
+    - field.field.group.parties.field_legal_address_text
+    - field.field.group.parties.field_ogrn
+    - field.field.group.parties.field_partia
+    - field.field.group.parties.field_source_info
+    - group.type.parties
+  module:
+    - address
+    - datetime
+    - text
+id: group.parties.full_content
+targetEntityType: group
+bundle: parties
+mode: full_content
+content:
+  field_create_method:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_date_egrul:
+    weight: 5
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_description:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_full_name:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_governing_body:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_leader_legal_entity:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_legal_address:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_legal_address_text:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_ogrn:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_partia:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  label:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_source_info: true
+  langcode: true
+  uid: true

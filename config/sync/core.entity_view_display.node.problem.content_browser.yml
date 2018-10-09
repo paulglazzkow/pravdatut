@@ -1,0 +1,23 @@
+uuid: 00459fba-bd64-4ed6-8b16-2e0147c611cb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.problem.body
+    - node.type.problem
+  module:
+    - user
+id: node.problem.content_browser
+targetEntityType: node
+bundle: problem
+mode: content_browser
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true

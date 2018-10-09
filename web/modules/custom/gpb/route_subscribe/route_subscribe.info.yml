@@ -1,0 +1,5 @@
+name: 'Route Subscribe'
+type: module
+description: 'Route subscribe'
+core: 8.x
+package: 'gpb'

@@ -1,0 +1,21 @@
+uuid: 187d8c6e-543d-473f-80a7-31c7502314b5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_solution
+    - node.type.party_programm
+  module:
+    - text
+id: node.party_programm.field_solution
+field_name: field_solution
+entity_type: node
+bundle: party_programm
+label: Решение
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

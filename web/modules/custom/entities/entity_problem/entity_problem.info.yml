@@ -1,0 +1,7 @@
+name: 'entity_problem'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'party'
+dependencies:
+  - admin_content

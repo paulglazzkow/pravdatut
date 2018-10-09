@@ -1,0 +1,14 @@
+{
+  "name": "drupal/route_subscribe",
+  "type": "drupal-module",
+  "description": "Route subscribe",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/route_subscribe",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/route_subscribe",
+    "source": "http://cgit.drupalcode.org/route_subscribe"
+  },
+  "require": { }
+}

@@ -1,0 +1,17 @@
+uuid: aadf82ad-b275-474b-b2c0-425762641970
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Задача
+type: party_task
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,5 @@
+services:
+  paths_define.route_subscriber:
+    class: Drupal\paths_define\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

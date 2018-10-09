@@ -1,0 +1,22 @@
+entity.import_info_entity.add_form:
+  route_name: entity.import_info_entity.add_page
+  title: 'Add Import info entity'
+  appears_on:
+    - entity.import_info_entity.collection
+entity.import_info_entity_type.add_form:
+  route_name: entity.import_info_entity_type.add_form
+  title: 'Add Import info entity type'
+  appears_on:
+    - entity.import_info_entity_type.collection
+
+entity.import_content_entity.add_form:
+  route_name: entity.import_content_entity.add_page
+  title: 'Add Import Content'
+  appears_on:
+    - entity.import_content_entity.collection
+entity.import_content_entity_type.add_form:
+  route_name: entity.import_content_entity_type.add_form
+  title: 'Add Import Content type'
+  appears_on:
+    - entity.import_content_entity_type.collection
+

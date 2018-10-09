@@ -1,0 +1,26 @@
+langcode: ru
+status: true
+id: import_links_news
+label: 'News Links.'
+migration_group: news_html
+source:
+  plugin: import_links_news
+  data_fetcher_plugin: http_fetcher
+  data_parser_plugin: import_parser
+destination:
+  plugin: 'entity:import_content_entity'
+  default_bundle: news
+process:
+  name:
+    plugin: substr
+    source: link_title
+    start: 0
+    length: 255
+  'field_source_url/uri':
+    plugin: url_add_domain
+    url: source_link
+    domain: source_url
+  'field_source_url/title': link_title
+  field_import_config:
+    plugin: entity_id
+    entity: entity

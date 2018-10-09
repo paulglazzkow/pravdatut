@@ -1,0 +1,19 @@
+uuid: 1240e320-ea32-4dd2-811f-639f8025928f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_create_method
+field_name: field_create_method
+entity_type: group
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

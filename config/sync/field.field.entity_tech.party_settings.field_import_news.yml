@@ -1,0 +1,26 @@
+uuid: ac98b773-222e-4b1c-a74a-b67b254cdbc8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.party_settings
+    - field.storage.entity_tech.field_import_news
+id: entity_tech.party_settings.field_import_news
+field_name: field_import_news
+entity_type: entity_tech
+bundle: party_settings
+label: 'Import news'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:import_info_entity'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

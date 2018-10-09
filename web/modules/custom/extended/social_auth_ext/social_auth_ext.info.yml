@@ -1,0 +1,7 @@
+name: 'Social Auth ext'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'extended'
+dependencies:
+  - social_auth

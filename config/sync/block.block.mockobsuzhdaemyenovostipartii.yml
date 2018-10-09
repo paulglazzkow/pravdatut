@@ -1,0 +1,31 @@
+uuid: 43e8b9c8-66a0-4d11-baca-1dd3a2c5e7e0
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9a602915-3f25-444e-a545-71880a8efd8c'
+  module:
+    - block_content
+    - system
+  theme:
+    - druda_zurb
+id: mockobsuzhdaemyenovostipartii
+theme: druda_zurb
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:9a602915-3f25-444e-a545-71880a8efd8c'
+settings:
+  id: 'block_content:9a602915-3f25-444e-a545-71880a8efd8c'
+  label: 'Mock обсуждаемые новости партии'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/news/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,19 @@
+uuid: d9adc926-02ed-4097-ab49-3618eaeaa920
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_solution
+field_name: field_solution
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

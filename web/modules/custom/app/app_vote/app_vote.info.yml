@@ -1,0 +1,5 @@
+name: 'app Vote'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'app'

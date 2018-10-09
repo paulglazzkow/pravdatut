@@ -1,0 +1,78 @@
+uuid: 7aec3091-bc55-4e04-9144-996fa4ab63ed
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.parties
+  enforced:
+    config:
+      - user.role.administrator
+id: parties-a416e6833
+label: Администратор
+weight: 2
+internal: true
+audience: outsider
+group_type: parties
+permissions_ui: false
+permissions:
+  - 'access content overview'
+  - 'view group'
+  - 'edit group'
+  - 'delete group'
+  - 'administer group'
+  - 'administer members'
+  - 'view group_membership content'
+  - 'join group'
+  - 'access group_node overview'
+  - 'create group_node:party_task entity'
+  - 'delete any group_node:party_task entity'
+  - 'delete own group_node:party_task entity'
+  - 'update any group_node:party_task entity'
+  - 'update own group_node:party_task entity'
+  - 'view unpublished group_node:party_task entity'
+  - 'view group_node:party_task entity'
+  - 'create group_node:party_task content'
+  - 'delete any group_node:party_task content'
+  - 'delete own group_node:party_task content'
+  - 'update any group_node:party_task content'
+  - 'update own group_node:party_task content'
+  - 'view group_node:party_task content'
+  - 'create group_node:problem entity'
+  - 'delete any group_node:problem entity'
+  - 'delete own group_node:problem entity'
+  - 'update any group_node:problem entity'
+  - 'update own group_node:problem entity'
+  - 'view unpublished group_node:problem entity'
+  - 'view group_node:problem entity'
+  - 'create group_node:problem content'
+  - 'delete any group_node:problem content'
+  - 'delete own group_node:problem content'
+  - 'update any group_node:problem content'
+  - 'update own group_node:problem content'
+  - 'view group_node:problem content'
+  - 'create group_node:party_programm entity'
+  - 'delete any group_node:party_programm entity'
+  - 'delete own group_node:party_programm entity'
+  - 'update any group_node:party_programm entity'
+  - 'update own group_node:party_programm entity'
+  - 'view unpublished group_node:party_programm entity'
+  - 'view group_node:party_programm entity'
+  - 'create group_node:party_programm content'
+  - 'delete any group_node:party_programm content'
+  - 'delete own group_node:party_programm content'
+  - 'update any group_node:party_programm content'
+  - 'update own group_node:party_programm content'
+  - 'view group_node:party_programm content'
+  - 'create group_node:article entity'
+  - 'delete any group_node:article entity'
+  - 'delete own group_node:article entity'
+  - 'update any group_node:article entity'
+  - 'update own group_node:article entity'
+  - 'view unpublished group_node:article entity'
+  - 'view group_node:article entity'
+  - 'create group_node:article content'
+  - 'delete any group_node:article content'
+  - 'delete own group_node:article content'
+  - 'update any group_node:article content'
+  - 'update own group_node:article content'
+  - 'view group_node:article content'

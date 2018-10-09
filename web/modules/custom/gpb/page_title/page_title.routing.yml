@@ -1,0 +1,7 @@
+page_title.routes_autocomplete:
+  path: '/page-title-autocomplete/{limit}'
+  defaults:
+    _controller: '\Drupal\page_title\RoutesAutocompleteController::handleAutocomplete'
+    _format: json
+  requirements:
+    _access: 'TRUE'

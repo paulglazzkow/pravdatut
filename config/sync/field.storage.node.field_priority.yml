@@ -1,0 +1,36 @@
+uuid: bfb199cf-fd14-4bee-87b3-b2354b4cb8d3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_priority
+field_name: field_priority
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: Нет
+    -
+      value: 10
+      label: 'Не большой'
+    -
+      value: 20
+      label: Нормальный
+    -
+      value: 30
+      label: Высокий
+    -
+      value: 40
+      label: Высший
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

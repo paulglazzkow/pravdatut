@@ -1,0 +1,19 @@
+uuid: a69493f8-3b70-4f69-a312-91ab744f1a20
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import_info
+    - text
+id: import_info_entity.field_response_example
+field_name: field_response_example
+entity_type: import_info_entity
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

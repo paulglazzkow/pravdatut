@@ -1,0 +1,11 @@
+services:
+  drucon_commands.gen_entity:
+    class: Drupal\drucon_commands\Command\GenEntityCommand
+    arguments: ['@drucon_commands.gen_entity_generator']
+    tags:
+      - { name: drupal.command }
+  drucon_commands.gen_entity_generator:
+    class: Drupal\drucon_commands\Generator\GenEntityGenerator
+    arguments: []
+    tags:
+      - { name: drupal.generator }

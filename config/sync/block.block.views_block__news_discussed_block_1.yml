@@ -1,0 +1,30 @@
+uuid: 3e2ce4e5-c1d7-41c6-bebd-b7b28fa29e96
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.news_discussed
+  module:
+    - system
+    - views
+  theme:
+    - druda_zurb
+id: views_block__news_discussed_block_1
+theme: druda_zurb
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'views_block:news_discussed-block_1'
+settings:
+  id: 'views_block:news_discussed-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

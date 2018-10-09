@@ -1,0 +1,71 @@
+<?php
+
+
+const APP_DEBUG_MESSAGE_CID = 'app_debug_message_cid';
+
+/**
+ * @file
+ * Contains app.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function app_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the app module.
+    case 'help.page.app':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('App') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function app_preprocess_menu__toolbar__admin(&$variables) {
+
+  $variables['flex'] = [
+    'rows_per_column' => 6,
+    'column_class_prefix' => 'toolbar-menu-col-',
+  ];
+
+  $variables['column_class_prefix'] = 'toolbar-menu-col-';
+  //  $columns = ceil(count($variables['items']) / $rows);
+
+  //  $variables['attributes_flex']->addClass('toolbar-menu-col-' . $columns);
+
+
+  $variables['#attached']['library'][] = 'app/menu__toolbar';
+
+  //  $variables['columns'] = array_chunk($variables['items'], $rows, TRUE);
+}
+
+function app_theme_registry_alter(&$theme_registry) {
+  //  $theme_registry['menu__toolbar__admin']['path'] = 'modules/custom/app/templates';
+  //  $theme_registry['menu__toolbar__admin']['template'] = 'menu--toolbar--admin';
+  //  $theme_registry['menu__toolbar__admin']['theme path'] = 'modules/custom/app';
+  $n = 0;
+  if (isset($theme_registry['menu__toolbar__admin'])) {
+    $module_path = drupal_get_path('module', 'app');
+
+    $theme_registry['menu__toolbar__admin']['theme path'] = $module_path;
+    $theme_registry['menu__toolbar__admin']['path'] = $module_path . '/templates';
+    $theme_registry['menu__toolbar__admin']['template'] = 'menu--toolbar--admin';
+  }
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function custom_theme_registry_alter(&$theme_registry) {
+  // Override the default field-collection-item.tpl.php with our own.
+  if (isset($theme_registry['field_collection_item'])) {
+    $module_path = drupal_get_path('module', 'custom');
+    $theme_registry['field_collection_item']['theme path'] = $module_path;
+    $theme_registry['field_collection_item']['template'] = '/templates/field-collection-item';
+  }
+}

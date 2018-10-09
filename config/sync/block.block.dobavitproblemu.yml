@@ -1,0 +1,29 @@
+uuid: 942d331a-7b58-4152-831c-9ff3f2988ef7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.add-problem
+  module:
+    - system
+  theme:
+    - druda_zurb
+id: dobavitproblemu
+theme: druda_zurb
+region: content_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:add-problem'
+settings:
+  id: 'system_menu_block:add-problem'
+  label: 'Добавить Проблему'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /problems
+    negate: false
+    context_mapping: {  }

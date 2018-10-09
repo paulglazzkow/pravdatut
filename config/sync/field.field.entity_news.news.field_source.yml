@@ -1,0 +1,23 @@
+uuid: 9bd9ef7f-29be-4351-80eb-dfe2f9a7f78d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_news.entity_news_type.news
+    - field.storage.entity_news.field_source
+  module:
+    - link
+id: entity_news.news.field_source
+field_name: field_source
+entity_type: entity_news
+bundle: news
+label: Источник
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

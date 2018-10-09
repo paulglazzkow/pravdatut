@@ -1,0 +1,33 @@
+uuid: 2dfc3908-d1ad-4c1a-94d4-69e237c5356f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_status
+field_name: field_status
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: Запланировано
+    -
+      value: 10
+      label: Подготовка
+    -
+      value: 20
+      label: 'В работе'
+    -
+      value: 30
+      label: Готово
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

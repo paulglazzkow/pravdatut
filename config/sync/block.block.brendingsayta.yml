@@ -1,0 +1,23 @@
+uuid: c7f84d12-cdee-4e94-8885-637cca3d2b4c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - druda_zurb
+id: brendingsayta
+theme: druda_zurb
+region: meta_header_left
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Брендинг сайта'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,33 @@
+uuid: ff11a907-e52f-4949-9fb7-727b44bf858f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import_info
+    - options
+id: import_content_entity.field_status
+field_name: field_status
+entity_type: import_content_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: wait
+      label: Wait
+    -
+      value: start
+      label: Start
+    -
+      value: process
+      label: Process
+    -
+      value: done
+      label: Done
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

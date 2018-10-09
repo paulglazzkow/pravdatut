@@ -1,0 +1,18 @@
+langcode: ru
+status: true
+id: import_content_news
+label: 'News Content.'
+migration_group: news_html
+source:
+  plugin: import_content_news
+  data_fetcher_plugin: http_fetcher
+  data_parser_plugin: import_parser
+destination:
+  plugin: 'entity_update:import_content_entity'
+  default_bundle: news
+process:
+  name:
+    plugin: substr
+    source: name
+    start: 0
+    length: 255

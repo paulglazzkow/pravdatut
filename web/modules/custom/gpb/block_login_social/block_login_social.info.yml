@@ -1,0 +1,8 @@
+name: 'Login Block with Social Media Auth'
+type: module
+description: 'Block Login with Social Auth'
+core: 8.x
+package: 'gpb'
+dependencies:
+  - user
+  - social_auth

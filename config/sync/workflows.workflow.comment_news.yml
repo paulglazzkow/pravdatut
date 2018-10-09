@@ -1,0 +1,37 @@
+uuid: f867c6df-6166-4ede-9541-ba7851d10e03
+langcode: ru
+status: true
+dependencies:
+  module:
+    - content_moderation
+id: comment_news
+label: Комментарии
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 1
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+    publish:
+      label: Publish
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+  entity_types: {  }

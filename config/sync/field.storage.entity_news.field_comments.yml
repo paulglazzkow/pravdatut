@@ -1,0 +1,20 @@
+uuid: 49ea1724-e654-4e2a-a9d4-df72a4fa6d19
+langcode: ru
+status: true
+dependencies:
+  module:
+    - comment
+    - entity_news
+id: entity_news.field_comments
+field_name: field_comments
+entity_type: entity_news
+type: comment
+settings:
+  comment_type: comment_news
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+uuid: 06168f77-6e50-40a4-b19b-868bb9274d42
+name: PravdaTut
+mail: gpb@yandex.ru
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/23
+admin_compact_mode: false
+weight_select_max: 100
+langcode: ru
+default_langcode: ru
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

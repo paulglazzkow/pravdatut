@@ -1,0 +1,31 @@
+uuid: fe8392f6-84a2-472c-97d9-7a348aa48643
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_info_entity.field_config_yml
+    - import_info.import_info_entity_type.party_news_source_link
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    yamleditor: yamleditor
+    htmleditor: '0'
+    basic_html: '0'
+    comment: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: import_info_entity.party_news_source_link.field_config_yml
+field_name: field_config_yml
+entity_type: import_info_entity
+bundle: party_news_source_link
+label: config_yml
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

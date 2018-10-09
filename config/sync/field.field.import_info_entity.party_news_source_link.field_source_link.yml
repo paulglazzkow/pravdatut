@@ -1,0 +1,23 @@
+uuid: a98536aa-6388-43d5-a2ee-4c1e8d8ad756
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_info_entity.field_source_link
+    - import_info.import_info_entity_type.party_news_source_link
+  module:
+    - link
+id: import_info_entity.party_news_source_link.field_source_link
+field_name: field_source_link
+entity_type: import_info_entity
+bundle: party_news_source_link
+label: source_link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

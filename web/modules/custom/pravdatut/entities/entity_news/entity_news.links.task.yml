@@ -1,0 +1,28 @@
+# News routing definition
+
+entity.entity_news.canonical:
+  route_name: entity.entity_news.canonical
+  base_route: entity.entity_news.canonical
+  title: 'View'
+
+entity.entity_news.edit_form:
+  route_name: entity.entity_news.edit_form
+  base_route: entity.entity_news.canonical
+  title: 'Edit'
+
+entity.entity_news.version_history:
+  route_name: entity.entity_news.version_history
+  base_route: entity.entity_news.canonical
+  title: 'Revisions'
+
+entity.entity_news.delete_form:
+  route_name:  entity.entity_news.delete_form
+  base_route:  entity.entity_news.canonical
+  title: 'Delete'
+  weight: 10
+
+entity.entity_news_type.edit_form:
+  route_name:  entity.entity_news_type.edit_form
+  base_route:  entity.entity_news_type.edit_form
+  title: 'Edit'
+  weight: 1

@@ -1,0 +1,20 @@
+uuid: 1fa1fcbb-20b5-4acc-8027-c6a2b82f3ba9
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import_info
+    - media
+id: import_content_entity.field_media
+field_name: field_media
+entity_type: import_content_entity
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

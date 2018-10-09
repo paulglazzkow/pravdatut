@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains admin_content.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function admin_content_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the admin_content module.
+    case 'help.page.admin_content':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Cestom entity content admin pages') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function admin_content_theme() {
+  return [
+    'admin_content' => [
+      'render element' => 'children',
+    ],
+  ];
+}

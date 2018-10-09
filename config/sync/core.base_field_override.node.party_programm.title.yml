@@ -1,0 +1,18 @@
+uuid: a2912bdc-35f6-4d97-bee0-f45247001b8c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.party_programm
+id: node.party_programm.title
+field_name: title
+entity_type: node
+bundle: party_programm
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

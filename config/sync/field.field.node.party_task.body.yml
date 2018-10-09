@@ -1,0 +1,22 @@
+uuid: aa1976b2-62a2-4ab1-9d8e-3c218f2d4e2e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.party_task
+  module:
+    - text
+id: node.party_task.body
+field_name: body
+entity_type: node
+bundle: party_task
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

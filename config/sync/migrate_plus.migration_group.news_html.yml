@@ -1,0 +1,14 @@
+uuid: 2b6e080b-6b1c-48ed-a1a5-dfd2fba1a2e0
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: P_cjDzswrS2s7oU_-6_y35eDvB9scyLYvNy9KJKiL1Q
+id: news_html
+label: News
+description: News
+source_type: Html
+module: null
+shared_configuration:
+  source:
+    key: default

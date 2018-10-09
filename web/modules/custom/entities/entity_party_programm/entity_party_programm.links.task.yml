@@ -1,0 +1,28 @@
+# Entity party programm routing definition
+
+entity.entity_party_programm.canonical:
+  route_name: entity.entity_party_programm.canonical
+  base_route: entity.entity_party_programm.canonical
+  title: 'View'
+
+entity.entity_party_programm.edit_form:
+  route_name: entity.entity_party_programm.edit_form
+  base_route: entity.entity_party_programm.canonical
+  title: 'Edit'
+
+entity.entity_party_programm.version_history:
+  route_name: entity.entity_party_programm.version_history
+  base_route: entity.entity_party_programm.canonical
+  title: 'Revisions'
+
+entity.entity_party_programm.delete_form:
+  route_name:  entity.entity_party_programm.delete_form
+  base_route:  entity.entity_party_programm.canonical
+  title: Delete
+  weight: 10
+
+// Добавить вкладки на страницу редактирвоания типа
+entity.entity_party_programm.edit_form:
+  route_name: entity.entity_party_programm_type.edit_form
+  base_route: entity.entity_party_programm_type.edit_form
+  title: 'Edit'

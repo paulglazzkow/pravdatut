@@ -1,0 +1,6 @@
+entity.title_token_config.add_form:
+  route_name: entity.title_token_config.add_form
+  title: 'Add Title token config'
+  appears_on:
+    - entity.title_token_config.collection
+

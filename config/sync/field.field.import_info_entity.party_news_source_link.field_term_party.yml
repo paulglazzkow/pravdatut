@@ -1,0 +1,29 @@
+uuid: d68ec614-4117-46e0-8fef-521bdb0eb46b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_info_entity.field_term_party
+    - import_info.import_info_entity_type.party_news_source_link
+    - taxonomy.vocabulary.party
+id: import_info_entity.party_news_source_link.field_term_party
+field_name: field_term_party
+entity_type: import_info_entity
+bundle: party_news_source_link
+label: Партия
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      party: party
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

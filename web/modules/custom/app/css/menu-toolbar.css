@@ -1,0 +1,24 @@
+.toolbar-tray-horizontal ul.menu li.menu-item {
+  background-color: #fff; }
+  .toolbar-tray-horizontal ul.menu li.menu-item:hover {
+    background-color: #7cf; }
+
+.toolbar-tray-horizontal ul li.menu-item--expanded.hover-intent ul.toolbar-menu-flex {
+  display: flex;
+  flex-wrap: wrap; }
+  .toolbar-tray-horizontal ul li.menu-item--expanded.hover-intent ul.toolbar-menu-flex > li {
+    width: 16em; }
+.toolbar-tray-horizontal ul li.menu-item--expanded.hover-intent .toolbar-menu-col-1 {
+  width: 16em; }
+.toolbar-tray-horizontal ul li.menu-item--expanded.hover-intent .toolbar-menu-col-2 {
+  width: 32em; }
+.toolbar-tray-horizontal ul li.menu-item--expanded.hover-intent .toolbar-menu-col-3 {
+  width: 48em; }
+.toolbar-tray-horizontal ul li.menu-item--expanded.hover-intent .toolbar-menu-col-4 {
+  width: 64em; }
+.toolbar-tray-horizontal ul li.menu-item--expanded.hover-intent .toolbar-menu-level-2 li {
+  background-color: #ddf;
+  box-shadow: 0 0 15px #aaa;
+  border: 1px solid #fff; }
+
+/*# sourceMappingURL=menu-toolbar.css.map */

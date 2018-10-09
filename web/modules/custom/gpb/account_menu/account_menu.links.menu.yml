@@ -1,0 +1,14 @@
+user_menu.page:
+  title: 'My account'
+  weight: -10
+  route_name: user.page
+  menu_name: account_menu
+user_menu.logout:
+  weight: 10
+  menu_name: account_menu
+  class: Drupal\user\Plugin\Menu\LoginLogoutMenuLink
+user_menu.register:
+  title: 'Register'
+  weight: -10
+  route_name: user.register
+  menu_name: account_menu

@@ -1,0 +1,21 @@
+uuid: 64345c7f-8f70-4229-9334-8150485e38d8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_date_egrul
+    - group.type.parties
+  module:
+    - datetime
+id: group.parties.field_date_egrul
+field_name: field_date_egrul
+entity_type: group
+bundle: parties
+label: 'Дата внесения в ЕГРЮЛ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

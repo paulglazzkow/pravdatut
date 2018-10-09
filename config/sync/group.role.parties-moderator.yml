@@ -1,0 +1,17 @@
+uuid: e9489679-cbde-4261-9caf-378cbcea184d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.parties
+id: parties-moderator
+label: Модератор
+weight: 4
+internal: false
+audience: member
+group_type: parties
+permissions_ui: true
+permissions:
+  - 'update own group_membership content'
+  - 'leave group'
+  - 'view group_membership content'

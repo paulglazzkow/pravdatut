@@ -1,0 +1,36 @@
+
+# Import info entity menu items definition
+entity.import_info_entity.collection:
+  title: 'Import settings'
+  route_name: entity.import_info_entity.collection
+  description: 'Import settings entities'
+  parent: import_settings.types_content
+  weight: 100
+
+
+# Import info entity type menu items definition
+entity.import_info_entity_type.collection:
+  title: 'Import settings'
+  route_name: entity.import_info_entity_type.collection
+  description: 'Import settings (bundles)'
+  parent: import_settings.types
+  weight: 99
+
+
+# Import Content menu items definition
+entity.import_content_entity.collection:
+  title: 'Import data'
+  route_name: entity.import_content_entity.collection
+  description: 'Import data entities'
+  parent: import_settings.types_content
+  weight: 100
+
+
+# Import Content type menu items definition
+entity.import_content_entity_type.collection:
+  title: 'Import data'
+  route_name: entity.import_content_entity_type.collection
+  description: 'Import data (bundles)'
+  parent: import_settings.types
+  weight: 99
+

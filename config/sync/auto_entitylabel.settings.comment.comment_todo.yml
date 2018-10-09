@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[comment:author:display-name]'
+php: 0
+escape: 1
+dependencies:
+  config:
+    - comment.type.comment_todo

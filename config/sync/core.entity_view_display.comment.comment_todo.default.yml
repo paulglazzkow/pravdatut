@@ -1,0 +1,29 @@
+uuid: 9c6465f5-a81b-45b7-82b4-1f7eccdedf17
+langcode: ru
+status: true
+dependencies:
+  config:
+    - comment.type.comment_todo
+    - field.field.comment.comment_todo.comment_body
+  module:
+    - text
+id: comment.comment_todo.default
+targetEntityType: comment
+bundle: comment_todo
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  link_answer:
+    weight: 0
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

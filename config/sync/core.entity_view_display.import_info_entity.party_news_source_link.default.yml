@@ -1,0 +1,110 @@
+uuid: c677747b-7c01-42a6-abc9-27af17ef4dc1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.import_info_entity.party_news_source_link.field_config_yml
+    - field.field.import_info_entity.party_news_source_link.field_deleted
+    - field.field.import_info_entity.party_news_source_link.field_enabled
+    - field.field.import_info_entity.party_news_source_link.field_response_example
+    - field.field.import_info_entity.party_news_source_link.field_source_format
+    - field.field.import_info_entity.party_news_source_link.field_source_link
+    - field.field.import_info_entity.party_news_source_link.field_state
+    - field.field.import_info_entity.party_news_source_link.field_term_party
+    - import_info.import_info_entity_type.party_news_source_link
+  module:
+    - link
+    - options
+    - text
+    - user
+id: import_info_entity.party_news_source_link.default
+targetEntityType: import_info_entity
+bundle: party_news_source_link
+mode: default
+content:
+  field_config_yml:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_deleted:
+    weight: 5
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_enabled:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_response_example:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_source_format:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_source_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_state:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_term_party:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  status: true

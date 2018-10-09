@@ -1,0 +1,8 @@
+<?php
+
+function import_info_update_8001() {
+  $entity_definition_update_manager = \Drupal::service('entity.definition_update_manager');
+  $field_definition = $entity_definition_update_manager->getFieldStorageDefinition('name', 'import_content_entity');
+  $field_definition->setSetting('max_length', 255);
+  $entity_definition_update_manager->updateFieldStorageDefinition($field_definition);
+}

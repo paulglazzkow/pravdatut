@@ -1,0 +1,11 @@
+entity.entity_party_programm.add_form:
+  route_name: entity.entity_party_programm.add_page
+  title: 'Add Entity party programm'
+  appears_on:
+    - entity.entity_party_programm.collection
+entity.entity_party_programm_type.add_form:
+  route_name: entity.entity_party_programm_type.add_form
+  title: 'Add Entity party programm type'
+  appears_on:
+    - entity.entity_party_programm_type.collection
+

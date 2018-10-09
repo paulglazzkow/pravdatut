@@ -1,0 +1,26 @@
+uuid: 597ea62b-4e35-4c52-9328-a93eb6dfa50f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - site_grabber
+    - system
+  theme:
+    - druda_adminimal_theme
+id: importtestblock
+theme: druda_adminimal_theme
+region: content
+weight: -2
+provider: null
+plugin: import_test_block
+settings:
+  id: import_test_block
+  label: 'Import test block'
+  provider: site_grabber
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/admin/content/import/info/*/edit'
+    negate: false
+    context_mapping: {  }

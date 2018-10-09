@@ -1,0 +1,11 @@
+entity.entity_news.add_form:
+  route_name: entity.entity_news.add_page
+  title: 'Add News'
+  appears_on:
+    - entity.entity_news.collection
+entity.entity_news_type.add_form:
+  route_name: entity.entity_news_type.add_form
+  title: 'Add News type'
+  appears_on:
+    - entity.entity_news_type.collection
+

@@ -1,0 +1,18 @@
+
+# Entity party programm menu items definition
+entity.entity_party_programm.collection:
+  title: 'Entity party programm list'
+  route_name: entity.entity_party_programm.collection
+  description: 'List Entity party programm entities'
+  parent: admin_content.types_content
+  weight: 100
+
+
+# Entity party programm type menu items definition
+entity.entity_party_programm_type.collection:
+  title: 'Entity party programm type'
+  route_name: entity.entity_party_programm_type.collection
+  description: 'List Entity party programm type (bundles)'
+  parent: admin_content.types_content
+  weight: 99
+

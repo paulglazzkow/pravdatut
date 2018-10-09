@@ -1,0 +1,175 @@
+uuid: 0e7fd20e-58e5-4bff-bd27-78b7328fc23c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.import_info_entity.party_news_source_link.field_config_yml
+    - field.field.import_info_entity.party_news_source_link.field_deleted
+    - field.field.import_info_entity.party_news_source_link.field_enabled
+    - field.field.import_info_entity.party_news_source_link.field_response_example
+    - field.field.import_info_entity.party_news_source_link.field_source_format
+    - field.field.import_info_entity.party_news_source_link.field_source_link
+    - field.field.import_info_entity.party_news_source_link.field_state
+    - field.field.import_info_entity.party_news_source_link.field_term_party
+    - import_info.import_info_entity_type.party_news_source_link
+  module:
+    - allowed_formats
+    - field_group
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_main
+        - group_config
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: tabs
+    group_main:
+      children:
+        - name
+        - field_enabled
+        - field_term_party
+        - field_deleted
+        - field_response_example
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        label: Main
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Main
+    group_config:
+      children:
+        - field_source_format
+        - group_source_links
+        - group_configyml
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        label: Config
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Config
+    group_configyml:
+      children:
+        - field_config_yml
+      parent_name: group_config
+      weight: 4
+      format_type: details
+      format_settings:
+        label: 'Config YML'
+        open: true
+        id: ''
+        classes: ''
+        required_fields: false
+      label: 'Config YML'
+    group_source_links:
+      children:
+        - field_source_link
+      parent_name: group_config
+      weight: 2
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Source links'
+id: import_info_entity.party_news_source_link.default
+targetEntityType: import_info_entity
+bundle: party_news_source_link
+mode: default
+content:
+  field_config_yml:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+    type: text_textarea
+    region: content
+  field_deleted:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_enabled:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_response_example:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+    type: text_textarea
+    region: content
+  field_source_format:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_source_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_state:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_term_party:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  moderation_state: true
+  status: true
+  user_id: true

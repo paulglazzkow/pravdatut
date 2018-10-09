@@ -1,0 +1,14 @@
+{
+  "name": "drupal/enumeration",
+  "type": "drupal-module",
+  "description": "Enumeration entity",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/enumeration",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/enumeration",
+    "source": "http://cgit.drupalcode.org/enumeration"
+  },
+  "require": { }
+}

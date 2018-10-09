@@ -1,0 +1,13 @@
+uuid: 3b2f2043-5ab1-475d-bdd1-279de4f799c9
+langcode: ru
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.comment_dislike.flag
+label: 'Не нравится'
+type: comment
+plugin: 'flag_action:comment_dislike.flag'
+configuration:
+  flag_id: comment_dislike
+  flag_action: flag

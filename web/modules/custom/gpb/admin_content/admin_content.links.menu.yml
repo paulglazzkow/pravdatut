@@ -1,0 +1,44 @@
+
+# Entity order menu items definition
+admin_content.types:
+  title: 'Content custom'
+  route_name: admin_content.types
+  description: 'Content custom'
+  parent: system.admin_structure
+  weight: 100
+
+admin_content.types_content:
+  title: 'Content custom'
+  route_name: admin_content.types_content
+  description: 'Content custom'
+  parent: system.admin_content
+  weight: 100
+
+
+import_settings.types:
+  title: 'Import'
+  route_name: import_settings.types
+  description: 'Import'
+  parent: system.admin_structure
+  weight: 100
+
+import_settings.types_content:
+  title: 'Import'
+  route_name: import_settings.types_content
+  description: 'Import'
+  parent: system.admin_content
+  weight: 100
+
+entity_tech.types:
+  title: 'Service'
+  route_name: entity_tech.types
+  description: 'Service'
+  parent: system.admin_structure
+  weight: 100
+
+entity_tech.types_content:
+  title: 'Service'
+  route_name: entity_tech.types_content
+  description: 'Service'
+  parent: system.admin_content
+  weight: 100

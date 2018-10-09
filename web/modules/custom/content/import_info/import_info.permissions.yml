@@ -1,0 +1,60 @@
+add import info entity entities:
+  title: 'Create new Import info entity entities'
+
+administer import info entity entities:
+  title: 'Administer Import info entity entities'
+  description: 'Allow to access the administration form to configure Import info entity entities.'
+  restrict access: true
+
+delete import info entity entities:
+  title: 'Delete Import info entity entities'
+
+edit import info entity entities:
+  title: 'Edit Import info entity entities'
+
+view published import info entity entities:
+  title: 'View published Import info entity entities'
+
+view unpublished import info entity entities:
+  title: 'View unpublished Import info entity entities'
+
+view all import info entity revisions:
+  title: 'View all Import info entity revisions'
+
+revert all import info entity revisions:
+  title: 'Revert all Import info entity revisions'
+  description: 'Role requires permission <em>view Import info entity revisions</em> and <em>edit rights</em> for import info entity entities in question or <em>administer import info entity entities</em>.'
+
+delete all import info entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Import info entity revisions</em> and <em>delete rights</em> for import info entity entities in question or <em>administer import info entity entities</em>.'
+add import content entities:
+  title: 'Create new Import Content entities'
+
+administer import content entities:
+  title: 'Administer Import Content entities'
+  description: 'Allow to access the administration form to configure Import Content entities.'
+  restrict access: true
+
+delete import content entities:
+  title: 'Delete Import Content entities'
+
+edit import content entities:
+  title: 'Edit Import Content entities'
+
+view published import content entities:
+  title: 'View published Import Content entities'
+
+view unpublished import content entities:
+  title: 'View unpublished Import Content entities'
+
+view all import content revisions:
+  title: 'View all Import Content revisions'
+
+revert all import content revisions:
+  title: 'Revert all Import Content revisions'
+  description: 'Role requires permission <em>view Import Content revisions</em> and <em>edit rights</em> for import content entities in question or <em>administer import content entities</em>.'
+
+delete all import content revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Import Content revisions</em> and <em>delete rights</em> for import content entities in question or <em>administer import content entities</em>.'

@@ -1,0 +1,19 @@
+uuid: a0575409-07c0-4ca5-b107-b96d5c14da20
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_governing_body
+    - group.type.parties
+id: group.parties.field_governing_body
+field_name: field_governing_body
+entity_type: group
+bundle: parties
+label: 'Руководящий орган'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

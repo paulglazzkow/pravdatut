@@ -1,0 +1,31 @@
+uuid: fe726350-1a79-4195-8243-a0f44fef62b9
+langcode: ru
+status: true
+dependencies:
+  module:
+    - comment
+id: comment_like
+label: 'Comment Like'
+bundles:
+  - comment_news
+entity_type: comment
+global: true
+weight: 0
+flag_short: '<i class="fas fa-thumbs-up"></i>'
+flag_long: 'С мнением предыдущего оратора согласен.'
+flag_message: ''
+unflag_short: '<i class="fas fa-thumbs-up"></i>'
+unflag_long: 'Не уверен, что согласен с мнением предыдущего оратора.'
+unflag_message: 'Ваше мнение учтено'
+unflag_denied_text: ''
+flag_type: 'entity:comment'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+    parent_owner: '0'
+linkTypeConfig: {  }

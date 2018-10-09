@@ -1,0 +1,5 @@
+name: 'entity_tree'
+type: module
+description: 'Entity Tree'
+core: 8.x
+package: 'gpb'

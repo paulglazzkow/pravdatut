@@ -1,0 +1,27 @@
+# Entity tech routing definition
+
+entity.entity_tech.canonical:
+  route_name: entity.entity_tech.canonical
+  base_route: entity.entity_tech.canonical
+  title: 'View'
+
+entity.entity_tech.edit_form:
+  route_name: entity.entity_tech.edit_form
+  base_route: entity.entity_tech.canonical
+  title: 'Edit'
+
+entity.entity_tech.version_history:
+  route_name: entity.entity_tech.version_history
+  base_route: entity.entity_tech.canonical
+  title: 'Revisions'
+
+entity.entity_tech.delete_form:
+  route_name:  entity.entity_tech.delete_form
+  base_route:  entity.entity_tech.canonical
+  title: Delete
+  weight: 10
+
+entity.entity_tech_type.edit_form:
+  route_name: entity.entity_tech_type.edit_form
+  base_route: entity.entity_tech_type.edit_form
+  title: 'Edit'

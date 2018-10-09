@@ -1,0 +1,3 @@
+pravdatut_party.party.menu:
+  deriver: \Drupal\context_menu\Plugin\Derivative\ContextMenuLinksDerivative
+  class: \Drupal\context_menu\Plugin\Menu\ContextMenuLink

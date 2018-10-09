@@ -1,0 +1,21 @@
+uuid: 27ef3b04-cc3f-4857-ac45-5db3d9a8f41a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import_info
+    - options
+id: import_info_entity.field_state
+field_name: field_state
+entity_type: import_info_entity
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

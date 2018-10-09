@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[node:field_task:entity:title]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - node.type.party_programm

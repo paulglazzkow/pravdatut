@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains pmtasks.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pmtasks_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pmtasks module.
+    case 'help.page.pmtasks':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Project developers tasks') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pmtasks_theme() {
+  $theme = [];
+  $theme['pmtask'] = [
+    'render element' => 'elements',
+    'file' => 'pmtask.page.inc',
+    'template' => 'pmtask',
+  ];
+  $theme['pmtask_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'pmtask.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function pmtasks_theme_suggestions_pmtask(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#pmtask'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'pmtask__' . $sanitized_view_mode;
+  $suggestions[] = 'pmtask__' . $entity->bundle();
+  $suggestions[] = 'pmtask__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'pmtask__' . $entity->id();
+  $suggestions[] = 'pmtask__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

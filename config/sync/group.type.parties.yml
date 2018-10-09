@@ -1,0 +1,12 @@
+uuid: 60da06ce-b244-445c-9cae-8f6034eec5bf
+langcode: ru
+status: true
+dependencies: {  }
+id: parties
+label: Партии
+description: ''
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - parties-admin
+  - parties-moderator

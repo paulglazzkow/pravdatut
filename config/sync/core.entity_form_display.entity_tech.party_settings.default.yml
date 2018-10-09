@@ -1,0 +1,118 @@
+uuid: 96c9a6d2-2862-4ba2-94d3-5ce683254a73
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.party_settings
+    - field.field.entity_tech.party_settings.field_import_news
+    - field.field.entity_tech.party_settings.field_sources
+    - field.field.entity_tech.party_settings.field_term_party
+  module:
+    - field_group
+    - inline_entity_form
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_main
+        - group_import_news
+        - group_sources
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: tabs
+    group_main:
+      children:
+        - name
+        - field_term_party
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Main
+    group_import_news:
+      children:
+        - field_import_news
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Импорт новостей'
+    group_sources:
+      children:
+        - field_sources
+      parent_name: group_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Sources
+id: entity_tech.party_settings.default
+targetEntityType: entity_tech
+bundle: party_settings
+mode: default
+content:
+  field_import_news:
+    weight: 2
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      override_labels: false
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_sources:
+    weight: 26
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      override_labels: false
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_term_party:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  moderation_state: true
+  status: true
+  user_id: true

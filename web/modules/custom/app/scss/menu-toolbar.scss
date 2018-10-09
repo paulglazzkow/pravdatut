@@ -1,0 +1,50 @@
+$admin_menu_col_width: 16em;
+
+.toolbar-tray-horizontal {
+  ul.menu {
+    li.menu-item {
+      background-color: #fff;
+      &:hover {
+        background-color: #7cf;
+      }
+    }
+  }
+
+}
+
+.toolbar-tray-horizontal ul li.menu-item--expanded.hover-intent {
+  ul.toolbar-menu-flex {
+
+    display: flex;
+    flex-wrap: wrap;
+    & > li {
+
+      width: $admin_menu_col_width;
+
+    }
+  }
+  .toolbar-menu-col-1 {
+    width: $admin_menu_col_width;
+  }
+  .toolbar-menu-col-2 {
+    width: $admin_menu_col_width*2;
+  }
+  .toolbar-menu-col-3 {
+    width: $admin_menu_col_width*3;
+  }
+
+  .toolbar-menu-col-4 {
+    width: $admin_menu_col_width*4;
+  }
+
+  .toolbar-menu-level-2 {
+
+    li {
+      background-color: #ddf;
+      box-shadow: 0 0 15px #aaa;
+      border: 1px solid #fff;
+    }
+  }
+
+}
+

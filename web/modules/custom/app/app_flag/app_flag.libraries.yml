@@ -1,0 +1,8 @@
+app_flag:
+  version: VERSION
+  js:
+    js/app-flag.js : {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

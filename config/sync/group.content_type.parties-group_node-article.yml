@@ -1,0 +1,19 @@
+uuid: 0f8b7649-7949-4588-b498-8621d9366d78
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.parties
+    - node.type.article
+  module:
+    - gnode
+    - node
+id: parties-group_node-article
+label: 'Партии: Group node (Статья)'
+description: 'Adds <em class="placeholder">Статья</em> content to groups both publicly and privately.'
+group_type: parties
+content_plugin: 'group_node:article'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

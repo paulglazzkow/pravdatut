@@ -1,0 +1,13 @@
+uuid: 0b475109-6a67-49b3-a039-bc0872a29daa
+langcode: ru
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.comment_abuse.unflag
+label: Пожаловаться
+type: comment
+plugin: 'flag_action:comment_abuse.unflag'
+configuration:
+  flag_id: comment_abuse
+  flag_action: unflag

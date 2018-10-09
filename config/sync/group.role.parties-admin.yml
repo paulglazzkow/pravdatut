@@ -1,0 +1,76 @@
+uuid: 74eefabf-eaa6-4d10-b36f-c2d01faa2de9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.parties
+id: parties-admin
+label: Администрация
+weight: 3
+internal: false
+audience: member
+group_type: parties
+permissions_ui: true
+permissions:
+  0: 'access content overview'
+  1: 'edit group'
+  2: 'view group'
+  3: 'update own group_membership content'
+  4: 'leave group'
+  5: 'view group_membership content'
+  9: 'delete group'
+  10: 'administer group'
+  11: 'administer members'
+  15: 'access group_node overview'
+  16: 'create group_node:party_task entity'
+  17: 'delete any group_node:party_task entity'
+  18: 'delete own group_node:party_task entity'
+  19: 'update any group_node:party_task entity'
+  20: 'update own group_node:party_task entity'
+  21: 'view unpublished group_node:party_task entity'
+  22: 'view group_node:party_task entity'
+  23: 'create group_node:party_task content'
+  24: 'delete any group_node:party_task content'
+  25: 'delete own group_node:party_task content'
+  26: 'update any group_node:party_task content'
+  27: 'update own group_node:party_task content'
+  28: 'view group_node:party_task content'
+  29: 'create group_node:problem entity'
+  30: 'delete any group_node:problem entity'
+  31: 'delete own group_node:problem entity'
+  32: 'update any group_node:problem entity'
+  33: 'update own group_node:problem entity'
+  34: 'view unpublished group_node:problem entity'
+  35: 'view group_node:problem entity'
+  36: 'create group_node:problem content'
+  37: 'delete any group_node:problem content'
+  38: 'delete own group_node:problem content'
+  39: 'update any group_node:problem content'
+  40: 'update own group_node:problem content'
+  41: 'view group_node:problem content'
+  42: 'create group_node:party_programm entity'
+  43: 'delete any group_node:party_programm entity'
+  44: 'delete own group_node:party_programm entity'
+  45: 'update any group_node:party_programm entity'
+  46: 'update own group_node:party_programm entity'
+  47: 'view unpublished group_node:party_programm entity'
+  48: 'view group_node:party_programm entity'
+  49: 'create group_node:party_programm content'
+  50: 'delete any group_node:party_programm content'
+  51: 'delete own group_node:party_programm content'
+  52: 'update any group_node:party_programm content'
+  53: 'update own group_node:party_programm content'
+  54: 'view group_node:party_programm content'
+  55: 'create group_node:article entity'
+  56: 'delete any group_node:article entity'
+  57: 'delete own group_node:article entity'
+  58: 'update any group_node:article entity'
+  59: 'update own group_node:article entity'
+  60: 'view unpublished group_node:article entity'
+  61: 'view group_node:article entity'
+  62: 'create group_node:article content'
+  63: 'delete any group_node:article content'
+  64: 'delete own group_node:article content'
+  65: 'update any group_node:article content'
+  66: 'update own group_node:article content'
+  67: 'view group_node:article content'

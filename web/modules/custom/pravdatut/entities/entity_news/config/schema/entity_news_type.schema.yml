@@ -1,0 +1,12 @@
+entity_news.entity_news_type.*:
+  type: config_entity
+  label: 'News type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

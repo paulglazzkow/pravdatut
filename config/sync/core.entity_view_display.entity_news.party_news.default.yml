@@ -1,0 +1,66 @@
+uuid: 57bae651-3c5a-4675-a250-331e87671ae4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_news.default
+    - entity_news.entity_news_type.party_news
+    - field.field.entity_news.party_news.field_comments
+    - field.field.entity_news.party_news.field_photo_top
+    - field.field.entity_news.party_news.field_term_party
+  module:
+    - ajax_comments
+    - comment
+    - image
+    - text
+id: entity_news.party_news.default
+targetEntityType: entity_news
+bundle: party_news
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_comments:
+    weight: 5
+    label: hidden
+    settings:
+      pager_id: 0
+      view_mode: default
+    third_party_settings:
+      ajax_comments:
+        enable_ajax_comments: '1'
+    type: comment_default
+    region: content
+  field_photo_top:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_term_party:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  user_id: true

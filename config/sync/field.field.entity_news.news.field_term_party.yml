@@ -1,0 +1,29 @@
+uuid: bf62e156-53c1-450b-8a72-c20be6cb678a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_news.entity_news_type.news
+    - field.storage.entity_news.field_term_party
+    - taxonomy.vocabulary.party
+id: entity_news.news.field_term_party
+field_name: field_term_party
+entity_type: entity_news
+bundle: news
+label: партия
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      party: party
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

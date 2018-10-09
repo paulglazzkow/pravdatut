@@ -1,0 +1,5 @@
+name: 'gpb_services'
+type: module
+description: 'Services collection'
+core: 8.x
+package: 'gpb'

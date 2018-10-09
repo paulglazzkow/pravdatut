@@ -1,0 +1,23 @@
+uuid: f6e63c04-5319-4789-9cd6-87cc05ae0a12
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.import_info_entity.field_deleted
+    - import_info.import_info_entity_type.'party_news_source_content
+id: import_info_entity.'party_news_source_content.field_deleted
+field_name: field_deleted
+entity_type: import_info_entity
+bundle: 'party_news_source_content
+label: deleted
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Удален
+  off_label: Нет
+field_type: boolean

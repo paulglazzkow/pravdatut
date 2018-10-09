@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains entity_party_programm.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function entity_party_programm_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the entity_party_programm module.
+    case 'help.page.entity_party_programm':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function entity_party_programm_theme() {
+  $theme = [];
+  $theme['entity_party_programm'] = [
+    'render element' => 'elements',
+    'file' => 'entity_party_programm.page.inc',
+    'template' => 'entity_party_programm',
+  ];
+  $theme['entity_party_programm_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'entity_party_programm.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function entity_party_programm_theme_suggestions_entity_party_programm(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#entity_party_programm'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'entity_party_programm__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_party_programm__' . $entity->bundle();
+  $suggestions[] = 'entity_party_programm__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_party_programm__' . $entity->id();
+  $suggestions[] = 'entity_party_programm__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

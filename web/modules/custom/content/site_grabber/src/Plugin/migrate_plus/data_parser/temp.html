@@ -1,0 +1,2503 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+    <title>������������ ������</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+
+    <META NAME="keywords" CONTENT="������������ ������, ������, ��������������� ����, �������, ������ �������, �������, ������, �������������� ������, ���, ���������� ������, ����� ����������, ������, ������">
+    <META NAME="description" CONTENT="">
+    <META NAME="robots" CONTENT="all">
+    <META NAME="revisit" CONTENT="1">
+
+    <meta property="og:image" content="http://www.spravedlivo.ru/depot/img/sr700x312.jpg" />
+    <meta property="og:title" content="�������" />
+    <meta property="og:url" content="http://spravedlivo.ru/10001" />
+    <meta property="og:description" content="" />
+
+    <link rel="image_src" href="http://www.spravedlivo.ru/depot/img/sr700x312.jpg" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <link href="http://www.spravedlivo.ru/core/addns/fonts/fonts.css" rel="stylesheet">
+
+
+
+
+    <script src="core/skeleton/odd.js"></script>
+
+    <link rel="stylesheet" href="core/addns/rslides/responsiveslides.css">
+    <script src="core/addns/jquery/jquery.min.js"></script>
+    <script src="core/addns/rslides/responsiveslides.min.js"></script>
+
+</head>
+
+<script language="JavaScript">
+
+    function OpenDialog()
+    {
+        document.getElementByID("dialogcanvas").style.display="block";
+    }
+
+    function ShowOrHide(url,h)
+    {
+        s="dialogcanvas";
+//	alert(document.getElementById(s).style.display);
+        if (document.getElementById(s).style.display=='block')
+            document.getElementById(s).style.display="none";
+        else
+            document.getElementById(s).style.display="block";
+
+        if (url!="")
+        {
+            document.getElementById('dialogframe').src=url;
+            document.getElementById('dialogframe').style.height=h;
+        }
+    }
+
+
+</script>
+
+<style>
+
+    * {box-sizing: border-box;}
+
+    body
+    {
+        margin: 0;
+        font-size: 16px;
+        font-family: arial, sans-serif;
+        overflow-y: scroll;
+        background-color: #f4f3ef;
+    }
+
+
+    .body_duma_bg
+    {
+        background: url(http://www.spravedlivo.ru/core/ti/duma_bg_1.jpg) center top no-repeat;
+        background-size: 1600px;
+        background-attachment: fixed;
+    }
+
+</style>
+
+<body><script language="JavaScript">
+
+    ch402_soh_current="";
+
+    function CH402_SoH(s)
+    {
+        if (ch402_soh_current!="")
+        {
+            document.getElementById("ch402"+ch402_soh_current).style.display="none";
+//		document.getElementById("ch402mi"+ch402_soh_current).style.backgroundColor="#ffffff";
+            document.getElementById("ch402mi"+ch402_soh_current).style.color="#000000";
+        }
+
+        if (ch402_soh_current!=s)
+        {
+            document.getElementById("ch402"+s).style.display="block";
+//		document.getElementById("ch402mi"+s).style.backgroundColor="#fab512";
+            document.getElementById("ch402mi"+s).style.color="#a00000";
+            ch402_soh_current=s;
+        }
+        else
+            ch402_soh_current="";
+    }
+
+</script><style>
+
+    .ch402_stripe
+    {
+        width: 100%;
+        text-align: center;
+        background-color: #FFC003;
+    }
+
+    .ch402_segment
+    {
+        width: 1560px; height: 150px;
+        margin: 0 auto;
+
+        padding: 0px;
+        text-align: left;
+        vertical-align: top;
+
+    }
+
+    .ch402_stripe_menu
+    {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: #FFC003;
+
+    }
+
+    .ch402_segment_menu
+    {
+        width: 1560px;
+        margin: 0 auto;
+
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .ch402_segment_menu_group
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 340px;
+
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+    .ch402_smg_title
+    {
+        font-family: 'PT Serif', serif;	font-size: 22px; color: #000000; line-height: 24px; font-weight: bold;
+        margin-top: 20px; margin-bottom: 20px;
+    }
+
+    .ch402_smg_item
+    {
+        display: block;
+        font-family: 'PT Sans', sans-serif;	font-size: 16px; color: #202020; line-height: 16px; font-weight: bold;
+        text-decoration: none;
+        margin-top: 8px; margin-bottom: 0px;
+    }
+
+
+
+
+
+    .ch402_logo
+    {
+
+        display: inline-block;
+        width: 450px; height: 150px;
+        vertical-align: top;
+    }
+
+    .ch402_logo_image
+    {
+
+        width: 450px;
+
+    }
+
+    .ch402_header_sandwich
+    {
+
+        display: inline-block;
+        width: 100px; height: 150px;
+        font-family: 'PT Sans', sans-serif; font-size: 32px; color: #000000; line-height: 150px; font-weight: normal;
+        text-align: center;
+        cursor: pointer;
+        vertical-align: top;
+    }
+
+
+    .ch402_header_menu_item
+    {
+        display: inline-block;
+        height: 150px;
+        font-family: 'PT Sans', sans-serif; font-size: 22px; color: #000000; line-height: 150px; font-weight: normal;
+        text-align: center;
+        cursor: pointer;
+        vertical-align: top;
+        padding-left: 15px; padding-right: 15px;
+
+    }
+
+    .ch402_header_menugroup
+    {
+        display: inline-block;
+        height: 150px;
+        vertical-align: top;
+        margin-left: 60px;
+
+    }
+
+
+
+    .ch402_header_icongroup
+    {
+        display: inline-block;
+        height: 150px;
+        vertical-align: top;
+        margin-left: 60px;
+
+    }
+
+    .ch402_header_icongroup_icon
+    {
+        position: relative;
+        display: block; float: left;
+        width: 25px;
+        text-decoration: none;
+        margin-top: 0px; margin-bottom: 0px; margin-left: 5px; margin-right: 0px;
+        padding-top: 60px;
+
+    }
+
+
+    @media (max-width: 1579px)
+    {
+        .ch402_segment
+        {
+            width: 1200px;
+        }
+
+        .ch402_segment_menu
+        {
+            width: 1200px;
+        }
+
+        .ch402_header_menu_item
+        {
+            display: none;
+        }
+
+        .ch402_segment_menu_group
+        {
+            width: 250px;
+        }
+
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch402_segment
+        {
+            width: 800px;
+        }
+
+        .ch402_segment_menu
+        {
+            width: 800px;
+        }
+
+        .ch402_header_icongroup_icon
+        {
+            display: none;
+        }
+
+        .ch402_smg_item
+        {
+            width: 240px;
+            margin: 10px;
+        }
+
+    }
+
+    @media (max-width: 799px)
+    {
+        .ch402_segment
+        {
+            width: 100%;
+        }
+
+        .ch402_segment_menu
+        {
+            width: 100%;
+        }
+
+    }
+
+    @media (max-width: 549px)
+    {
+
+        .ch402_logo
+        {
+            width: 220px;
+        }
+
+        .ch402_logo_image
+        {
+            width: 220px;
+            margin-top: 40px;
+        }
+
+    }
+
+
+
+
+</style><div class="ch402_stripe"><div class="ch402_segment"><div id="ch402miz" class="ch402_header_sandwich" onClick="CH402_SoH('z')">&#8801;</div><a href="index" class="ch402_logo"><img class="ch402_logo_image" src="core/ti/logo.png"></a><div class="ch402_header_menugroup"><div id="ch402mia" class="ch402_header_menu_item" onClick="CH402_SoH('a')">� ������</div><div id="ch402mid" class="ch402_header_menu_item" onClick="CH402_SoH('d')">���������</div><div id="ch402mic" class="ch402_header_menu_item" onClick="CH402_SoH('c')">����</div><div id="ch402mib" class="ch402_header_menu_item" onClick="CH402_SoH('b')">������������</div></div><div class="ch402_header_icongroup"><a href="https://vk.com/spravo_ross" class="ch402_header_icongroup_icon"><img src="core/ti/sm_vk.png"></a><a href="https://www.facebook.com/spravoross/" class="ch402_header_icongroup_icon"><img src="core/ti/sm_fb.png"></a><a href="https://ok.ru/spravoross" class="ch402_header_icongroup_icon"><img src="core/ti/sm_ok.png"></a><a href="https://twitter.com/spravoross" class="ch402_header_icongroup_icon"><img src="core/ti/sm_tw.png"></a><a href="https://www.instagram.com/spravoross/" class="ch402_header_icongroup_icon"><img src="core/ti/sm_in.png"></a><a href="https://www.youtube.com/channel/UC8ruQ9ENXgu9MBV8E5e3KBg" class="ch402_header_icongroup_icon"><img src="core/ti/sm_yt.png"></a><div class="ch402_header_icongroup_icon"><img src="core/ti/e.gif"></div><a href="http://special.spravedlivo.ru/" class="ch402_header_icongroup_icon"><img src="core/ti/mainicon_eye.png"></a><div class="ch402_header_icongroup_icon"><img src="core/ti/e.gif"></div><a href="http://www.spravedlivo.ru/rss/spravedlivo.xml" class="ch402_header_icongroup_icon"><img src="core/ti/mainicon_rss.png"></a><div class="ch402_header_icongroup_icon"><img src="core/ti/e.gif"></div><a href="search" class="ch402_header_icongroup_icon"><img src="core/ti/mainicon_search.png"></a></div></div></div><div id="ch402z" class="ch402_stripe_menu"><div class="ch402_segment_menu"><div class="ch402_segment_menu_group"><div class="ch402_smg_title">�������</div><a href="11101" class="ch402_smg_item">����� ��������</a><a href="17301" class="ch402_smg_item">����������</a><a href="14001" class="ch402_smg_item">������ � ���</a><a href="13701" class="ch402_smg_item">����</a><a href="13801" class="ch402_smg_item">�����</a><a href="13901" class="ch402_smg_item">�����</a><a href="13501" class="ch402_smg_item">������</a><div class="ch402_smg_title">��������� �������</div><a href="http://spravedlivo.center/" class="ch402_smg_item">������ ������ ���� �������</a><a href="8097616" class="ch402_smg_item">��������</a><a href="6666716" class="ch402_smg_item">������������ ������</a><a href="7346816" class="ch402_smg_item">��������� �������� ������</a><div class="ch402_smg_title">������������� ��������������</div><a href="6949416" class="ch402_smg_item">���������� � �����������</a><a href="6949516" class="ch402_smg_item">������������ ��������������</a><a href="6949616" class="ch402_smg_item">���������������� ��������������</a><a href="4189618" class="ch402_smg_item">���������</a><a href="15601" class="ch402_smg_item">���������� ������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">� ������</div><a href="7634910" class="ch402_smg_item">��������� ������</a><a href="16101" class="ch402_smg_item">������������ ���������</a><a href="4774510" class="ch402_smg_item">������� ������</a><a href="4842610" class="ch402_smg_item">�����</a><a href="4818710" class="ch402_smg_item">���������</a><a href="4774710" class="ch402_smg_item">��������</a><a href="18101" class="ch402_smg_item">��������</a><a href="4799810" class="ch402_smg_item">��������</a><div class="ch402_smg_title">��� ���� ��� � ������</div><a href="206315" class="ch402_smg_item">������������ ������</a><a href="11201-2" class="ch402_smg_item">��������� ���������� �� ������</a><a href="11201-3" class="ch402_smg_item">��������� ������������ ������</a><a href="11201-4" class="ch402_smg_item">����� ������ ���������</a><a href="11201-5" class="ch402_smg_item">����������� ����� ������</a><a href="11201-7" class="ch402_smg_item">������ ���������</a><a href="11201-6" class="ch402_smg_item">����������� ����������-����������� ��������</a><div class="ch402_smg_title">��������� ����������</div><a href="7634910" class="ch402_smg_item">��������� ������</a><a href="4838310" class="ch402_smg_item">25 ������������ �������</a><a href="7783310" class="ch402_smg_item">������������ �������</a><a href="8854316" class="ch402_smg_item">����� ������ ��������</a><a href="18201" class="ch402_smg_item">��� ����������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">������� � ��������������� ����&nbsp;��</div><a href="12001" class="ch402_smg_item">������� ������</a><a href="5334616" class="ch402_smg_item">������������ ���������</a><a href="17501-3" class="ch402_smg_item">����������� �������</a><a href="17501" class="ch402_smg_item">������ ��������� �������</a><a href="17501-2" class="ch402_smg_item">����������������� � ���������</a><a href="17501-1" class="ch402_smg_item">����� � ���������</a><a href="17401" class="ch402_smg_item">�������������</a><a href="8854216" class="ch402_smg_item">������ �������</a><a href="20101" class="ch402_smg_item">�������������� ���������</a><div class="ch402_smg_title">���������� ����� �������</div><a href="5691818" class="ch402_smg_item">������������ ������</a><a href="5691818-5" class="ch402_smg_item">������ ������</a><div class="ch402_smg_title">������ ���������</div><a href="597815" class="ch402_smg_item">������������ ������ ���������</a><a href="11201-4" class="ch402_smg_item">����� ������ ���������</a><a href="11201-7" class="ch402_smg_item">����� ������ ���������</a><a href="14301" class="ch402_smg_item">������������ ������ ���������</a><a href="20201" class="ch402_smg_item">������������</a><div class="ch402_smg_title">����������� ������</div><a href="16901" class="ch402_smg_item">����� ������ ���������</a><a href="17501" class="ch402_smg_item">�������� ��������������� ����</a><a href="17101" class="ch402_smg_item">������������ ��������</a><a href="17201" class="ch402_smg_item">������������� ��������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">�����-������</div><a href="13501" class="ch402_smg_item">������</a><a href="4799810" class="ch402_smg_item">��������</a><div class="ch402_smg_title">������ � ��������</div><a href="https://www.facebook.com/spravoross/" class="ch402_smg_item">Facebook</a><a href="https://vk.com/spravo_ross" class="ch402_smg_item">VKontakte</a><a href="https://twitter.com/spravoross" class="ch402_smg_item">Twitter</a><a href="https://ok.ru/spravoross" class="ch402_smg_item">�������������</a><a href="https://www.instagram.com/spravoross/" class="ch402_smg_item">Instagram</a><a href="https://www.youtube.com/channel/UC8ruQ9ENXgu9MBV8E5e3KBg" class="ch402_smg_item">YouTube</a><div class="ch402_smg_title">������ � ��������</div><a href="http://mironov.ru/" class="ch402_smg_item">���� ������ ��������</a><a href="http://www.spravmir.ru/" class="ch402_smg_item">�������� ������������� ���</a><a href="http://spravedlivo.center/" class="ch402_smg_item">����� ������ ���� �������</a><a href="http://spravsila.ru/" class="ch402_smg_item">������������ ����</a><a href="http://sdwomen.ru/" class="ch402_smg_item">������-��������������� ���� ������ ������</a><a href="http://greenpatrol.ru/" class="ch402_smg_item">������ �������</a><a href="https://domsovet.tv/" class="ch402_smg_item">��������</a><div class="ch402_smg_title">�������</div><a href="search" class="ch402_smg_item">�����</a><a href="http://www.spravedlivo.ru/rss/spravedlivo.xml" class="ch402_smg_item">RSS</a></div></div></div><div id="ch402a" class="ch402_stripe_menu"><div class="ch402_segment_menu"><div class="ch402_segment_menu_group"><div class="ch402_smg_title">� ������</div><a href="7634910" class="ch402_smg_item">��������� ������</a><a href="16101" class="ch402_smg_item">������������ ���������</a><a href="4774510" class="ch402_smg_item">������� ������</a><a href="4842610" class="ch402_smg_item">�����</a><a href="4818710" class="ch402_smg_item">���������</a><a href="4774710" class="ch402_smg_item">��������</a><a href="18101" class="ch402_smg_item">��������</a><a href="4799810" class="ch402_smg_item">��������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">��� ���� ��� � ������</div><a href="206315" class="ch402_smg_item">������������ ������</a><a href="11201-2" class="ch402_smg_item">��������� ���������� �� ������</a><a href="11201-3" class="ch402_smg_item">��������� ������������ ������</a><a href="11201-4" class="ch402_smg_item">����� ������ ���������</a><a href="11201-5" class="ch402_smg_item">����������� ����� ������</a><a href="11201-7" class="ch402_smg_item">������ ���������</a><a href="11201-6" class="ch402_smg_item">����������� ����������-����������� ��������</a><div class="ch402_smg_title">����������� ������</div><a href="16901" class="ch402_smg_item">����� ������ ���������</a><a href="17501" class="ch402_smg_item">�������� ��������������� ����</a><a href="17101" class="ch402_smg_item">������������ ��������</a><a href="17201" class="ch402_smg_item">������������� ��������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">��������� ����������</div><a href="7634910" class="ch402_smg_item">��������� ������</a><a href="4838310" class="ch402_smg_item">25 ������������ �������</a><a href="7783310" class="ch402_smg_item">������������ �������</a><a href="8854316" class="ch402_smg_item">����� ������ ��������</a><a href="18201" class="ch402_smg_item">��� ����������</a><div class="ch402_smg_title">��������� �������</div><a href="http://spravedlivo.center/" class="ch402_smg_item">������ ������ ���� �������</a><a href="8097616" class="ch402_smg_item">��������</a><a href="6666716" class="ch402_smg_item">������������ ������</a><a href="7346816" class="ch402_smg_item">��������� �������� ������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">�����-������</div><a href="13501" class="ch402_smg_item">������</a><a href="4799810" class="ch402_smg_item">��������</a><div class="ch402_smg_title">������ � ��������</div><a href="https://www.facebook.com/spravoross/" class="ch402_smg_item">Facebook</a><a href="https://vk.com/spravo_ross" class="ch402_smg_item">VKontakte</a><a href="https://twitter.com/spravoross" class="ch402_smg_item">Twitter</a><a href="https://ok.ru/spravoross" class="ch402_smg_item">�������������</a><a href="https://www.instagram.com/spravoross/" class="ch402_smg_item">Instagram</a><a href="https://www.youtube.com/channel/UC8ruQ9ENXgu9MBV8E5e3KBg" class="ch402_smg_item">YouTube</a></div></div></div><div id="ch402b" class="ch402_stripe_menu"><div class="ch402_segment_menu"><div class="ch402_segment_menu_group"><div class="ch402_smg_title">����� ������</div><a href="9100510" class="ch402_smg_item">������ ������� ���������� ���������� �� ������� ��������� ������ ������� ��������������� ��������</a><a href="9097010" class="ch402_smg_item">������ ������� ������� ������������� ����������� ����������� � �����������</a><a href="9094010" class="ch402_smg_item">�� ������� ������� � ������� "������ ������ ���������<br> ����������� ��������"</a><a href="9089310" class="ch402_smg_item">������ �������: �� �� ������ ������� �� ���������� ������� � �� ��������� ����������������� ������������</a><a href="9092810" class="ch402_smg_item">������ �������: ������ ���������� ���������� �� ����� �� ������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">��������������� ���� ��</div><a href="12001" class="ch402_smg_item">������� ������</a><a href="5334616" class="ch402_smg_item">������������ ���������</a><a href="17401" class="ch402_smg_item">�������������</a><a href="8854216" class="ch402_smg_item">������ �������</a><a href="20101" class="ch402_smg_item">�������������� ���������</a><div class="ch402_smg_title">���������� ����� �������</div><a href="5691818" class="ch402_smg_item">������������ ������</a><div class="ch402_smg_title">������ ��������� ������</div><a href="20201" class="ch402_smg_item">������������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">��������� �������</div><a href="http://spravedlivo.center/" class="ch402_smg_item">������ ������ ���� �������</a><a href="8097616" class="ch402_smg_item">��������</a><a href="6666716" class="ch402_smg_item">������������ ������</a><a href="7346816" class="ch402_smg_item">��������� �������� ������</a><div class="ch402_smg_title">������������� ��������������</div><a href="6949416" class="ch402_smg_item">���������� � �����������</a><a href="6949516" class="ch402_smg_item">������������ ��������������</a><a href="6949616" class="ch402_smg_item">���������������� ��������������</a><a href="4189618" class="ch402_smg_item">���������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">�������</div><a href="11101" class="ch402_smg_item">����� ��������</a><a href="17301" class="ch402_smg_item">����������</a><a href="14001" class="ch402_smg_item">������ � ���</a><a href="13701" class="ch402_smg_item">����</a><a href="13801" class="ch402_smg_item">�����</a><a href="13901" class="ch402_smg_item">�����</a><a href="13501" class="ch402_smg_item">������</a><div class="ch402_smg_title">�����-������</div><a href="13501" class="ch402_smg_item">������</a><a href="4799810" class="ch402_smg_item">��������</a></div></div></div><div id="ch402c" class="ch402_stripe_menu"><div class="ch402_segment_menu"><div class="ch402_segment_menu_group"><div class="ch402_smg_title">����������� ������</div><a href="206315" class="ch402_smg_item">������������</a><a href="11201-2" class="ch402_smg_item">��������� ����������</a><a href="11201-3" class="ch402_smg_item">���������</a><a href="11201-5" class="ch402_smg_item">�� ������</a><a href="11201-6" class="ch402_smg_item">����</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">������ �������</div><a href="206315-1" class="ch402_smg_item">���������</a><a href="http://mironov.ru/" class="ch402_smg_item">����������� ����</a><a href="http://sergey-mironov.livejournal.com/" class="ch402_smg_item">����� ������</a><a href="https://www.facebook.com/mironov.online" class="ch402_smg_item">Facebook</a><a href="https://twitter.com/mironov_ru" class="ch402_smg_item">Twitter</a><a href="https://vk.com/mironov_sergey" class="ch402_smg_item">���������</a><a href="https://ok.ru/sergeymironov" class="ch402_smg_item">�������������</a><a href="https://www.instagram.com/mironov.online/" class="ch402_smg_item">Instagram</a><div class="ch402_smg_title">����������� ������</div><a href="16901" class="ch402_smg_item">����� ������ ���������</a><a href="17501" class="ch402_smg_item">�������� ��������������� ����</a><a href="17101" class="ch402_smg_item">������������ ��������</a><a href="17201" class="ch402_smg_item">������������� ��������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">������� � ��������������� ����&nbsp;��</div><a href="17501-3" class="ch402_smg_item">����������� �������</a><a href="17501" class="ch402_smg_item">������ ��������� �������</a><a href="17501-2" class="ch402_smg_item">����������������� � ���������</a><a href="17501-1" class="ch402_smg_item">����� � ���������</a><div class="ch402_smg_title">���������� ����� �������</div><a href="5691818-5" class="ch402_smg_item">������ ������ ������</a><div class="ch402_smg_title">������ ���������</div><a href="597815" class="ch402_smg_item">������������ ������ ������</a><a href="11201-4" class="ch402_smg_item">����� ������ ���������</a><a href="11201-7" class="ch402_smg_item">����� ������ ���������</a><a href="14301" class="ch402_smg_item">������������ ������ ���������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">�����-������</div><a href="13501" class="ch402_smg_item">������</a><a href="4799810" class="ch402_smg_item">��������</a></div></div></div><div id="ch402d" class="ch402_stripe_menu"><div class="ch402_segment_menu"><div class="ch402_segment_menu_group"><div class="ch402_smg_title">����������� ����</div><a href="7634910" class="ch402_smg_item">��������� ������</a><a href="4838310" class="ch402_smg_item">25 ������������ �������</a><a href="7783310" class="ch402_smg_item">������������ �������</a><a href="4774510" class="ch402_smg_item">������� ������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">�� �������� ���</div><a href="8873910" class="ch402_smg_item">����������� ����� ���</a><a href="8866816" class="ch402_smg_item">�������� ���� �� �����</a><a href="8864310" class="ch402_smg_item">����� �� ������� ���</a><a href="8859310" class="ch402_smg_item">����� ������������� � ��</a><a href="8857510" class="ch402_smg_item">������������� ���������</a><a href="8850610" class="ch402_smg_item">��������� ���������</a><a href="8841110" class="ch402_smg_item">������� � ������������� �������������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">��������� ����������</div><a href="8854316" class="ch402_smg_item">����� ������ ��������</a><a href="8878316" class="ch402_smg_item">�������������� ����������� ������</a><a href="7603110" class="ch402_smg_item">������������� ���� � 2016</a><a href="18201" class="ch402_smg_item">��� ����������</a></div><div class="ch402_segment_menu_group"><div class="ch402_smg_title">��������� �������</div><a href="http://spravedlivo.center/" class="ch402_smg_item">������ ������ ���� �������</a><a href="8097616" class="ch402_smg_item">��������</a><a href="6666716" class="ch402_smg_item">������������ ������</a><a href="7346816" class="ch402_smg_item">��������� �������� ������</a></div></div></div><style>
+
+
+    .ch411_stripe
+    {
+
+        width: 100%;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .ch411_segment
+    {
+
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+
+    .ch411_slide
+    {
+        position: relative;
+        display: none; float: left;
+        width: 100%;
+        max-height: 600px; overflow-y: hidden;
+    }
+
+
+    .ch411_slide_image
+    {
+        width: 100%;
+    }
+
+    .ch411_slide_liner
+    {
+        width: 100%; max-width: 600px;
+        height: 2px;
+        background-color: #ffffff;
+
+        margin-top: 10px; margin-bottom: 10px;
+
+    }
+
+
+
+
+    .ch411_pstrset
+    {
+        position: absolute; bottom: 0px; left: 0px;
+        display: block;
+        text-align: center;
+        width: 100%;
+        max-height: 300px;
+        background: url('/core/ti/tfbg.png');
+    }
+
+    .ch411_pstrttl
+    {
+        position: relative;
+        display: block;
+        font-family: 'PT Serif', serif; font-size: 48px; font-weight: bold; color: #ffffff; line-height: 48px;
+        text-align: center;
+        padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;
+        margin-top: 100px;
+    }
+
+
+
+    .ch411_pstrtxt
+    {
+        position: relative;
+        display: block;
+
+        font-family: 'PT Sans', sans-serif; font-size: 18px; color: #ffffff; line-height: 19px;
+        text-align: center;
+        padding-left: 200px; padding-right: 200px; padding-top: 10px; padding-bottom: 10px;
+
+    }
+
+
+    .firstposter
+    {
+        display: block;
+    }
+
+    .posterdotset
+    {
+        position: absolute; bottom: 0px; left: 0px;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 30px; max-height: 30px;
+
+    }
+
+    .posterfulldot
+    {
+        position: relative;
+        display: inline-block;
+        width: 16px; height: 16px;
+        background-color: #ffffff;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+    .posteremptydot
+    {
+        position: relative;
+        display: inline-block;
+        width: 16px; height: 16px;
+        background-color: #800000;
+
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch411_pstrttl
+        {
+            font-size: 40px; line-height: 40px;
+        }
+
+        .ch411_pstrtxt
+        {
+            font-size: 18px;
+        }
+
+        .ch411_slide_liner
+        {
+            margin-top: 10px;
+        }
+
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch411_pstrttl
+        {
+            font-size: 36px; line-height: 36px;
+        }
+
+        .ch411_pstrtxt
+        {
+            display: none;
+        }
+
+        .ch411_slide_liner
+        {
+            display: none;
+        }
+
+    }
+
+    @media (max-width: 799px)
+    {
+
+        .ch411_pstrttl
+        {
+            font-size: 32px; line-height: 32px;
+        }
+
+
+
+        .ch411_pstr
+        {
+            width: 100%;
+            padding-bottom: 0px;
+        }
+
+        .ch411_lstitm
+        {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 500px)
+    {
+
+        .ch411_stripe
+        {
+            display: none;
+        }
+
+        .ch411_pstrttl
+        {
+            position: absolute; bottom: 0px;
+            font-size: 24px; line-height: 24px;
+
+        }
+    }
+
+
+</style><div class="ch411_stripe"><div class="ch411_segment"><a href="9100510" class="ch411_slide firstposter"><img class="ch411_slide_image" src="http://spravedlivo.ru/pictbank/036/03634116000900.jpg"><div class="ch411_pstrset"><div class="ch411_pstrttl">������ ������� ���������� ���������� �� ������� ��������� ������ ������� ��������������� ��������</div><div class="ch411_pstrtxt"></div></div></a></div></div><style>
+
+    .ch421_stripe
+    {
+        width: 100%;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .ch421_segment
+    {
+        width: 1560px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .ch421_heading
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 0px;
+    }
+
+    .ch421_ending
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 40px;
+    }
+
+
+    .ch421_entitle
+    {
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+        text-decoration: none; text-align: left;
+
+    }
+
+    .ch421_navilink
+    {
+        display: inline-block;
+        font-family: 'PT Sans', sans-serif; font-size: 14px; color: #96191F; line-height: 14px; font-weight: bold;
+        text-decoration: none; text-transform: uppercase;
+        margin-right: 40px;
+    }
+
+
+    .ch421_item
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 340px;
+        background-color: #ffffff;
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+    .ch421_first
+    {
+        display: none;
+    }
+
+
+    .ch421_item_image
+    {
+        width: 100%;
+    }
+
+
+    .ch421_item_title
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 22px; color: #96191F; line-height: 24px; font-weight: bold;
+        margin-top: 20px; margin-bottom: 0px;
+    }
+
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch421_segment
+        {
+            width: 1200px;
+        }
+
+        .ch421_item
+        {
+            width: 250px;
+        }
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch421_segment
+        {
+            width: 800px;
+            padding: 10px;
+        }
+
+        .ch421_item
+        {
+            width: 360px;
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 799px)
+    {
+        .ch421_segment
+        {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .ch421_item
+        {
+            width: 45%;
+            margin-top: 40px; margin-bottom: 40px;
+        }
+
+    }
+
+    @media (max-width: 500px)
+    {
+        .ch421_first
+        {
+            display: inline-block;
+        }
+
+
+        .ch421_entitle
+        {
+            font-size: 32px; line-height: 32px;
+        }
+
+        .ch421_item
+        {
+            margin: 0px; margin-top: 10px; margin-bottom: 40px;
+            width: 100%;
+        }
+    }
+
+
+</style><div class="ch416_stripe"><div class="ch416_segment"><a href="9100510" class="ch421_item ch421_first"><img class="ch421_item_image" src="http://spravedlivo.ru/pictbank/036/03634116000900.jpg"><div class="ch421_item_title">������ ������� ���������� ���������� �� ������� ��������� ������ ������� ��������������� ��������</div></a><a href="9097010" class="ch421_item"><img class="ch421_item_image" src="http://spravedlivo.ru/pictbank/036/03699408000450.jpg"><div class="ch421_item_title">������ ������� ������� ������������� ����������� ����������� � �����������</div></a><a href="9094010" class="ch421_item"><img class="ch421_item_image" src="http://spravedlivo.ru/pictbank/038/03816608000450.jpg"><div class="ch421_item_title">�� ������� ������� � ������� "������ ������ ���������<br> ����������� ��������"</div></a><a href="9089310" class="ch421_item"><img class="ch421_item_image" src="http://spravedlivo.ru/pictbank/036/03692508000450.jpg"><div class="ch421_item_title">������ �������: �� �� ������ ������� �� ���������� ������� � �� ��������� ����������������� ������������</div></a><a href="9092810" class="ch421_item"><img class="ch421_item_image" src="http://spravedlivo.ru/pictbank/038/03815508000450.jpg"><div class="ch421_item_title">������ �������: ������ ���������� ���������� �� ����� �� ������</div></a></div></div><style>
+
+
+    .ch426_stripe
+    {
+
+        width: 100%;
+
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .ch426_segment
+    {
+
+        width: 100%;
+        margin: 0px;
+
+        padding: 0px;
+
+    }
+
+
+    .ch426_slide_l, .ch426_slide_s
+    {
+
+        display: block;
+        width: 100%;
+
+        margin: 0px;
+        padding-bottom: -4px;
+
+        background-color: #ff0000;
+        border: 0px;
+    }
+
+    .ch426_slide_s
+    {
+        display: none;
+    }
+
+    .ch426_slide_image
+    {
+
+        display: block;
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 0px;
+        border: 0px;
+    }
+
+
+    @media (max-width: 1579px)
+    {
+
+    }
+
+    @media (max-width: 1199px)
+    {
+
+
+    }
+
+    @media (max-width: 799px)
+    {
+
+        .ch426_slide_l
+        {
+            display: none;
+        }
+
+        .ch426_slide_s
+        {
+            display: block;
+        }
+    }
+
+    @media (max-width: 500px)
+    {
+
+    }
+
+
+</style><div class="ch426_stripe"><div class="ch426_segment"><a href="http://tehosmotr.spravedlivo.ru/" class="ch426_slide_l"><img class="ch426_slide_image" src="core/ti/to_banner_1600x150.jpg"></a><a href="http://tehosmotr.spravedlivo.ru/" class="ch426_slide_s"><img class="ch426_slide_image" src="core/ti/to_banner_800x150.jpg"></a></div></div><style>
+
+
+    .ch412_stripe
+    {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        background-color: #fab512;
+        margin-top: 0px;
+    }
+
+    .ch412_segment
+    {
+        display: inline-block;
+        width: 1560px;
+        margin: 0 auto;
+
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .ch412_heading
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 0px;
+        vartical-align: top;
+    }
+
+    .ch412_ending
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 40px;
+    }
+
+
+    .ch412_entitle
+    {
+        position: relative;
+        display: inline-block;
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+        text-decoration: none;
+        vartical-align: top;
+    }
+
+    .ch412_navilink
+    {
+        position: relative;
+        display: inline-block;
+
+        font-family: 'PT Sans', sans-serif; font-size: 14px; color: #96191F; line-height: 54px; font-weight: bold;
+        text-decoration: none; text-transform: uppercase;
+        margin-left: 40px;
+        vartical-align: top;
+    }
+
+
+    .ch412_column_group
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 340px;
+
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+
+
+
+
+    .ch412_enttlset
+    {
+        display: block; float: left;
+        width: 100%;
+        text-decoration: none; text-align: left;
+        margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
+        background-color: #fab512;
+    }
+
+
+    .ch412_enttl
+    {
+        display: block; float: left;
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+        text-decoration: none; text-align: left;
+        margin-left: 40px; margin-top: 20px; margin-right: 40px;
+    }
+
+    .ch412_navilnk
+    {
+        display: block; float: left;
+        font-family: 'PT Sans', sans-serif; font-size: 19px; color: #96191F; line-height: 26px; font-weight: bold;
+        text-decoration: none;
+        margin-top: 40px; margin-left: 10px; margin-right: 20px;
+    }
+
+
+
+    .ch412_cnvs
+    {
+        display: block; float: left;
+        width: 100%;
+
+        text-decoration: none;
+        margin-top: 0px;
+        padding-top: 0px; padding-bottom: 40px; padding-left: 20px; padding-right: 0px;
+        background-color: #fab512;
+    }
+
+    .ch412_grp
+    {
+        display: block; float: left;
+        width: 22%;
+
+        text-align: left;
+        margin-top: 20px; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;
+        padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;
+
+
+    }
+
+
+    .ch412_grpitm, .ch412_grpitma, .ch412_grpitmt
+    {
+        display: block; float: none;
+        text-decoration: none; text-align: left;
+        margin-top: 20px;
+        padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;
+        background-color: #ffffff;
+    }
+
+    .ch412_grpitma
+    {
+        background-color: #96191F;
+    }
+
+    .ch412_grpitmt
+    {
+        padding-left: 0px; padding-bottom: 0px;
+        background-color: #fab512;
+    }
+
+    .ch412_grpitm_txt, .ch412_grpitm_txta, .ch412_grpitm_txtt
+    {
+        display: block; float: none;
+        height: 100px; overflow-y: hidden;
+        font-family: 'PT Sans', sans-serif; font-size: 19px; color: #000000; line-height: 20px;
+    }
+
+    .ch412_grpitm_txta
+    {
+        color: #ffffff;
+    }
+
+    .ch412_grpitm_rd, .ch412_grpitm_rda
+    {
+        display: block; float: none;
+        height: 20px; width: 100%;
+        font-family: 'PT Sans', sans-serif; font-size: 12px; color: #000000; line-height: 12px;
+        text-align: right;
+    }
+
+    .ch412_grpitm_rda
+    {
+        text-align: left;
+        color: #ffffff;
+    }
+
+
+
+    .ch412_grpttl
+    {
+        display: block; float: none;
+        text-decoration: none; text-align: left;
+        padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;
+        height: 100px; overflow-y: hidden;
+        font-family: 'PT Sans', sans-serif; font-size: 18px; color: #000000; line-height: 20px;
+    }
+
+    .ch412_grpitm_txtt
+    {
+        display: block; float: none;
+        height: 54px; overflow-y: hidden;
+        margin-top: 76px;
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+    }
+
+
+
+    .ch412_ftr
+    {
+        display: block; float: left;
+        width: 100%;
+        text-align: left;
+        margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
+        padding-left: 0px; padding-bottom: 0px;
+        background-color: #d0d0d0;
+    }
+
+
+    .ch412_grpitm:hover, .ch412_grpitmr, .ch412_ftrlnk:hover
+    {
+        color: #ff0000;
+    }
+
+
+
+    .ch412_double_item
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 340px; height: 300px;
+        background-color: #ffffff;
+        padding: 0px; padding-bottom: 0px;
+        margin-top: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+
+    .ch412_double_item_poster
+    {
+        position: absolute;
+        height: 300px;
+
+
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray; /* IE 6-9 */
+        opacity: 0.5;
+        transition: 0.7s ease-in-out;
+    }
+
+    .ch412_double_item_poster:hover
+    {
+        opacity: 1;
+    }
+
+
+    .ch412_double_item_title
+    {
+        position: absolute; bottom: 20px; left: 20px;
+        display: inline-block;
+        width: 280px;
+        font-family: 'PT Sans', sans-serif; font-size: 20px; color: #000000; line-height: 22px; font-weight: bold;
+
+    }
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch412_segment
+        {
+            width: 1200px;
+        }
+
+        .ch412_column_group
+        {
+            width: 250px;
+
+        }
+
+        .ch412_double_item_poster
+        {
+            left: -100px;
+
+        }
+
+
+        .ch412_double_item_title
+        {
+            bottom: 10px; left: 10px;
+            font-size: 18px; line-height: 19px;
+            width: 230px;
+        }
+
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch412_segment
+        {
+            width: 800px;
+            padding: 10px;
+        }
+
+        .ch412_column_group
+        {
+            width: 350px;
+        }
+
+        .ch412_double_item_poster
+        {
+            left: 0px;
+
+        }
+
+
+        .ch412_double_item_title
+        {
+            font-size: 20px; line-height: 21px;
+            width: 200px;
+        }
+
+
+    }
+
+    @media (max-width: 799px)
+    {
+        .ch412_segment
+        {
+            width: 100%;
+            padding: 0px;
+        }
+
+        .ch412_column_group
+        {
+            width: 45%;
+
+        }
+
+    }
+
+    @media (max-width: 500px)
+    {
+        .ch412_entitle
+        {
+            font-size: 32px; line-height: 32px;
+        }
+
+        .ch412_column_group
+        {
+            width: 100%;
+        }
+
+        .ch412_item_image
+        {
+            display: block;
+        }
+    }
+
+
+
+
+</style><div class="ch412_stripe"><div class="ch412_segment ch412_heading"><a href="11101" class="ch412_entitle">�������</a><a href="11101" class="ch412_navilink">&gt; ��� �������</a><a href="14001" class="ch412_navilink">&gt; ���� ���������� ���</a><a href="13801" class="ch412_navilink">&gt; �� �����</a></div><div class="ch412_segment"><div class="ch412_column_group"><a href="9100610" class="ch412_double_item"><img class="ch412_double_item_poster" src="http://spravedlivo.ru/pictbank/036/03631908000450.jpg"><div class="ch412_double_item_title">������ ������� ����������� ����� ����� �������� �� ������ ���������� �������</div></a><a href="9101710" class="ch412_grpitm"><div class="ch412_grpitm_rd">14:00</div><div class="ch412_grpitm_txt">������ ���������: ��� � �� ���� ��������� �������� � �� �����, ��� � ��������</div></a><a href="9101510" class="ch412_grpitm"><div class="ch412_grpitm_rd">11:30</div><div class="ch412_grpitm_txt">������� �������: ��������� �������� ������ �� ���� �� ������� ����� ��������� ��������������</div></a><a href="9101410" class="ch412_grpitm"><div class="ch412_grpitm_rd">11:29</div><div class="ch412_grpitm_txt">��������� ���������: ��� ���������� ������� ������� ��������� �������</div></a><a href="9101210" class="ch412_grpitm"><div class="ch412_grpitm_rd">05 ��������</div><div class="ch412_grpitm_txt">������ �������: �� ������� ���������� ������������ ��������� � ������������ ��������</div></a></div><div class="ch412_column_group"><a href="9100710" class="ch412_grpitm"><div class="ch412_grpitm_rd">05 ��������</div><div class="ch412_grpitm_txt">������ �������: ������������� ��������� ����� ������������</div></a><a href="9100510" class="ch412_grpitm"><div class="ch412_grpitm_rd">05 ��������</div><div class="ch412_grpitm_txt">������ ������� ���������� ���������� �� ������� ��������� ������ ������� ��������������� ��������</div></a><a href="9100410" class="ch412_grpitm"><div class="ch412_grpitm_rd">05 ��������</div><div class="ch412_grpitm_txt">������ �������: ��� �������� ������ ���������� ������� �������� �������� � ������</div></a><a href="9099910" class="ch412_grpitm"><div class="ch412_grpitm_rd">05 ��������</div><div class="ch412_grpitm_txt">������ �������: ��������� �������������� � ������ ����� ������ � ��������� ������ ��</div></a><a href="9099810" class="ch412_grpitm"><div class="ch412_grpitm_rd">05 ��������</div><div class="ch412_grpitm_txt">������ �������: ������ "��" ��������� � ������������� ���������� ������� �������������</div></a><a href="9099610" class="ch412_grpitm"><div class="ch412_grpitm_rd">05 ��������</div><div class="ch412_grpitm_txt">������ �������: ����� ������ ���� ������� � ������������ �� ��� ���� ����� ������� ����� 12 ��������� ������</div></a></div><div class="ch412_column_group"><a href="9099210" class="ch412_grpitm"><div class="ch412_grpitm_rd">05 ��������</div><div class="ch412_grpitm_txt">�������� �������: ����� ��������� ����������� ����������� ���������� (�����)</div></a><a href="9099110" class="ch412_grpitm"><div class="ch412_grpitm_rd">04 ��������</div><div class="ch412_grpitm_txt">������ �����: ���� � �������� �������������� Youtube-������� �����������</div></a><a href="9099010" class="ch412_grpitm"><div class="ch412_grpitm_rd">04 ��������</div><div class="ch412_grpitm_txt">������ ���������: ���������� ������ ��������� ��������������� �� ��������� � ��������� ������ �������� �����������</div></a><a href="9098910" class="ch412_grpitm"><div class="ch412_grpitm_rd">04 ��������</div><div class="ch412_grpitm_txt">������ ���������: ���� ���������� ����� �� ����������� ������ ������������ ����� ������ �� ������ ��������</div></a><a href="9056110" class="ch412_double_item"><img class="ch412_double_item_poster" src="http://spravedlivo.ru/pictbank/037/03788408000450.jpg"><div class="ch412_double_item_title">������ ������� � ����� ���������� "������-24"</div></a></div><div class="ch412_column_group"><a href="9098110" class="ch412_grpitm"><div class="ch412_grpitm_rd">04 ��������</div><div class="ch412_grpitm_txt">������ ������� ������ ������� � ������������ ���������� ������� �������� ���������</div></a><a href="13501" class="ch412_grpitmt"><div class="ch412_grpitm_txtt">������</div></a><a href="9097210" class="ch412_grpitma"><div class="ch412_grpitm_rda">7 ��������, 15:15. ������</div><div class="ch412_grpitm_txta">������ ������� �������� ������� � ����������� ���������� �� ��������� ��������</div></a><a href="9096810" class="ch412_grpitma"><div class="ch412_grpitm_rda">9 ��������, 12:00</div><div class="ch412_grpitm_txta">������ ������� ����������� �� ������� ���� ������ �� ������������� ������� � 73</div></a><a href="9098410" class="ch412_grpitma"><div class="ch412_grpitm_rda">10 ��������, 13.00</div><div class="ch412_grpitm_txta">�����-����������� ������ �������� �� ������ ������� ��� �����������</div></a><a href="9078910" class="ch412_grpitma"><div class="ch412_grpitm_rda">26-27 ��������. �����-���������</div><div class="ch412_grpitm_txta">III ������������� ��������� �������� ����� "������������-2018"</div></a></div></div></div><style>
+
+
+
+    .ch413_stripe
+    {
+        width: 100%;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+
+    .ch413_segment
+    {
+        width: 1560px;
+        margin: 0 auto;
+
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .ch413_heading
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 0px;
+    }
+
+    .ch413_ending
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 40px;
+    }
+
+
+    .ch413_entitle
+    {
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+        text-decoration: none; text-align: left;
+
+    }
+
+    .ch413_navilink
+    {
+        display: inline-block;
+        font-family: 'PT Sans', sans-serif; font-size: 14px; color: #96191F; line-height: 14px; font-weight: bold;
+        text-decoration: none; text-transform: uppercase;
+        margin-right: 40px;
+    }
+
+
+    .ch413_item
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 465px; height: 400px;
+        background-color: #ffffff;
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+
+
+    .ch413_item_image
+    {
+        width: 100%;
+    }
+
+
+    .ch413_item_title
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 22px; color: #000000; line-height: 24px; font-weight: bold;
+        margin-top: 20px; margin-bottom: 0px;
+    }
+
+    .ch413_item_descr
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 16px; color: #000000; line-height: 18px; font-weight: normal;
+        margin-top: 10px;
+    }
+
+
+
+
+
+    .ch413_enttlset
+    {
+        display: block; float: left;
+        width: 100%;
+        text-decoration: none; text-align: left;
+        margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
+        background-color: #f3f3f3;
+    }
+
+
+    .ch413_enttl
+    {
+        display: block; float: left;
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+        text-decoration: none; text-align: left;
+        margin-left: 40px; margin-top: 20px; margin-right: 40px;
+    }
+
+
+
+    .ch413_cnvs
+    {
+        display: block; float: left;
+        width: 100%;
+
+        text-decoration: none;
+        margin-top: 0px;
+        padding-top: 0px; padding-bottom: 40px; padding-left: 20px; padding-right: 0px;
+        background-color: #f3f3f3;
+
+    }
+
+    .ch413_plt
+    {
+        position: relative;
+        display: block; float: left;
+        width: 30%;
+        height: 340px; overflow-y: hidden;
+        text-align: left; text-decoration: none;
+        margin-top: 20px; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;
+        padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;
+        background-color: #ffffff;
+
+    }
+
+    .ch413_plticn
+    {
+        position: relative;
+        display: block;  float: left;
+        width: 140px;
+        padding-top: 20px; padding-left: 20px;
+
+    }
+
+    .ch413_pltttl
+    {
+        position: relative;
+        display: block; float: left;
+        width: 300px;
+        padding: 20px;
+        padding-top: 40px;
+        font-family: 'PT Sans', sans-serif; font-size: 20px; color: #000000; line-height: 24px; font-weight: normal;
+        text-decoration: none;
+    }
+
+    .ch413_plttxt
+    {
+        position: relative;
+        display: block; float: left;
+        width: 100%;
+        font-family: 'PT Sans', sans-serif; font-size: 16px; color: #000000; line-height: 22px; font-weight: normal;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .ch413_navilnk
+    {
+        display: block; float: left;
+        font-family: 'PT Sans', sans-serif; font-size: 19px; color: #96191F; line-height: 26px; font-weight: bold;
+        text-decoration: none;
+        margin-top: 40px; margin-left: 10px; margin-right: 20px;
+    }
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch413_segment
+        {
+            width: 1200px;
+        }
+
+        .ch413_item
+        {
+            width: 345px;
+        }
+
+        .ch413_pltttl
+        {
+            width: 200px;
+        }
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch413_segment
+        {
+            width: 800px;
+            padding: 10px;
+        }
+
+        .ch413_item
+        {
+            width: 240px;
+            margin: 10px;
+        }
+
+        .ch413_plttxt
+        {
+            display: none;
+        }
+
+    }
+
+    @media (max-width: 799px)
+    {
+        .ch413_segment
+        {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .ch413_item
+        {
+            width: 50%;
+            margin: 0px;
+            padding-bottom: 40px;
+        }
+
+    }
+
+    @media (max-width: 500px)
+    {
+        .ch413_entitle
+        {
+            font-size: 32px; line-height: 32px;
+        }
+
+        .ch413_item_image
+        {
+            display: block;
+        }
+    }
+
+
+</style><div class="ch413_stripe"><div class="ch413_segment ch413_heading"><div class="ch413_entitle">����</div></div><div class="ch413_segment"><a href="9044710" class="ch413_item"><img class="ch413_plticn" src="http://spravedlivo.ru/pictbank/036/03628902400240.jpg"><div class="ch413_pltttl"><b>������ �������</b> �� ���������� ������ ���������� �������</div><div class="ch413_plttxt">"��� ������ ����� ������� �� ������������ ��������. �� ����� ����� ���� ������� ���� ������� 337 ��������� "��" ����������� ��, � 90% ��������� � ������. ����� ��� �������? ��� �� �� ���� ��������.
+    �������, ������� �������, � ������, ��� � ��� ��� �� ���������, �� �������������, �� ���������� ��������� ���������� �� ���� �����".</div></a><a href="9042110" class="ch413_item"><img class="ch413_plticn" src="http://spravedlivo.ru/pictbank/036/03628402400240.jpg"><div class="ch413_pltttl"><b>������� �������</b> � ������� ��������� �������������� ����������� �������� � �������������� ������� ���������� ������� ��</div><div class="ch413_plttxt">"�� ��������� �� ������������ ����������������� �������, � ������������� �� �������������� �������, ������� ������ "������������ �������", ��� ���� ��������� �� 2030 ���� �� ��������� ����������� �������� � ������� � ����������������� ���������� �������..."</div></a><a href="9037910" class="ch413_item"><img class="ch413_plticn" src="http://spravedlivo.ru/pictbank/037/03778202400240.jpg"><div class="ch413_pltttl"><b>������� �������</b> � ������������ �������� �������������� ������� ����� ��-2018</div><div class="ch413_plttxt">"�������� ���������� ���� � ��� ��������� � ����� ������ ����. ��������� ���� ������� � �������, � �� �������� �������� ���������� ���������� �������� � ��� ���������, ���������, ���������� ������, � ����� ����� ������� ����, �, ������� ��, ���������� �������������� � �������� �������� � ������������� ����. ��� ������������ �� ������? ��� ����� ������ ������".</div></a><a href="9031610" class="ch413_item"><img class="ch413_plticn" src="http://spravedlivo.ru/pictbank/036/03628502400240.jpg"><div class="ch413_pltttl"><b>���� ����</b> � ���������� �������</div><div class="ch413_plttxt">"90% ��������� ������ ��������� ������ ��������������� ������ � ��������� ����������� ��������. �� ����������� ������������ ����� ������, ����, ������������� ������, ����������� ���������� ����� ��� � 100 ������� ������ ������ �����������, � ������� ������� ������� ������� 70 ����� �������"</div></a><a href="8998310" class="ch413_item"><img class="ch413_plticn" src="http://spravedlivo.ru/pictbank/036/03628702400240.jpg"><div class="ch413_pltttl"><b>���� �����</b> � ���������� ������� �������������</div><div class="ch413_plttxt">"�������� ��������� ����������������� (�������� ������� ������� ����� ������� ������� � ������� ���� ������� � ��������) � ��� �������� ��� ������� ��� "���������" ������� �� ������ ������: �������� ������������ �� ���������� "������ ������"</div></a><a href="8966310" class="ch413_item"><img class="ch413_plticn" src="http://spravedlivo.ru/pictbank/037/03726702400240.jpg"><div class="ch413_pltttl"><b>��������� ��������</b> � �������� ��������� � ����������� ������-2018</div><div class="ch413_plttxt">"�������, � ��� �� �� ����� �����������, ��� ���������� ���� ������� ������������� ����������� ������ � ������������ ��� �������������� ����, ������������ ������ ���������� ��������� ������ �� 7 ��� 2018 ���� � 204".</div></a></div><div class="ch413_segment ch413_ending"><a href="5334616" class="ch413_navilink">&gt;&nbsp;������������&nbsp;���������</a></div></div><style>
+
+    .ch414_stripe
+    {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .ch414_stripe_czpg
+    {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        background: url('http://www.spravedlivo.ru/core/ti/map1600.jpg');
+    }
+
+    .ch414_segment
+    {
+        width: 1560px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .ch414_heading
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 0px;
+    }
+
+    .ch414_ending
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 40px;
+    }
+
+
+    .ch414_entitle
+    {
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #96172C; line-height: 54px;
+        text-decoration: none; text-align: left;
+
+    }
+
+    .ch414_navilink
+    {
+        display: inline-block;
+        font-family: 'PT Sans', sans-serif; font-size: 28px; color: #96191F; line-height: 14px; font-weight: bold;
+        text-decoration: none; text-transform: uppercase;
+        margin-right: 40px;
+    }
+
+
+    .ch414_item
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 465px; height: 70px;
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+
+
+    .ch414_item_image
+    {
+        position: absolute; top: 10px; left: 10px;
+        width: 50px;
+    }
+
+
+    .ch414_item_title
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 19px; color: #000000; line-height: 20px; font-weight: normal;
+        margin-left: 70px; margin-top: 10px; margin-bottom: 0px;
+    }
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch414_segment
+        {
+            width: 1200px;
+        }
+
+        .ch414_item
+        {
+            width: 345px;
+        }
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch414_segment
+        {
+            width: 800px;
+            padding: 10px;
+        }
+
+        .ch414_item
+        {
+            width: 240px;
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 799px)
+    {
+        .ch414_segment
+        {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .ch414_item
+        {
+            width: 100%;
+            margin: 0px;
+            padding-bottom: 40px;
+        }
+
+    }
+
+    @media (max-width: 500px)
+    {
+        .ch414_entitle
+        {
+            font-size: 32px; line-height: 32px;
+        }
+
+        .ch414_item_image
+        {
+            display: block;
+        }
+    }
+
+</style><div class="ch414_stripe_czpg"><div class="ch414_segment ch414_heading"><a href="http://spravedlivo.center" class="ch414_entitle">������ ������ ���� �������<br>������������ ������</a></div><div class="ch414_segment"><a href="http://spravedlivo.center/articles/belgorod-dobilis-remonta-ventilyacii-v-mnogoetazhke" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb334.png"><div class="ch414_item_title">��������: �������� ������� ���������� � �����������</div></a><a href="http://spravedlivo.center/articles/tyumen-dobilis-remonta-podezdov" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb373.png"><div class="ch414_item_title">������: �������� ������� ���������</div></a><a href="http://spravedlivo.center/articles/bryansk-dobilis-remonta-kozyrka" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb335.png"><div class="ch414_item_title">������: �������� ������� �������� ��������</div></a><a href="http://spravedlivo.center/articles/barnaul-dobilis-uvelicheniya-pensii-na-800-rublej" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb322.png"><div class="ch414_item_title">�������: �������� ���������� ������ �� 800 ������</div></a><a href="http://spravedlivo.center/articles/vladimir-zastavili-zhek-sdelat-pereraschet-za-odn-na-17-000-rublej" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb000.png"><div class="ch414_item_title">��������: ��������� ��� ������� ���������� �� ��� �� 17 000 ������</div></a><a href="http://spravedlivo.center/articles/irkutsk-zastavili-chinovnikov-sdelat-avtobusnyj-marshrut-dlya-otdalennogo-mikrorajona" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb341.png"><div class="ch414_item_title">�������: ��������� ���������� ������� ���������� ������� � ���������� ����������</div></a><a href="http://spravedlivo.center/articles/vladimir-dobilis-remonta-krovli-kotoraya-protekala-30-let" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb000.png"><div class="ch414_item_title">��������: �������� ������� ������, ������� ��������� 30 ���</div></a><a href="http://spravedlivo.center/articles/blagoveshhensk-dobilis-pererascheta-za-otoplenie-v-607-000-rublej" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb331.png"><div class="ch414_item_title">������������: �������� ����������� �� ��������� � 607 000 ������</div></a><a href="http://spravedlivo.center/articles/vladimir-nakazali-kosmetologicheskij-kabinet-za-nekachestvennye-uslugi" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb000.png"><div class="ch414_item_title">��������: �������� ����������������� ������� �� �������������� ������</div></a><a href="http://spravedlivo.center/articles/ulan-ude-pomogli-vernut-v-magazin-brakovannyj-nasos-" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb304.png"><div class="ch414_item_title">����-���: ������� ������� � ������� ����������� �����</div></a><a href="http://spravedlivo.center/articles/rasskazyvaem-kak-vernut-tovar-v-magazin" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb000.png"><div class="ch414_item_title">������������, ��� ������� ����� � �������</div></a><a href="http://spravedlivo.center/articles/cheboksary-dobilis-svorachivaniya-strannoj-programmy-energosberezheniya" class="ch414_item"><img class="ch414_item_image" src="core/ti/herbs/herb000.png"><div class="ch414_item_title">���������: �������� ������ �������� ��������� ����������������</div></a></div><div class="ch414_segment ch414_ending"><a href="http://spravedlivo.center" class="ch414_navilink">&gt; SPRAVEDLIVO.CENTER</a></div></div><style>
+
+
+    .ch430_stripe
+    {
+
+        width: 100%;
+
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .ch430_segment
+    {
+
+        width: 100%;
+        margin: 0px;
+
+        padding: 0px;
+
+    }
+
+
+    .ch430_slide_l, .ch430_slide_s
+    {
+
+        display: block;
+        width: 100%;
+
+        margin: 0px;
+        padding-bottom: -4px;
+
+        background-color: #ff0000;
+        border: 0px;
+    }
+
+    .ch430_slide_s
+    {
+        display: none;
+    }
+
+    .ch430_slide_image
+    {
+
+        display: block;
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 0px;
+        border: 0px;
+    }
+
+
+    @media (max-width: 1579px)
+    {
+
+    }
+
+    @media (max-width: 1199px)
+    {
+
+
+    }
+
+    @media (max-width: 799px)
+    {
+
+        .ch430_slide_l
+        {
+            display: none;
+        }
+
+        .ch430_slide_s
+        {
+            display: block;
+        }
+    }
+
+    @media (max-width: 500px)
+    {
+
+    }
+
+
+</style><div class="ch430_stripe"><div class="ch430_segment"><a href="http://spravedlivo.center/podpiska-na-elektronnuyu-versiyu-gazety-domovoj-sovet/" class="ch430_slide_l"><img class="ch430_slide_image" src="core/ti/ds_banner_1600x150.jpg"></a><a href="http://spravedlivo.center/podpiska-na-elektronnuyu-versiyu-gazety-domovoj-sovet/" class="ch430_slide_s"><img class="ch430_slide_image" src="core/ti/ds_banner_800x150.jpg"></a></div></div><style>
+
+    .ch429_stripe
+    {
+        width: 100%;
+        text-align: center;
+        background-color: #ffffff;
+
+    }
+
+    .ch429_segment
+    {
+        width: 1560px;
+        margin: 0 auto;
+
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .ch429_heading
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 0px;
+    }
+
+    .ch429_ending
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 40px;
+    }
+
+
+    .ch429_entitle
+    {
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+        text-decoration: none; text-align: left;
+
+    }
+
+    .ch429_navilink
+    {
+        display: inline-block;
+        font-family: 'PT Sans', sans-serif; font-size: 14px; color: #96191F; line-height: 14px; font-weight: bold;
+        text-decoration: none; text-transform: uppercase;
+        margin-right: 40px;
+    }
+
+
+    .ch429_item
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 465px;
+        background-color: #ffffff;
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+
+
+    .ch429_item_image
+    {
+        width: 100%;
+    }
+
+
+    .ch429_item_title
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 22px; color: #000000; line-height: 24px; font-weight: bold;
+        margin-top: 20px; margin-bottom: 0px;
+    }
+
+    .ch429_item_descr
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 16px; color: #000000; line-height: 18px; font-weight: normal;
+        margin-top: 10px;
+    }
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch429_segment
+        {
+            width: 1200px;
+        }
+
+        .ch429_item
+        {
+            width: 345px;
+        }
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch429_segment
+        {
+            width: 800px;
+            padding: 10px;
+        }
+
+        .ch429_item
+        {
+            width: 240px;
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 799px)
+    {
+        .ch429_segment
+        {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .ch429_item
+        {
+            width: 100%;
+            margin: 0px;
+            padding-bottom: 40px;
+        }
+
+        .ch429_item_image
+        {
+            display: none;
+        }
+    }
+
+    @media (max-width: 500px)
+    {
+        .ch429_entitle
+        {
+            font-size: 32px; line-height: 32px;
+        }
+
+        .ch429_item_image
+        {
+            display: block;
+        }
+    }
+
+</style><div class="ch429_stripe"><div class="ch429_segment ch429_heading"><a href="8900416" class="ch429_entitle">��������� "������� �����"</a></div><div class="ch429_segment"><a href="8894410" class="ch429_item"><img class="ch429_item_image" src="http://spravedlivo.ru/pictbank/036/03673308000450.jpg"><div class="ch429_item_title">��������� "������� �����". ������3</div><div class="ch429_item_descr">�� ������ ����������� �������� �����. ���� ������� ������� ������������� ��������, ������� ���� �������, � ������ ������� � ���� ���������������.<br>������������ ��������� �������� ������ ������������ ���� � ����! �������� ��������� ����������� ������� <b>������������ ������</b>.</div></a><a href="8894310" class="ch429_item"><img class="ch429_item_image" src="http://spravedlivo.ru/pictbank/036/03673008000450.jpg"><div class="ch429_item_title">��������� "������� �����". ������2</div><div class="ch429_item_descr">������ �� �������! ������� ����� � 20% ��������������� ����� � ������ ������� � ������� ����������� ������� ����� ���� ��������� �������������. <b>������������ ������</b>  ������� ������� ����������� ��������� �������.<br>������� � �������������� ������ ����������� ������������� ��������� � ������� �����! ��� ��� ���������, �������� ����������� ������ ������ ���� �������.</div></a><a href="8894210" class="ch429_item"><img class="ch429_item_image" src="http://spravedlivo.ru/pictbank/036/03672908000450.jpg"><div class="ch429_item_title">��������� "������� �����". ������1</div><div class="ch429_item_descr">���������� �������� � ������ ��� ���������� ���������������? <b>������������ ������</b> ���������� ���������� �� ��������� ����������� � ������� ��������� ������� ���������������. <br>�������� �� ������������. � ������ ������ ����������� �������� ������� �� ������� ��������. ����������� �������� �� ������� � ������ ������ ���� �������.</div></a></div></div><style>
+
+    .ch415_stripe
+    {
+        width: 100%;
+        text-align: center;
+        background-color: #f3f3f3;
+    }
+
+    .ch415_segment
+    {
+        width: 1560px;
+        margin: 0 auto;
+
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .ch415_heading
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 0px;
+    }
+
+    .ch415_ending
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 40px;
+    }
+
+
+    .ch415_entitle
+    {
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+        text-decoration: none; text-align: left;
+
+    }
+
+    .ch415_navilink
+    {
+        display: inline-block;
+        font-family: 'PT Sans', sans-serif; font-size: 14px; color: #96191F; line-height: 14px; font-weight: bold;
+        text-decoration: none; text-transform: uppercase;
+        margin-right: 40px;
+    }
+
+
+    .ch415_item
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 465px; height: 340px;
+        background-color: #ffffff;
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+
+
+    .ch415_item_image
+    {
+        position: relative;
+        display: block;
+        width: 100%; max-width: 400px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+
+    .ch415_item_title
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 22px; color: #a00000; line-height: 24px; font-weight: bold;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .ch415_item_descr
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 16px; color: #000000; line-height: 18px; font-weight: normal;
+        margin-top: 10px;
+    }
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch415_segment
+        {
+            width: 1200px;
+        }
+
+        .ch415_item
+        {
+            width: 345px; height: 360px;
+        }
+
+        .ch415_item_image
+        {
+            margin-top: 0px;
+
+        }
+
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch415_segment
+        {
+            width: 800px;
+            padding: 10px;
+        }
+
+        .ch415_item
+        {
+            width: 240px;
+            margin: 10px;
+        }
+
+        .ch415_item_image
+        {
+            width: 240px;
+            margin: 0px;
+        }
+
+    }
+
+    @media (max-width: 799px)
+    {
+
+        .ch415_segment
+        {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .ch415_entitle
+        {
+            font-size: 32px; line-height: 32px;
+        }
+
+        .ch415_item
+        {
+            width: 180px;
+        }
+
+        .ch415_item_image
+        {
+            width: 100%;
+
+        }
+
+
+    }
+
+    @media (max-width: 500px)
+    {
+
+
+        .ch415_item
+        {
+            width: 100%;
+            margin: 0px;
+            padding-bottom: 0px;
+        }
+
+    }
+
+
+</style><div class="ch415_stripe"><div class="ch415_segment ch415_heading"><a href="" class="ch415_entitle">��������� �������</a></div><div class="ch415_segment"><a href="8097616" class="ch415_item"><img class="ch415_item_image" src="core/ti/ti_p01.jpg"><div class="ch415_item_title">������������� ����������� ������ "��������"</div></a><a href="6666716" class="ch415_item"><img class="ch415_item_image" src="core/ti/ti_p02.jpg"><div class="ch415_item_title">��������� ������������ ������ ������������ ������</div></a><a href="7346816" class="ch415_item"><img class="ch415_item_image" src="core/ti/ti_p04.jpg"><div class="ch415_item_title">��������� �������� ������ ������������ ������</div></a></div></div><style>
+
+    .ch416_stripe
+    {
+        width: 100%;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .ch416_segment
+    {
+        width: 1560px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .ch416_heading
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 0px;
+    }
+
+    .ch416_ending
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 40px;
+    }
+
+
+    .ch416_entitle
+    {
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+        text-decoration: none; text-align: left;
+
+    }
+
+    .ch416_navilink
+    {
+        display: inline-block;
+        font-family: 'PT Sans', sans-serif; font-size: 14px; color: #96191F; line-height: 14px; font-weight: bold;
+        text-decoration: none; text-transform: uppercase;
+        margin-right: 40px;
+    }
+
+
+    .ch416_item
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 465px;
+        background-color: #ffffff;
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+
+
+    .ch416_item_image
+    {
+        width: 100%;
+    }
+
+
+    .ch416_item_title
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 22px; color: #000000; line-height: 24px; font-weight: bold;
+        margin-top: 20px; margin-bottom: 0px;
+    }
+
+    .ch416_item_descr
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 16px; color: #000000; line-height: 18px; font-weight: normal;
+        margin-top: 10px;
+    }
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch416_segment
+        {
+            width: 1200px;
+        }
+
+        .ch416_item
+        {
+            width: 345px;
+        }
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch416_segment
+        {
+            width: 800px;
+            padding: 10px;
+        }
+
+        .ch416_item
+        {
+            width: 240px;
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 799px)
+    {
+        .ch416_segment
+        {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .ch416_item
+        {
+            width: 100%;
+            margin: 0px;
+            padding-bottom: 40px;
+        }
+
+        .ch416_item_image
+        {
+            display: none;
+        }
+    }
+
+    @media (max-width: 500px)
+    {
+        .ch416_entitle
+        {
+            font-size: 32px; line-height: 32px;
+        }
+
+        .ch416_item_image
+        {
+            display: block;
+        }
+    }
+
+</style><div class="ch416_stripe"><div class="ch416_segment ch416_heading"><a href="" class="ch416_entitle">������������ ���������</a></div><div class="ch416_segment"><a href="9043916" class="ch416_item"><img class="ch416_item_image" src="http://spravedlivo.ru/pictbank/036/03671804000225.jpg"><div class="ch416_item_title">������� � ������� ��</div><div class="ch416_item_descr">�� ��������� ��������� ������� � �������� �� ������������������ ������������� � ��������� ����������� �������� �������� ������ �������. ������� �� ������������� �������� ����� � ���������� ������ �� ������� �������� ������ ���� ����, ������� �����, ���� ����� � ������� �������. ���� ���� � ������� ������� ����� ����������� �� ����������� ��������� � ����������� ������ ��������������.</div></a><a href="8791410" class="ch416_item"><img class="ch416_item_image" src="http://spravedlivo.ru/pictbank/036/03628008000450.jpg"><div class="ch416_item_title">���������� ����� �������</div><div class="ch416_item_descr">2 ����� � ��������������� ���� ���������� ����������� ��������� ������ �� ����������� ����������� ����������� ������ ������� "������������ ������". � ��� ������ ������� ������� ������ ����������� ������������ ��� ������������� ��, ������������ ��. ���������, ��������� ��������� ���. ������ ��������� ��������� ������ ������ �������. � �������� �������� ��� ���� ���������� ���������� ������������� ������� � ������������� ����������� � ����������� �������� ������������� ����� ���������������. ���� ������� ������� ���������� �� � ������ ���������.</div></a><a href="8827816" class="ch416_item"><img class="ch416_item_image" src="http://spravedlivo.ru/pictbank/036/03601104000225.jpg"><div class="ch416_item_title">������ ��������� ������</div><div class="ch416_item_descr">29 ����� � ������� ���������� ������� ��������� ������ ������ ��������� ������ <b>������������ ������</b>, ������� ������� ����������� ������������ ��, ������� ������� "��", ������������ ������ ������ ��������� ����� ���������. �������� ������� ��������� �������������� ������������ ������� ������ ���� ��������� �������� ����������� ���������������� � ��������������� ������������ � ���������� ��������� ������ �� ���������� �������� ������� ����� ���� � ������� ����������, �������� ���������� ������������ �������� � ������������ ������ ������������� �������� � 35 ���������.</div></a></div><div class="ch416_segment ch416_ending"><a href="12001" class="ch416_navilink">&gt;&nbsp;�������&nbsp;�&nbsp;�������</a><a href="5691818" class="ch416_navilink">&gt;&nbsp;����������&nbsp;�����</a><a href="20201" class="ch416_navilink">&gt;&nbsp;������&nbsp;���������</a></div></div><style>
+
+    .ch425_stripe
+    {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .ch425_segment
+    {
+        width: 1560px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+
+
+    .ch425_heading
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 0px;
+    }
+
+    .ch425_ending
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 40px;
+    }
+
+
+    .ch425_entitle
+    {
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+        text-decoration: none; text-align: left;
+
+    }
+
+    .ch425_navilink
+    {
+        display: inline-block;
+        font-family: 'PT Sans', sans-serif; font-size: 28px; color: #96191F; line-height: 14px; font-weight: bold;
+        text-decoration: none; text-transform: uppercase;
+        margin-right: 40px;
+    }
+
+
+    .ch425_photo
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 465px;
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+    .ch425_text
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 600px;
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+
+
+
+
+
+
+    .ch425_item_image
+    {
+        width: 100%;
+    }
+
+
+    .ch425_item_title
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 28px; color: #96191F; line-height: 26px; font-weight: bold;
+        margin-top: 0px; margin-bottom: 0px;
+    }
+
+    .ch425_item_subtitle
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 19px; color: #606060; line-height: 21px; font-weight: bold;
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+
+    .ch425_item_descr
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 19px; color: #000000; line-height: 21px; font-weight: normal;
+        margin-top: 10px;
+    }
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch425_segment
+        {
+            width: 1200px;
+        }
+
+        .ch425_item
+        {
+            width: 345px;
+        }
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch425_segment
+        {
+            width: 800px;
+            padding: 10px;
+        }
+
+        .ch425_item
+        {
+            width: 240px;
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 799px)
+    {
+        .ch425_segment
+        {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .ch425_item
+        {
+            width: 100%;
+            margin: 0px;
+            padding-bottom: 40px;
+        }
+
+    }
+
+    @media (max-width: 500px)
+    {
+        .ch425_entitle
+        {
+            font-size: 32px; line-height: 32px;
+        }
+
+        .ch425_photo
+        {
+            width: 100%;
+            margin: 0px;
+        }
+
+        .ch425_text
+        {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+    }
+
+</style><div class="ch425_stripe" style="background: url('http://spravedlivo.ru/pictbank/038/03801316000500.jpg') right top;"><div class="ch425_segment ch425_heading"><a href="8945510" class="ch425_entitle">� ����� �����</a></div><div class="ch425_segment"><a href="8945510" class="ch425_photo"><img class="ch425_item_image" src="http://spravedlivo.ru/pictbank/038/03801108000450.jpg"></a><a href="8945510" class="ch425_text"><div class="ch425_item_title">������� �������� ����������</div><div class="ch425_item_subtitle"></div><div class="ch425_item_descr">�������� �������� ������ ���������� �� ����������� ����������� ������������ ���������, ������ ���� ����������� � ������� ��������� ���������� � ���������� ������� ����� ��������. ��� ������ ��� �� ������� � ������ <b>������������ ������</b>. 20 ���� 2018 ���� �������������� ���������� ��������� ���� �������� �������� ��������� ������� ������ "�������� ��������� ���������� �������" �� ������ ������� ����� ��������.</div></a></div></div><style>
+
+    .ch417_stripe
+    {
+        width: 100%;
+        text-align: center;
+        background-color: #fab512;
+    }
+
+    .ch417_segment
+    {
+        width: 1560px;
+        margin: 0 auto;
+
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .ch417_heading
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 0px;
+    }
+
+    .ch417_ending
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 40px;
+    }
+
+
+    .ch417_entitle
+    {
+        font-family: 'PT Serif', serif; font-size: 54px; font-weight: bold; color: #333F2B; line-height: 54px;
+        text-decoration: none; text-align: left;
+
+    }
+
+    .ch417_navilink
+    {
+        display: inline-block;
+        font-family: 'PT Sans', sans-serif; font-size: 14px; color: #96191F; line-height: 14px; font-weight: bold;
+        text-decoration: none; text-transform: uppercase;
+        margin-right: 40px;
+    }
+
+
+    .ch417_menu_group
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 340px;
+
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+
+
+    .ch417_item_image
+    {
+        width: 100%;
+    }
+
+
+    .ch417_menu_group_title
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 22px; color: #000000; line-height: 24px; font-weight: bold;
+        margin-top: 20px; margin-bottom: 20px;
+    }
+
+    .ch417_menu_group_item
+    {
+        display: block;
+        font-family: 'PT Sans', sans-serif;	font-size: 17px; color: #900000; line-height: 18px; font-weight: bold;
+        text-decoration: none;
+        margin-top: 5px; margin-bottom: 0px;
+    }
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch417_segment
+        {
+            width: 1200px;
+        }
+
+        .ch417_menu_group
+        {
+            width: 250px;
+        }
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch417_segment
+        {
+            width: 800px;
+            padding: 10px;
+        }
+
+        .ch417_item
+        {
+            width: 240px;
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 799px)
+    {
+        .ch417_segment
+        {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .ch417_item
+        {
+            width: 100%;
+            margin: 0px;
+            padding-bottom: 40px;
+        }
+
+        .ch417_item_image
+        {
+            display: none;
+        }
+    }
+
+    @media (max-width: 500px)
+    {
+        .ch417_entitle
+        {
+            font-size: 32px; line-height: 32px;
+        }
+
+        .ch417_item_image
+        {
+            display: block;
+        }
+    }
+
+
+
+
+</style><div class="ch417_stripe"><div class="ch417_segment ch417_heading"><div class="ch417_entitle">������ � ��������</div></div><div class="ch417_segment"><div class="ch417_menu_group"><div class="ch417_menu_group_title">������ �������</div><a href="http://mironov.ru/" class="ch417_menu_group_item">����������� ���� </a><a href="http://sergey-mironov.livejournal.com/" class="ch417_menu_group_item">����� ������</a><a href="https://www.facebook.com/mironov.online" class="ch417_menu_group_item">Facebook</a><a href="https://twitter.com/mironov_ru" class="ch417_menu_group_item">Twitter</a><a href="https://vk.com/mironov_sergey" class="ch417_menu_group_item">���������</a><a href="https://ok.ru/sergeymironov" class="ch417_menu_group_item">�������������</a><a href="https://www.instagram.com/mironov.online/" class="ch417_menu_group_item">Instagram</a></div><div class="ch417_menu_group"><div class="ch417_menu_group_title">������</div><a href="https://www.facebook.com/spravoross/" class="ch417_menu_group_item">Facebook</a><a href="https://vk.com/spravo_ross" class="ch417_menu_group_item">VKontakte</a><a href="https://twitter.com/spravoross" class="ch417_menu_group_item">Twitter</a><a href="https://ok.ru/spravoross" class="ch417_menu_group_item">�������������</a><a href="https://www.instagram.com/spravoross/" class="ch417_menu_group_item">Instagram</a><a href="https://www.youtube.com/channel/UC8ruQ9ENXgu9MBV8E5e3KBg" class="ch417_menu_group_item">YouTube</a></div><div class="ch417_menu_group"><div class="ch417_menu_group_title">�����������</div><a href="http://www.spravmir.ru/" class="ch417_menu_group_item">�������� ������������� ���</a><a href="http://spravedlivo.center/" class="ch417_menu_group_item">����� ������ ���� �������</a><a href="http://spravsila.ru/" class="ch417_menu_group_item">������������ ����</a><a href="http://sdwomen.ru/" class="ch417_menu_group_item">������-��������������� ���� ������ ������</a><a href="http://greenpatrol.ru/" class="ch417_menu_group_item">������ �������</a><a href="https://domsovet.tv/" class="ch417_menu_group_item">��������</a></div><div class="ch417_menu_group"><div class="ch417_menu_group_title">���������</div><a href="http://kremlin.ru" class="ch417_menu_group_item">���� ����������&nbsp;��</a><a href="http://government.ru" class="ch417_menu_group_item">���� �������������&nbsp;��</a><a href="http://www.council.gov.ru" class="ch417_menu_group_item">���� ������ ���������&nbsp;��</a><a href="http://duma.gov.ru" class="ch417_menu_group_item">���� ��������������� ����&nbsp;��</a></div></div></div><style>
+
+    .ch403_stripe
+    {
+        width: 100%;
+        text-align: center;
+
+
+        background-color: #666666;
+    }
+
+
+
+    .ch403_segment
+    {
+        width: 1200px;
+        margin: 0 auto;
+
+        padding: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+
+    .ch403_ending
+    {
+        padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 40px;
+
+        background-color: #96191F;
+    }
+
+    .ch403_ending_text
+    {
+        font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: normal; color: #ffffff; line-height: 22px;
+        text-decoration: none; text-align: left;
+        margin-top: 15px;
+    }
+
+
+
+
+
+    .ch403_contact_group
+    {
+        position: relative;
+        display: inline-block; overflow: hidden;
+        width: 340px;
+
+        padding: 0px; padding-bottom: 10px;
+        margin: 20px;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+    .ch403_contact_group_icon
+    {
+        position: absolute;
+        top: 0px; left: 0px;
+        width: 60px; height: 60px;
+    }
+
+    .ch403_contact_group_title
+    {
+        font-family: 'PT Sans', sans-serif;	font-size: 22px; color: #ffffff; line-height: 26px;
+        margin-left: 70px; margin-top: 0px; margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #808080;
+    }
+
+    .ch403_contact_group_text
+    {
+        display: block;
+        font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: normal; color: #ffffff; line-height: 22px;
+        text-decoration: none;
+        margin-left: 70px; margin-top: 5px; margin-bottom: 0px;
+    }
+
+
+
+    @media (max-width: 1579px)
+    {
+        .ch403_segment
+        {
+            width: 1200px;
+        }
+
+        .ch403_menu_group
+        {
+            width: 250px;
+        }
+    }
+
+    @media (max-width: 1199px)
+    {
+        .ch403_segment
+        {
+            width: 800px;
+            padding: 10px;
+        }
+
+        .ch403_item
+        {
+            width: 240px;
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 799px)
+    {
+        .ch403_segment
+        {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .ch403_item
+        {
+            width: 100%;
+            margin: 0px;
+            padding-bottom: 40px;
+        }
+
+
+    }
+
+    @media (max-width: 500px)
+    {
+        .ch403_contact_group
+        {
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 30px;
+        }
+
+        .ch403_contact_group_title
+        {
+            margin-left: 0px;
+            border-bottom: 0px;
+            margin-bottom: 5px;
+            padding-bottom: 0px;
+        }
+
+        .ch403_contact_group_text
+        {
+            margin-left: 0px;
+        }
+
+        .ch403_contact_group_icon
+        {
+            display: none;
+        }
+    }
+
+</style><div class="ch403_stripe"><div class="ch403_segment"><div class="ch403_contact_group"><img class="ch403_contact_group_icon" src="core/ti/ficon1.png"><div class="ch403_contact_group_title">����������� ������� ������</div><div class="ch403_contact_group_text">�������: (495) 787-85-15<br>����: (495) 959-35-86</div></div><div class="ch403_contact_group"><img class="ch403_contact_group_icon" src="core/ti/ficon2.png"><div class="ch403_contact_group_title">�����-������<br>������</div><div class="ch403_contact_group_text">���. ���.: +7 (495) 783-98-03<br>���. ���.: +7 (916) 249-49-47<br>(������ ��� ���)</div></div><div class="ch403_contact_group"><img class="ch403_contact_group_icon" src="core/ti/ficon3.png"><div class="ch403_contact_group_title">������������ ��������<br>������� "��" � �������</div><div class="ch403_contact_group_text">����. ���: (495) 629-61-01</div></div></div></div><div class="ch403_stripe ch403_ending"><div class="ch403_segment"><div class="ch403_ending_text">����������� ���� ������������ ������ <b>������������ ������ </b>
+    <br>������ ��� ��������� ����������� ���������� �������������� �� ������� �� ���� spravedlivo.ru
+    <br>&copy; 2006-2018</div></div></div></body>
+</html>

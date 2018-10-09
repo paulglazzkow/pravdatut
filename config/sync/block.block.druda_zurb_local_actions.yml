@@ -1,0 +1,20 @@
+uuid: 4acd2936-1f19-4702-b069-be1d746c68a4
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: druda_zurb_local_actions
+theme: druda_zurb
+region: content_top
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  provider: core
+  label_display: '0'
+visibility: {  }

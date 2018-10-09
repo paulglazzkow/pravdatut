@@ -1,0 +1,11 @@
+entity.pmtask.add_form:
+  route_name: entity.pmtask.add_page
+  title: 'Add Project task'
+  appears_on:
+    - entity.pmtask.collection
+entity.pmtask_type.add_form:
+  route_name: entity.pmtask_type.add_form
+  title: 'Add Project task type'
+  appears_on:
+    - entity.pmtask_type.collection
+

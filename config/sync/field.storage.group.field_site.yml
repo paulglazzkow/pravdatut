@@ -1,0 +1,19 @@
+uuid: c6d42d4e-1a51-4574-a538-33236b2edafa
+langcode: ru
+status: true
+dependencies:
+  module:
+    - group
+    - link
+id: group.field_site
+field_name: field_site
+entity_type: group
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

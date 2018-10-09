@@ -1,0 +1,30 @@
+add entity party programm entities:
+  title: 'Create new Entity party programm entities'
+
+administer entity party programm entities:
+  title: 'Administer Entity party programm entities'
+  description: 'Allow to access the administration form to configure Entity party programm entities.'
+  restrict access: true
+
+delete entity party programm entities:
+  title: 'Delete Entity party programm entities'
+
+edit entity party programm entities:
+  title: 'Edit Entity party programm entities'
+
+view published entity party programm entities:
+  title: 'View published Entity party programm entities'
+
+view unpublished entity party programm entities:
+  title: 'View unpublished Entity party programm entities'
+
+view all entity party programm revisions:
+  title: 'View all Entity party programm revisions'
+
+revert all entity party programm revisions:
+  title: 'Revert all Entity party programm revisions'
+  description: 'Role requires permission <em>view Entity party programm revisions</em> and <em>edit rights</em> for entity party programm entities in question or <em>administer entity party programm entities</em>.'
+
+delete all entity party programm revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Entity party programm revisions</em> and <em>delete rights</em> for entity party programm entities in question or <em>administer entity party programm entities</em>.'

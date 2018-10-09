@@ -1,0 +1,30 @@
+add entity tech entities:
+  title: 'Create new Entity tech entities'
+
+administer entity tech entities:
+  title: 'Administer Entity tech entities'
+  description: 'Allow to access the administration form to configure Entity tech entities.'
+  restrict access: true
+
+delete entity tech entities:
+  title: 'Delete Entity tech entities'
+
+edit entity tech entities:
+  title: 'Edit Entity tech entities'
+
+view published entity tech entities:
+  title: 'View published Entity tech entities'
+
+view unpublished entity tech entities:
+  title: 'View unpublished Entity tech entities'
+
+view all entity tech revisions:
+  title: 'View all Entity tech revisions'
+
+revert all entity tech revisions:
+  title: 'Revert all Entity tech revisions'
+  description: 'Role requires permission <em>view Entity tech revisions</em> and <em>edit rights</em> for entity tech entities in question or <em>administer entity tech entities</em>.'
+
+delete all entity tech revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Entity tech revisions</em> and <em>delete rights</em> for entity tech entities in question or <em>administer entity tech entities</em>.'

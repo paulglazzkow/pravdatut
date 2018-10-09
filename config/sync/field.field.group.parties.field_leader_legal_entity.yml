@@ -1,0 +1,19 @@
+uuid: 42f27087-34a7-4223-8424-2f4768432e5e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_leader_legal_entity
+    - group.type.parties
+id: group.parties.field_leader_legal_entity
+field_name: field_leader_legal_entity
+entity_type: group
+bundle: parties
+label: 'Лицо, имеющее право без доверенности действовать от имени юридического лица'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

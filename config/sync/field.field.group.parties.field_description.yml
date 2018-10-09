@@ -1,0 +1,22 @@
+uuid: 4a21b93f-4cac-4780-857f-3d132750c4bc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_description
+    - group.type.parties
+  module:
+    - text
+id: group.parties.field_description
+field_name: field_description
+entity_type: group
+bundle: parties
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

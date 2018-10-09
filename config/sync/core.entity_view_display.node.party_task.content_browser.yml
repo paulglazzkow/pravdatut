@@ -1,0 +1,29 @@
+uuid: 46551004-0c90-4ed1-8c3d-ed09f38914de
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.party_task.body
+    - node.type.party_task
+  module:
+    - text
+    - user
+id: node.party_task.content_browser
+targetEntityType: node
+bundle: party_task
+mode: content_browser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

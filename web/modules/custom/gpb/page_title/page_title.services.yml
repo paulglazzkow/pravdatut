@@ -1,0 +1,5 @@
+services:
+  title_resolver: ~
+  title_resolver:
+    class: Drupal\page_title\PageTitleTokenService
+    arguments: ['@controller_resolver', '@string_translation']

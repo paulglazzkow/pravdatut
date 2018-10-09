@@ -1,0 +1,18 @@
+
+# Entity enumeration menu items definition
+entity.entity_enumeration.collection:
+  title: 'Entity enumeration list'
+  route_name: entity.entity_enumeration.collection
+  description: 'List Entity enumeration entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Entity enumeration type menu items definition
+entity.entity_enumeration_type.collection:
+  title: 'Entity enumeration type'
+  route_name: entity.entity_enumeration_type.collection
+  description: 'List Entity enumeration type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

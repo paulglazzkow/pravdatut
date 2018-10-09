@@ -1,0 +1,30 @@
+add entity problem entities:
+  title: 'Create new Entity problem entities'
+
+administer entity problem entities:
+  title: 'Administer Entity problem entities'
+  description: 'Allow to access the administration form to configure Entity problem entities.'
+  restrict access: true
+
+delete entity problem entities:
+  title: 'Delete Entity problem entities'
+
+edit entity problem entities:
+  title: 'Edit Entity problem entities'
+
+view published entity problem entities:
+  title: 'View published Entity problem entities'
+
+view unpublished entity problem entities:
+  title: 'View unpublished Entity problem entities'
+
+view all entity problem revisions:
+  title: 'View all Entity problem revisions'
+
+revert all entity problem revisions:
+  title: 'Revert all Entity problem revisions'
+  description: 'Role requires permission <em>view Entity problem revisions</em> and <em>edit rights</em> for entity problem entities in question or <em>administer entity problem entities</em>.'
+
+delete all entity problem revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Entity problem revisions</em> and <em>delete rights</em> for entity problem entities in question or <em>administer entity problem entities</em>.'

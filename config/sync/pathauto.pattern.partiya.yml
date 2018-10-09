@@ -1,0 +1,23 @@
+uuid: c13573d2-5ef1-4187-a764-297a75ecbad6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - ctools
+    - group
+id: partiya
+label: Партия
+type: 'canonical_entities:group'
+pattern: '/party/[group:id]'
+selection_criteria:
+  c9860293-340e-48b5-a8f7-cfcb454f3f12:
+    id: 'entity_bundle:group'
+    bundles:
+      parties: parties
+    negate: false
+    context_mapping:
+      group: group
+    uuid: c9860293-340e-48b5-a8f7-cfcb454f3f12
+selection_logic: and
+weight: -5
+relationships: {  }

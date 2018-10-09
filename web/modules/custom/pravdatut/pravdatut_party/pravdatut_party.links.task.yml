@@ -1,0 +1,16 @@
+pravdatut_prty.party.view:
+  title: 'View'
+  base_route: 'entity.pravdatut_party.canonical'
+  route_name: 'entity.pravdatut_party.canonical'
+
+pravdatut_prty.party.edit_form:
+  title: 'Edit'
+  base_route: 'entity.pravdatut_party.canonical'
+  route_name: 'entity.pravdatut_party.edit_form'
+
+pravdatut_prty.party.delete_form:
+  title: 'Delete'
+  base_route: 'entity.pravdatut_party.canonical'
+  route_name: 'entity.group.delete_form'
+  weight: 10
+

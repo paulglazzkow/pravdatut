@@ -1,0 +1,6 @@
+# Entity tech routing definition
+
+social_auth_ext.user_auth_list:
+  route_name: social_auth_ext.user_auth_list
+  base_route: entity.user.canonical
+  title: 'Social auth'

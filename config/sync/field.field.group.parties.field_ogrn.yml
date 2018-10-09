@@ -1,0 +1,19 @@
+uuid: 1f0032d3-f798-4b0d-945e-ccb36f90f504
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_ogrn
+    - group.type.parties
+id: group.parties.field_ogrn
+field_name: field_ogrn
+entity_type: group
+bundle: parties
+label: ОГРН
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

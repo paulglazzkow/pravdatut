@@ -1,0 +1,21 @@
+# Example context_menu.config plugin definitions.
+# Plugin property $defaults are defined in ContextMenuConfigManager.
+context_menu.party:
+  actions:
+    programm_add:
+      title: 'Add programm'
+      route: ''
+  links:
+    - party:
+        title: 'Main'
+        route: ''
+    - programm:
+        title: 'Programm'
+        route: ''
+        actions:
+          - programm_add
+  tree:
+    party:
+      actions:
+      children:
+        - programm:

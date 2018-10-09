@@ -1,0 +1,24 @@
+uuid: 5e2c9cc4-bd54-46c0-9c69-a1e9299b3910
+langcode: ru
+status: true
+dependencies:
+  module:
+    - group
+  theme:
+    - zurb_foundation
+_core:
+  default_config_hash: MjMChFykEa-4UxdnGstVk1FcXqwUF3p_GBJLIFT3_XI
+id: zurb_foundation_group_operations
+theme: zurb_foundation
+region: sidebar_first
+weight: -20
+provider: null
+plugin: group_operations
+settings:
+  id: group_operations
+  label: 'Group operations'
+  provider: group
+  label_display: visible
+  context_mapping:
+    group: '@group.group_route_context:group'
+visibility: {  }

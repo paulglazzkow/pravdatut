@@ -1,0 +1,20 @@
+uuid: b3dd9af6-87d6-4874-9ef4-28ff71c5aebc
+langcode: ru
+status: true
+dependencies:
+  module:
+    - entity_tech
+    - import_info
+id: entity_tech.field_import_news
+field_name: field_import_news
+entity_type: entity_tech
+type: entity_reference
+settings:
+  target_type: import_info_entity
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

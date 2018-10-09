@@ -1,0 +1,58 @@
+uuid: 448ec26e-222c-4da8-8dc0-9dc23fed607a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.party_settings
+    - field.field.entity_tech.party_settings.field_import_news
+    - field.field.entity_tech.party_settings.field_sources
+    - field.field.entity_tech.party_settings.field_term_party
+  module:
+    - user
+id: entity_tech.party_settings.default
+targetEntityType: entity_tech
+bundle: party_settings
+mode: default
+content:
+  field_import_news:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_sources:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_term_party:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  status: true

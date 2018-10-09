@@ -1,0 +1,11 @@
+uuid: 0ff34e40-97c0-4e83-b769-e9ade6a6b872
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.todo
+id: node.todo
+target_entity_type_id: node
+target_bundle: todo
+default_langcode: site_default
+language_alterable: false

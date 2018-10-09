@@ -1,0 +1,6 @@
+uuid: c3e2357f-58bb-42be-9e00-da654b603adb
+langcode: ru
+status: true
+dependencies: {  }
+id: news
+label: News

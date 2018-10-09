@@ -1,0 +1,67 @@
+<?php
+
+const GRABBER_LOGGER_CHANNEL = 'site_grabber';
+
+/**
+ * @file
+ * Contains site_grabber.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function site_grabber_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the site_grabber module.
+    case 'help.page.site_grabber':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+//
+//function site_grabber_migration_plugins_alter($definitions){
+//  $n=0;
+//}
+
+/**
+ * Implements hook_migration_plugins_alter().
+ */
+function site_grabber_migration_plugins_alter(array &$migrations) {
+
+  $idmap_sql_update = [
+    'import_content_news' => TRUE,
+  ];
+
+  /** @var \Drupal\migrate\Plugin\MigrationInterface $migration */
+  foreach ($migrations as $id => $migration) {
+  if($migration['migration_group']==='news_html'){
+    $migrations[$id]['class']='Drupal\site_grabber\MigrationExt';
+  }
+    if (isset($idmap_sql_update[$id])) {
+      $migrations[$id]['idMap'] = ['plugin' => 'sql_update'];
+    }
+
+  }
+
+
+}
+
+
+function jerror($msg, array $context = [], $channel = GRABBER_LOGGER_CHANNEL) {
+  \Drupal::logger($channel)->error($msg, $context);
+}
+
+function jwarn($msg, array $context = [], $channel = GRABBER_LOGGER_CHANNEL) {
+  \Drupal::logger($channel)->warning($msg, $context);
+}
+
+function jdebug($msg, array $context = [], $channel = GRABBER_LOGGER_CHANNEL) {
+  \Drupal::logger($channel)->debug($msg, $context);
+}

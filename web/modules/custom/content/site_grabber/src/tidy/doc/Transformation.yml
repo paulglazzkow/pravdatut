@@ -1,0 +1,37 @@
+decorate-inferred-ul
+Type:	Boolean
+Default:	no
+Values:	no, yes
+This option specifies if Tidy should decorate inferred <ul> elements with some CSS markup to avoid indentation to the right.
+escape-cdata
+Type:	Boolean
+Default:	no
+Values:	no, yes
+This option specifies if Tidy should convert <![CDATA[]]> sections to normal text.
+hide-comments
+Type:	Boolean
+Default:	no
+Values:	no, yes
+This option specifies if Tidy should print out comments.
+join-classes
+Type:	Boolean
+Default:	no
+Values:	no, yes
+This option specifies if Tidy should combine class names to generate a single, new class name if multiple class assignments are detected on an element.
+join-styles
+Type:	Boolean
+Default:	yes
+Values:	no, yes
+This option specifies if Tidy should combine styles to generate a single, new style if multiple style values are detected on an element.
+merge-emphasis
+Type:	Boolean
+Default:	yes
+Values:	no, yes
+This option specifies if Tidy should merge nested <b> and <i> elements; for example, for the case
+<b class="rtop-2">foo <b class="r2-2">bar</b> baz</b>,
+Tidy will output <b class="rtop-2">foo bar baz</b>.
+replace-color
+Type:	Boolean
+Default:	no
+Values:	no, yes
+This option specifies if Tidy should replace numeric values in color attributes with HTML/XHTML color names where defined, e.g. replace #ffffff with white.

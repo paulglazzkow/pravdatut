@@ -1,0 +1,4 @@
+services:
+  plugin.manager.context_menu.config:
+    class: Drupal\context_menu\ContextMenuConfigManager
+    arguments: ['@module_handler', '@cache.discovery']

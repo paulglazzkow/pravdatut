@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[entity_tech:field_term_party:entity:name]'
+php: 0
+escape: 1
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.party_settings

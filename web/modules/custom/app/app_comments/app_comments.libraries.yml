@@ -1,0 +1,7 @@
+app-comments:
+  version: 1.x
+  js:
+    js/app-comments.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

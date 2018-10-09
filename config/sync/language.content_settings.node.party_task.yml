@@ -1,0 +1,11 @@
+uuid: ef56fb31-fbbf-40f8-bea5-f3ef343f35b2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.party_task
+id: node.party_task
+target_entity_type_id: node
+target_bundle: party_task
+default_langcode: site_default
+language_alterable: false

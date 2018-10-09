@@ -1,0 +1,20 @@
+uuid: 90231642-8dcc-4e60-ad2f-ba5f96c0aa4b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - social_auth
+  theme:
+    - druda_zurb
+id: socialauthlogin
+theme: druda_zurb
+region: content_bottom
+weight: 0
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: 'Social Auth Login'
+  provider: social_auth
+  label_display: visible
+visibility: {  }

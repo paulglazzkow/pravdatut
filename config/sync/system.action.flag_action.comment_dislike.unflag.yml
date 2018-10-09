@@ -1,0 +1,13 @@
+uuid: ebfe98fe-2028-48c7-aa5e-7cea63130c1d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.comment_dislike.unflag
+label: 'Не нравится(отменить)'
+type: comment
+plugin: 'flag_action:comment_dislike.unflag'
+configuration:
+  flag_id: comment_dislike
+  flag_action: unflag

@@ -1,0 +1,21 @@
+uuid: 054aec0c-fadc-4396-8b0f-0af4c1d47e83
+langcode: ru
+status: true
+dependencies:
+  config:
+    - comment.type.comment_news
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_news.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_news
+label: 'Add new comment'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

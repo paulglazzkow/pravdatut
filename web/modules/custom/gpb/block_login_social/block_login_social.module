@@ -1,0 +1,77 @@
+<?php
+
+/**
+ * @file
+ * Contains block_login_social.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function block_login_social_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the block_login_social module.
+    case 'help.page.block_login_social':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * @file
+ * Allows login using different social networking services.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function block_login_social_theme() {
+  return [
+    'login_social_buttons' => [
+      'variables' => ['social_networks' => NULL],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function block_login_social_preprocess_login_with(&$variables) {
+
+  $dest = \Drupal::destination()->getAsArray();
+  $variables['destination'] = $dest['destination'];
+//  foreach ($variables['social_networks'] as &$item) {
+//    $url = new Url($item['route'], [], ['query' => \Drupal::destination()->getAsArray()]);
+//        $url = new Url($item['route']);
+//    $item['url'] = $url->toString();
+//  }
+//  $variables['base_path'] = base_path();
+}
+
+function block_login_social_get_services_urls() {
+
+  $urls = [];
+
+  $configs = \Drupal::service('config.factory')->get('social_auth.settings')->get('auth');
+  foreach ($configs as $config) {
+    $urls[] = Url::fromRoute($config['route'])->toString();
+  }
+
+  return $urls;
+}
+
+
+function block_login_social_page_attachments(array &$page) {
+  //  if (\Drupal::currentUser()->isAnonymous()) {
+  //    $page['#attached']['library'][] = 'block_login_social/anonymous-set-referer';
+  //  }
+  //
+  //  $urls = block_login_social_get_services_urls();
+}

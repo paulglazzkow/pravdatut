@@ -1,0 +1,13 @@
+uuid: 46acdd50-98e6-43ba-ad95-545e48d39370
+langcode: ru
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.comment_like.flag
+label: Нравиться
+type: comment
+plugin: 'flag_action:comment_like.flag'
+configuration:
+  flag_id: comment_like
+  flag_action: flag

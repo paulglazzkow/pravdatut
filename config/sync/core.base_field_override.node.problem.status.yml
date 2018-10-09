@@ -1,0 +1,22 @@
+uuid: 77f42eee-9663-4416-8aec-3e2d014a60ef
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.problem
+id: node.problem.status
+field_name: status
+entity_type: node
+bundle: problem
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

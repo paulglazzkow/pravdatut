@@ -1,0 +1,22 @@
+uuid: 9213e1a6-b0a3-4842-9d49-039ea06b0789
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - druda_adminimal_theme
+_core:
+  default_config_hash: 3QjFxy61VgWJLHyG5znWzZYTSp4HdcVLTLWYYr9kaN0
+id: druda_adminimal_theme_help
+theme: druda_adminimal_theme
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

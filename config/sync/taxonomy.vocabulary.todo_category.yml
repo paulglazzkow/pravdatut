@@ -1,0 +1,9 @@
+uuid: d9884ae5-afe1-44c4-a708-fd5dc6fd0c18
+langcode: ru
+status: true
+dependencies: {  }
+name: 'TODO Категории'
+vid: todo_category
+description: ''
+hierarchy: 0
+weight: 0

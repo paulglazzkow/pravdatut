@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Contains app_flag.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function app_flag_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the app_flag module.
+    case 'help.page.app_flag':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function app_flag_preprocess_flag(&$variables) {
+  $not_count = ['comment_abuse' => TRUE];
+  /* @var $flag \Drupal\flag\Entity\Flag */
+  $flag = $variables['flag'];
+  $id = $flag->getOriginalId();
+  if (isset($not_count[$id])) {
+    return;
+  }
+  $counts = \Drupal::service('flag.count')->getEntityFlagCounts($variables['flaggable']);
+  $count = isset($counts[$id]) ? $counts[$id] : 0;
+  $variables['title']['#markup'] = $variables['title']['#markup'] . "({$count})";
+
+}
+
+function app_flag_preprocess_comment(&$variables) {
+  $variables['#attached']['library'][] =  'app_flag/app_flag';
+}

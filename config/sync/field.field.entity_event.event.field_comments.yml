@@ -1,0 +1,33 @@
+uuid: 60594c8a-3df6-4161-8f26-b07ed28864f8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_events.entity_event_type.event
+    - field.storage.entity_event.field_comments
+  module:
+    - comment
+id: entity_event.event.field_comments
+field_name: field_comments
+entity_type: entity_event
+bundle: event
+label: Комментарии
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

@@ -1,0 +1,22 @@
+uuid: 089345f8-a41c-4d61-ba4d-f6fec1aa2e86
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.todo
+id: node.todo.status
+field_name: status
+entity_type: node
+bundle: todo
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

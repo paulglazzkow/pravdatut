@@ -1,0 +1,85 @@
+uuid: e436b52c-c43a-48e1-8f1e-efe6f475d04d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_todo.default
+    - field.field.node.todo.body
+    - field.field.node.todo.field_comment
+    - field.field.node.todo.field_priority
+    - field.field.node.todo.field_status
+    - field.field.node.todo.field_term_category
+    - field.field.node.todo.field_type
+    - field.field.node.todo.field_worker
+    - node.type.todo
+  module:
+    - comment
+    - options
+    - text
+    - user
+id: node.todo.default
+targetEntityType: node
+bundle: todo
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_comment:
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_priority:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_status:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_term_category:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_worker:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  langcode: true

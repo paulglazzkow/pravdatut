@@ -1,0 +1,10 @@
+id: social_auth
+label: 'Social Auth'
+ui_limit: ''
+properties:
+  block: social_auth_login
+  use_block_title: false
+type: block
+type_label: 'Block field'
+entities:
+  entity_news: entity_news

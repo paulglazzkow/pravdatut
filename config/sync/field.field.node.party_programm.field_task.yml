@@ -1,0 +1,25 @@
+uuid: b40ce33c-eb51-4b93-82f6-c9b30312cd20
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task
+    - node.type.party_programm
+id: node.party_programm.field_task
+field_name: field_task
+entity_type: node
+bundle: party_programm
+label: Задача
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entityreference_problem_select
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 43fda16b-8b26-4544-aa4d-cd345e683010
+langcode: ru
+status: true
+dependencies:
+  config:
+    - group.type.parties
+    - node.type.party_programm
+  module:
+    - gnode
+    - node
+id: group_content_type_bd65f5877148b
+label: 'Партии: Group node (Программа партии)'
+description: 'Adds <em class="placeholder">Программа партии</em> content to groups both publicly and privately.'
+group_type: parties
+content_plugin: 'group_node:party_programm'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

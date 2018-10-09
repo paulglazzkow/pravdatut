@@ -1,0 +1,9 @@
+
+# Title token config menu items definition
+entity.title_token_config.collection:
+  title: 'Title token config'
+  route_name: entity.title_token_config.collection
+  description: 'List Title token config (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

@@ -1,0 +1,13 @@
+.votingapi-widgets.flag-widget .flag-widget-rating a {
+    border: none !important;
+    margin-right: .5em;
+    display: inline-block;
+}
+
+.votingapi-widgets.flag-widget .flag-widget-rating a.flag-widget-on {
+    color: #aa5555;
+}
+
+.votingapi-widgets.flag-widget .flag-widget-rating a {
+    color: #888888;
+}

@@ -1,0 +1,42 @@
+uuid: 4db5ff66-9714-4271-96f9-3ff407cdf1c3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.source_link
+    - field.field.entity_tech.source_link.field_link
+    - field.field.entity_tech.source_link.field_link_type
+  module:
+    - link
+id: entity_tech.source_link.default
+targetEntityType: entity_tech
+bundle: source_link
+mode: default
+content:
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_link_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  moderation_state: true
+  status: true
+  user_id: true

@@ -1,0 +1,26 @@
+uuid: 08e2044b-22d6-46ee-8f6c-4b118bb62ee1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - comment.type.comment_event
+    - field.field.comment.comment_event.comment_body
+  module:
+    - text
+id: comment.comment_event.default
+targetEntityType: comment
+bundle: comment_event
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

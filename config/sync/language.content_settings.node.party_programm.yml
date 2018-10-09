@@ -1,0 +1,11 @@
+uuid: 599f73d2-9483-4b42-b323-cd60ecf20712
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.party_programm
+id: node.party_programm
+target_entity_type_id: node
+target_bundle: party_programm
+default_langcode: site_default
+language_alterable: false

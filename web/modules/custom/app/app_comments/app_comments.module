@@ -1,0 +1,132 @@
+<?php
+
+/**
+ * @file
+ * Contains app_comments.module.
+ */
+
+use Drupal\app_comments\Comment;
+use Drupal\app_comments\CommentTemplates;
+use Drupal\app_comments\EntityNewsHelper;
+use Drupal\app_comments\LinkAnswer;
+use Drupal\comment\CommentInterface;
+use Drupal\comment\Entity\CommentType;
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\entity_news\Entity\EntityNewsType;
+
+/**
+ * Implements hook_help().
+ */
+function app_comments_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the app_comments module.
+    case 'help.page.app_comments':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function app_comments_entity_extra_field_info() {
+  $extra = [];
+
+  foreach (EntityNewsType::loadMultiple() as $bundle) {
+    /* @var $bundle EntityNewsType */
+    $extra['entity_news_type'][$bundle->bundle()]['display']['current_user'] = [
+      'label' => t('Current user'),
+      'weight' => 0,
+      'visible' => TRUE,
+    ];
+  }
+
+  foreach (CommentType::loadMultiple() as $bundle) {
+    /* @var $bundle CommentType */
+    $extra['comment'][$bundle->id()]['display']['link_answer'] = [
+      'label' => t('Answer'),
+      'weight' => 0,
+      'visible' => TRUE,
+    ];
+
+
+  }
+  return $extra;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function app_comments_comment_view(array &$build,
+                                   CommentInterface $comment,
+                                   EntityViewDisplayInterface $display,
+                                   $view_mode) {
+  LinkAnswer::add($build, $comment, $display);
+
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function app_comments_entity_news_view(array &$build,
+                                       ContentEntityInterface $entity,
+                                       EntityViewDisplayInterface $display,
+                                       $view_mode) {
+
+//  $build['current_user'] = EntityNewsHelper::currentUserView();
+}
+
+/**
+ * Build the default links (reply, edit, delete …) for a comment.
+ *
+ * @param \Drupal\comment\CommentInterface $comment
+ *   The comment object.
+ * @param \Drupal\Core\Entity\EntityInterface $commented_entity
+ *   The entity to which the comment is attached.
+ *
+ * @return array
+ *   An array that can be processed by drupal_pre_render_links().
+ */
+
+
+function app_comments_comment_links_alter(array &$links, CommentInterface $entity, array &$context) {
+  CommentTemplates::createDropdownLinks($links);
+}
+
+function app_comments_preprocess_field(&$variables) {
+  $n = 0;
+}
+
+/**
+ * Change the ckeditor's settings.
+ *
+ * Implements hook_editor_js_settings_alter().
+ */
+function app_comments_editor_js_settings_alter(array &$settings) {
+  if (FALSE === isset($settings['editor']['formats']['comment'])) {
+    return;
+  }
+
+  $settings = &$settings['editor']['formats']['comment']['editorSettings'];
+  $settings['height'] = '100';
+}
+
+
+/**
+ * Implements hook_preprocess_block()
+ */
+function app_comments_preprocess_comment__field_comments__news(&$variables) {
+  CommentTemplates::createFooterLinks($variables);
+}
+
+
+function app_comments_preprocess_comment(&$variables) {
+  $variables['permalink'] = Comment::getPermalink($variables);
+}
+
+function app_comments_theme_registry_alter(&$theme_registry) {
+  CommentTemplates::override($theme_registry);
+}

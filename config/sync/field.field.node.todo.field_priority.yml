@@ -1,0 +1,23 @@
+uuid: 8ec850a2-37fc-4d4f-9fd6-b4f8854c2cde
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_priority
+    - node.type.todo
+  module:
+    - options
+id: node.todo.field_priority
+field_name: field_priority
+entity_type: node
+bundle: todo
+label: Приоритет
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 20
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

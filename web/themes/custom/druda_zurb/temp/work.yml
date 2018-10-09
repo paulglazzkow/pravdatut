@@ -1,0 +1,121 @@
+uuid: 75d7455c-955d-4422-b14e-1ce3aa794c2f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.entity_solution.teaser
+    - entity_solution.entity_solution_type.work
+    - field.field.entity_solution.work.field_category
+    - field.field.entity_solution.work.field_platform
+  module:
+    - entity_solution
+    - user
+    - field_formatter_class
+    - field_group
+third_party_settings:
+  field_group:
+    group_top:
+      children:
+        - name
+        - to_order
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'Row Top'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: teaser-top
+      label: 'Row Top'
+    group_content:
+      children:
+        - field_description
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: 'Row Content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: teaser-content
+      label: 'Row Content'
+    group_info:
+      children:
+        - user_id
+        - field_category
+        - field_platform
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        label: Footer
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: teaser-footer
+      label: Footer
+id: entity_solution.work.teaser
+targetEntityType: entity_solution
+bundle: work
+mode: teaser
+content:
+  field_category:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_platform:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  to_order:
+    type: solution_order_button
+    weight: 4
+    region: content
+    label: above
+    settings:
+      button_text: 'To order'
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

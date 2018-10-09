@@ -1,0 +1,20 @@
+uuid: 03d421da-b838-4409-9ec1-cd2c1b057676
+langcode: ru
+status: true
+dependencies:
+  module:
+    - comment
+    - entity_events
+id: entity_event.field_comments
+field_name: field_comments
+entity_type: entity_event
+type: comment
+settings:
+  comment_type: comment_event
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+entity.entity_problem.add_form:
+  route_name: entity.entity_problem.add_page
+  title: 'Add Entity problem'
+  appears_on:
+    - entity.entity_problem.collection
+entity.entity_problem_type.add_form:
+  route_name: entity.entity_problem_type.add_form
+  title: 'Add Entity problem type'
+  appears_on:
+    - entity.entity_problem_type.collection
+

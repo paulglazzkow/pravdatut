@@ -1,0 +1,14 @@
+uuid: da1b2f67-ca82-4ff7-8714-154081a49133
+langcode: ru
+status: true
+dependencies: {  }
+id: party_member
+label: 'Член партии'
+registration: true
+multiple: true
+roles:
+  authenticated: authenticated
+  administrator: '0'
+weight: 0
+use_revisions: true
+description: ''

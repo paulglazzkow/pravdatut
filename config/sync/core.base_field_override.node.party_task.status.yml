@@ -1,0 +1,22 @@
+uuid: 9654677e-de86-4991-a689-b0e0c15fdfe4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.party_task
+id: node.party_task.status
+field_name: status
+entity_type: node
+bundle: party_task
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

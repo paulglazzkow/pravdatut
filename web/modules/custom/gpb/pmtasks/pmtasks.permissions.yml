@@ -1,0 +1,30 @@
+add project task entities:
+  title: 'Create new Project task entities'
+
+administer project task entities:
+  title: 'Administer Project task entities'
+  description: 'Allow to access the administration form to configure Project task entities.'
+  restrict access: true
+
+delete project task entities:
+  title: 'Delete Project task entities'
+
+edit project task entities:
+  title: 'Edit Project task entities'
+
+view published project task entities:
+  title: 'View published Project task entities'
+
+view unpublished project task entities:
+  title: 'View unpublished Project task entities'
+
+view all project task revisions:
+  title: 'View all Project task revisions'
+
+revert all project task revisions:
+  title: 'Revert all Project task revisions'
+  description: 'Role requires permission <em>view Project task revisions</em> and <em>edit rights</em> for project task entities in question or <em>administer project task entities</em>.'
+
+delete all project task revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Project task revisions</em> and <em>delete rights</em> for project task entities in question or <em>administer project task entities</em>.'

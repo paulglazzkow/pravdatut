@@ -1,0 +1,31 @@
+uuid: c47992e8-abe1-414a-a35e-5653bb65c2e4
+langcode: ru
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - druda_zurb
+id: vkladki
+theme: druda_zurb
+region: content_top
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      manager: manager
+      root: root
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

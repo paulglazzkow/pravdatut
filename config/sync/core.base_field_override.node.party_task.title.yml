@@ -1,0 +1,18 @@
+uuid: bf863058-4b02-4ed5-9c8f-b124284f4097
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.party_task
+id: node.party_task.title
+field_name: title
+entity_type: node
+bundle: party_task
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,6 @@
+anonymous-set-referer:
+  version: 1.x
+  js:
+    js/anonymous-set-referer.js: {}
+  dependencies:
+    - core/jquery

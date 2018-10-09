@@ -1,0 +1,29 @@
+uuid: bd596a36-34cd-49f7-be55-f7a79ecf799d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.party_task.body
+    - node.type.party_task
+  module:
+    - text
+    - user
+id: node.party_task.teaser
+targetEntityType: node
+bundle: party_task
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

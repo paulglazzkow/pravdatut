@@ -1,0 +1,30 @@
+uuid: 80cfa693-e6d2-424a-a79c-a1ed88b09a23
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import_info
+    - options
+id: import_info_entity.field_source_format
+field_name: field_source_format
+entity_type: import_info_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: html
+      label: HTML
+    -
+      value: xml
+      label: XML
+    -
+      value: json
+      label: JSON
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

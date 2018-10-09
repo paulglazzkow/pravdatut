@@ -1,0 +1,20 @@
+uuid: 5bc4aa48-51ef-4481-9939-238db7094b58
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - zurb_foundation
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: zurb_foundation_local_actions
+theme: zurb_foundation
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  provider: core
+  label_display: '0'
+visibility: {  }

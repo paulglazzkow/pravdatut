@@ -1,0 +1,29 @@
+uuid: 2d5fa736-8099-42f0-a985-e7bf6a045ab2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_term_category
+    - node.type.todo
+    - taxonomy.vocabulary.todo_category
+id: node.todo.field_term_category
+field_name: field_term_category
+entity_type: node
+bundle: todo
+label: Категория
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      todo_category: todo_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

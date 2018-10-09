@@ -1,0 +1,5 @@
+name: 'Site Grabber'
+type: module
+description: 'Import external sites content'
+core: 8.x
+package: 'import'

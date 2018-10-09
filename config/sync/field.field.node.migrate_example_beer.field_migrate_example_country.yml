@@ -1,0 +1,21 @@
+uuid: 58e792b3-894f-4d2c-a3f9-9905270e2ad5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_migrate_example_country
+    - node.type.migrate_example_beer
+_core:
+  default_config_hash: 267WOazRYNp4VIbrd7mXDTFpKn2y10nXzvCOETAlCOA
+id: node.migrate_example_beer.field_migrate_example_country
+field_name: field_migrate_example_country
+entity_type: node
+bundle: migrate_example_beer
+label: Countries
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

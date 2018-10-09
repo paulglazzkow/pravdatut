@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains enumeration.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function enumeration_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the enumeration module.
+    case 'help.page.enumeration':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Enumeration entity') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function enumeration_theme() {
+  $theme = [];
+  $theme['entity_enumeration'] = [
+    'render element' => 'elements',
+    'file' => 'entity_enumeration.page.inc',
+    'template' => 'entity_enumeration',
+  ];
+  $theme['entity_enumeration_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'entity_enumeration.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function enumeration_theme_suggestions_entity_enumeration(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#entity_enumeration'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'entity_enumeration__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_enumeration__' . $entity->bundle();
+  $suggestions[] = 'entity_enumeration__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_enumeration__' . $entity->id();
+  $suggestions[] = 'entity_enumeration__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

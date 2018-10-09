@@ -1,0 +1,23 @@
+uuid: 868109f1-16f6-426c-b8de-f66b6f54155b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.todo
+  module:
+    - options
+id: node.todo.field_type
+field_name: field_type
+entity_type: node
+bundle: todo
+label: Тип
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: issue
+default_value_callback: ''
+settings: {  }
+field_type: list_string

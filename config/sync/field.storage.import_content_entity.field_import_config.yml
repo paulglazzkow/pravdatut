@@ -1,0 +1,19 @@
+uuid: 221c3bc3-218d-4536-9fe3-fe178a8bdd3a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - import_info
+id: import_content_entity.field_import_config
+field_name: field_import_config
+entity_type: import_content_entity
+type: entity_reference
+settings:
+  target_type: import_info_entity
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

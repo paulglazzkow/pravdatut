@@ -1,0 +1,30 @@
+uuid: bf1062f2-4b06-4240-8a89-4121863615de
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.profile.party_member.field_party
+    - profile.type.party_member
+  module:
+    - content_moderation
+id: profile.party_member.default
+targetEntityType: profile
+bundle: party_member
+mode: default
+content:
+  field_party:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden: {  }

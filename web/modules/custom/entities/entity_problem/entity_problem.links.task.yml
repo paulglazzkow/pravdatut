@@ -1,0 +1,27 @@
+# Entity problem routing definition
+
+entity.entity_problem.canonical:
+  route_name: entity.entity_problem.canonical
+  base_route: entity.entity_problem.canonical
+  title: 'View'
+
+entity.entity_problem.edit_form:
+  route_name: entity.entity_problem.edit_form
+  base_route: entity.entity_problem.canonical
+  title: 'Edit'
+
+entity.entity_problem.version_history:
+  route_name: entity.entity_problem.version_history
+  base_route: entity.entity_problem.canonical
+  title: 'Revisions'
+
+entity.entity_problem.delete_form:
+  route_name:  entity.entity_problem.delete_form
+  base_route:  entity.entity_problem.canonical
+  title: Delete
+  weight: 10
+
+entity.entity_problem.edit_form:
+  route_name: entity.entity_problem_type.edit_form
+  base_route: entity.entity_problem_type.edit_form
+  title: 'Edit'

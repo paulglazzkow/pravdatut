@@ -1,0 +1,23 @@
+uuid: a4223bb9-77f7-453f-8915-501472e9248c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.source_link
+    - field.storage.entity_tech.field_link
+  module:
+    - link
+id: entity_tech.source_link.field_link
+field_name: field_link
+entity_type: entity_tech
+bundle: source_link
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

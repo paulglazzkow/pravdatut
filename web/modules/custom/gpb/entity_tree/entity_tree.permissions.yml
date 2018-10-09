@@ -1,0 +1,30 @@
+add entity tree entities:
+  title: 'Create new Entity tree entities'
+
+administer entity tree entities:
+  title: 'Administer Entity tree entities'
+  description: 'Allow to access the administration form to configure Entity tree entities.'
+  restrict access: true
+
+delete entity tree entities:
+  title: 'Delete Entity tree entities'
+
+edit entity tree entities:
+  title: 'Edit Entity tree entities'
+
+view published entity tree entities:
+  title: 'View published Entity tree entities'
+
+view unpublished entity tree entities:
+  title: 'View unpublished Entity tree entities'
+
+view all entity tree revisions:
+  title: 'View all Entity tree revisions'
+
+revert all entity tree revisions:
+  title: 'Revert all Entity tree revisions'
+  description: 'Role requires permission <em>view Entity tree revisions</em> and <em>edit rights</em> for entity tree entities in question or <em>administer entity tree entities</em>.'
+
+delete all entity tree revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Entity tree revisions</em> and <em>delete rights</em> for entity tree entities in question or <em>administer entity tree entities</em>.'

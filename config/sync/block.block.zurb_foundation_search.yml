@@ -1,0 +1,22 @@
+uuid: e85dc773-e5cb-4d17-8500-7e05ee2722e3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - zurb_foundation
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: zurb_foundation_search
+theme: zurb_foundation
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Поиск
+  provider: search
+  label_display: visible
+visibility: {  }

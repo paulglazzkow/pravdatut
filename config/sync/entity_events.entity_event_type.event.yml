@@ -1,0 +1,6 @@
+uuid: 96f9f51f-449b-4d32-9da6-866dc17950ac
+langcode: ru
+status: true
+dependencies: {  }
+id: event
+label: Event

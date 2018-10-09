@@ -1,0 +1,11 @@
+services:
+  site_grabber.imigrate_execute:
+    class: Drupal\site_grabber\Command\ImportMigrateExecuteCommand
+    arguments: ['@?plugin.manager.migration']
+    tags:
+      - { name: drupal.command }
+  site_grabber.imigrate_test:
+    class: Drupal\site_grabber\Command\ImportMigrateTestCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }

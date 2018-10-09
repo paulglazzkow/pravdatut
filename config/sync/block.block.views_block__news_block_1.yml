@@ -1,0 +1,30 @@
+uuid: e422d359-c496-439d-afab-57b83a5906e0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - druda_zurb
+id: views_block__news_block_1
+theme: druda_zurb
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

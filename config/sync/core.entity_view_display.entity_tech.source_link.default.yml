@@ -1,0 +1,54 @@
+uuid: ba02c1a9-0768-4242-b343-4911e0cb3bab
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_tech.entity_tech_type.source_link
+    - field.field.entity_tech.source_link.field_link
+    - field.field.entity_tech.source_link.field_link_type
+  module:
+    - link
+    - options
+    - user
+id: entity_tech.source_link.default
+targetEntityType: entity_tech
+bundle: source_link
+mode: default
+content:
+  field_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_link_type:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  status: true

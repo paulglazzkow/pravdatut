@@ -1,0 +1,18 @@
+uuid: 0fd2aa50-5bef-4e5c-9f8a-6625786d52b0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.problem
+id: node.problem.title
+field_name: title
+entity_type: node
+bundle: problem
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

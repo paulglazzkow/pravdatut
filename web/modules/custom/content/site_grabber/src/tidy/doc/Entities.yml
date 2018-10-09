@@ -1,0 +1,42 @@
+ascii-chars:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  See also:	clean
+  Can be used to modify behavior of the clean option when set to yes.
+  If set to yes when using clean, &emdash;, &rdquo;, and other named character entities are downgraded to their closest ASCII equivalents.
+ncr:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should allow numeric character references.
+numeric-entities:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  See also:	doctype, preserve-entities
+  This option specifies if Tidy should output entities other than the built-in HTML entities (&amp;, &lt;, &gt;, and &quot;) in the numeric rather than the named entity form.
+  Only entities compatible with the DOCTYPE declaration generated are used.
+  Entities that can be represented in the output encoding are translated correspondingly.
+preserve-entities:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should preserve well-formed entities as found in the input.
+quote-ampersand:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should output unadorned & characters as &amp;.
+quote-marks:
+  Type:	Boolean
+  Default:	no
+  Values:	no, yes
+  This option specifies if Tidy should output " characters as &quot; as is preferred by some editing environments.
+  The apostrophe character ' is written out as &#39; since many web browsers don't yet support &apos;.
+quote-nbsp:
+  Type:	Boolean
+  Default:	yes
+  Values:	no, yes
+  This option specifies if Tidy should output non-breaking space characters as entities, rather than as
+   the Unicode character value 160 (decimal).

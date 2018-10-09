@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains theme_custom.module.
+ */
+
+use Drupal\comment\CommentInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\filter\Element\TextFormat;
+
+/**
+ * Implements hook_help().
+ */
+function theme_custom_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the theme_custom module.
+    case 'help.page.theme_custom':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_element_info_alter().
+ *
+ * Extends the functionality of text_format elements (provided by Filter
+ * module), so that selecting a text format notifies a client-side text editor
+ * when it should be enabled or disabled.
+ *
+ * @see \Drupal\filter\Element\TextFormat
+ */
+function theme_custom_element_info_alter(&$types) {
+  $types['text_format']['#process'] = ['theme_custom_process__text_format'];
+
+}
+
+function theme_custom_process__text_format(&$element, FormStateInterface $form_state, &$complete_form) {
+  $element = TextFormat::processFormat($element, $form_state, $complete_form);
+  $element['format']['#type'] = 'details';
+  $element['format']['#title'] = t('Format');
+  return $element;
+}
+
+function theme_custom_form_alter(&$form, FormStateInterface $form_state) {
+  switch ($form['#form_id']) {
+    case 'comment_comment_news_form':
+      $form['actions']['submit']['#value'] = t('Send');
+      break;
+  }
+
+}
+

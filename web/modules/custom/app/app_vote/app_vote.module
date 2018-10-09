@@ -1,0 +1,84 @@
+<?php
+
+/**
+ * @file
+ * Contains app_vote.module.
+ */
+
+use Drupal\app_vote\Plugin\votingapi_widget\FlagWidget;
+use Drupal\app_vote\Plugin\votingapi_widget\LikeWidget;
+use Drupal\comment\CommentInterface;
+use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
+use Drupal\Component\Plugin\Exception\PluginNotFoundException;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function app_vote_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the app_vote module.
+    case 'help.page.app_vote':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function app_vote_comment_view(array &$build,
+                               CommentInterface $comment,
+                               EntityViewDisplayInterface $display,
+                               $view_mode) {
+}
+
+function app_vote_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  //appd($form);
+  $build_info = $form_state->getBuildInfo();
+
+  if (isset($build_info['base_form_id']) && $build_info['base_form_id'] === 'vote_form') {
+    $storage = $form_state->getStorage();
+    /* @var $plugin \Drupal\votingapi_widgets\Plugin\VotingApiWidgetBase */
+    $plugin = $storage['plugin'];
+
+    try {
+      $comment = \Drupal::entityTypeManager()
+        ->getStorage($storage['entity_type'])
+        ->load($storage['entity_id']);
+    } catch (InvalidPluginDefinitionException $e) {
+    } catch (PluginNotFoundException $e) {
+    }
+
+    $label = $comment->get($storage['field_name'])->getFieldDefinition()->getLabel();
+
+
+    //    $label = $vote->get($field_name)->getFieldDefinition()->getLabel();
+
+
+    /* @var $plugin \Drupal\votingapi_widgets\Plugin\VotingApiWidgetBase */
+    switch ($plugin->getPluginId()) {
+      case 'flag':
+        $form['value'] = FlagWidget::prepareElement($form['value'], $label, $storage['settings'], $form['submit']);
+//        $form['submit'] = ['#type' => 'value', '#value' => $form['submit']['#value']];
+//        unset($form['result']);
+        break;
+      case 'like':
+        $form['value'] = LikeWidget::prepareElement($form['value'], $label, $storage['settings'], $form['submit']);
+//        $form['submit'] = ['#type' => 'value', '#value' => $form['submit']['#value']];
+//        unset($form['result']);
+        break;
+    }
+
+
+  }
+
+  $n = 0;
+
+}

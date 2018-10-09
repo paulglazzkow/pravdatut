@@ -1,0 +1,23 @@
+# Project task routing definition
+
+entity.pmtask.canonical:
+  route_name: entity.pmtask.canonical
+  base_route: entity.pmtask.canonical
+  title: 'View'
+
+entity.pmtask.edit_form:
+  route_name: entity.pmtask.edit_form
+  base_route: entity.pmtask.canonical
+  title: 'Edit'
+
+entity.pmtask.version_history:
+  route_name: entity.pmtask.version_history
+  base_route: entity.pmtask.canonical
+  title: 'Revisions'
+
+entity.pmtask.delete_form:
+  route_name:  entity.pmtask.delete_form
+  base_route:  entity.pmtask.canonical
+  title: Delete
+  weight: 10
+
